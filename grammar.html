@@ -5,7 +5,7 @@ grammar.html
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>English Grammar | The Student Spot</title>
+  <title>C1 Grammar | The Student Spot</title>
 
   <style>
     body {
@@ -13,17 +13,18 @@ grammar.html
       font-family: Arial, sans-serif;
       background: #fff7fb;
       color: #333;
+      line-height: 1.7;
     }
 
     header {
       background: #d9b8ff;
       text-align: center;
-      padding: 45px 20px;
+      padding: 50px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 38px;
+      font-size: 42px;
     }
 
     header p {
@@ -31,33 +32,54 @@ grammar.html
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 35px 20px;
     }
 
-    .lesson {
+    .topic,
+    .practice {
       background: white;
-      padding: 25px;
+      padding: 28px;
       margin: 25px 0;
       border-radius: 18px;
       box-shadow: 0 4px 12px #ddd;
     }
 
-    .lesson h2 {
+    h2 {
       color: #7b4bb7;
     }
 
-    .example {
+    .rule {
       background: #f6edff;
+      padding: 18px;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    .example {
+      border-left: 4px solid #7b4bb7;
+      padding-left: 15px;
+      margin: 15px 0;
+    }
+
+    .mistake {
+      background: #fff0f5;
       padding: 15px;
       border-radius: 10px;
       margin-top: 15px;
     }
 
+    .answers {
+      background: #f6edff;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
     .back {
       display: inline-block;
-      margin: 15px;
+      margin: 20px 10px;
       color: #7b4bb7;
       text-decoration: none;
       font-weight: bold;
@@ -68,95 +90,355 @@ grammar.html
 <body>
 
 <header>
-  <h1>📖 English Grammar</h1>
-  <p>Simple grammar lessons for students 💜</p>
+  <h1>📖 C1 English Grammar</h1>
+  <p>Understand advanced grammar and use it confidently.</p>
 </header>
 
 <div class="container">
 
-  <div class="lesson">
-    <h2>🔤 What is Grammar?</h2>
+  <div class="topic">
+    <h2>1. Advanced Conditionals</h2>
+
     <p>
-      Grammar is the set of rules we use to arrange words
-      correctly and form meaningful sentences.
+      Conditionals describe situations and their possible results.
+      At C1 level, you should be comfortable with mixed and inverted
+      conditionals.
+    </p>
+
+    <div class="rule">
+      <strong>Mixed conditional:</strong><br>
+      If + past perfect → would + base verb
+    </div>
+
+    <div class="example">
+      <strong>Example:</strong><br>
+      If I had studied harder last year, I would understand this topic
+      much better now.
+    </div>
+
+    <div class="example">
+      <strong>Another example:</strong><br>
+      If she weren't so busy, she would have attended the event yesterday.
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>2. Inversion</h2>
+
+    <p>
+      In formal English, we can place certain negative or limiting
+      expressions at the beginning of a sentence and invert the
+      subject and auxiliary verb.
+    </p>
+
+    <div class="rule">
+      <strong>Normal:</strong><br>
+      I had never seen such a beautiful place.
+      <br><br>
+
+      <strong>Inverted:</strong><br>
+      Never had I seen such a beautiful place.
+    </div>
+
+    <div class="example">
+      <strong>Examples:</strong><br>
+      Rarely do students get such an opportunity.<br>
+      Not only did she finish the project, but she also presented it.
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>3. Modal Verbs of Deduction</h2>
+
+    <p>
+      Modal verbs can express how certain we are about a past or
+      present situation.
+    </p>
+
+    <div class="rule">
+      <strong>Present:</strong><br>
+      must be → strong certainty<br>
+      might be → possibility<br>
+      can't be → strong belief that something is impossible
+      <br><br>
+
+      <strong>Past:</strong><br>
+      must have + past participle<br>
+      might have + past participle<br>
+      can't have + past participle
+    </div>
+
+    <div class="example">
+      <strong>Example:</strong><br>
+      She isn't answering her phone. She must be busy.
+      <br><br>
+      They left an hour ago, so they must have arrived by now.
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>4. Participle Clauses</h2>
+
+    <p>
+      Participle clauses allow us to combine information and make
+      writing more concise.
     </p>
 
     <div class="example">
       <strong>Example:</strong><br>
-      Sara reads a book.
+      Having finished her homework, Maria went outside.
+      <br><br>
+      Instead of:<br>
+      Maria had finished her homework, so she went outside.
+    </div>
+
+    <div class="example">
+      <strong>Another example:</strong><br>
+      Feeling tired, he decided to take a break.
     </div>
   </div>
 
-  <div class="lesson">
-    <h2>🧩 Nouns</h2>
+
+  <div class="topic">
+    <h2>5. Cleft Sentences</h2>
+
     <p>
-      A noun is a word that names a person, place, animal,
-      thing or idea.
+      Cleft sentences allow us to emphasise particular information.
+    </p>
+
+    <div class="rule">
+      <strong>Structure:</strong><br>
+      It + be + emphasised information + that/who...
+    </div>
+
+    <div class="example">
+      <strong>Example:</strong><br>
+      It was Sarah who solved the problem.
+      <br><br>
+      The emphasis is on <strong>Sarah</strong>.
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>6. Relative Clauses</h2>
+
+    <p>
+      Relative clauses provide additional information about a noun.
+      At advanced level, you should understand defining,
+      non-defining and reduced relative clauses.
     </p>
 
     <div class="example">
-      <strong>Examples:</strong><br>
-      teacher • school • cat • book • happiness
+      <strong>Example:</strong><br>
+      The book, which was published last year, became extremely popular.
+    </div>
+
+    <div class="example">
+      <strong>Reduced form:</strong><br>
+      Students studying abroad often develop greater independence.
     </div>
   </div>
 
-  <div class="lesson">
-    <h2>🏃 Verbs</h2>
+
+  <div class="topic">
+    <h2>7. Advanced Passive Structures</h2>
+
     <p>
-      A verb usually describes an action or a state.
+      Passive structures are especially common in formal,
+      academic and scientific writing.
     </p>
 
     <div class="example">
-      <strong>Examples:</strong><br>
-      run • write • eat • learn • is
+      <strong>Example:</strong><br>
+      The researchers are believed to have discovered a new species.
+    </div>
+
+    <div class="example">
+      <strong>Another example:</strong><br>
+      The problem is thought to have been caused by a technical error.
     </div>
   </div>
 
-  <div class="lesson">
-    <h2>✨ Adjectives</h2>
+
+  <div class="topic">
+    <h2>8. Reported Speech</h2>
+
     <p>
-      An adjective describes or gives more information
-      about a noun.
+      Reported speech is used to communicate what someone said
+      without repeating their exact words.
     </p>
 
     <div class="example">
-      <strong>Examples:</strong><br>
-      beautiful flower • clever student • big house
+      <strong>Direct:</strong><br>
+      "I am studying for my exam."
+      <br><br>
+
+      <strong>Reported:</strong><br>
+      She said that she was studying for her exam.
+    </div>
+
+    <div class="example">
+      <strong>Advanced example:</strong><br>
+      He claimed that he had never been informed about the changes.
     </div>
   </div>
 
-  <div class="lesson">
-    <h2>⏰ Basic Tenses</h2>
+
+  <div class="topic">
+    <h2>9. Wish & Regret</h2>
+
     <p>
-      Tenses help us understand when an action happens.
+      We use different structures to talk about present situations,
+      past regrets and desired changes.
     </p>
 
     <div class="example">
-      <strong>Present:</strong> I study every day.<br><br>
-      <strong>Past:</strong> I studied yesterday.<br><br>
-      <strong>Future:</strong> I will study tomorrow.
+      <strong>Present:</strong><br>
+      I wish I had more time.
+      <br><br>
+
+      <strong>Past regret:</strong><br>
+      I wish I had studied harder.
+      <br><br>
+
+      <strong>Annoying repeated behaviour:</strong><br>
+      I wish you wouldn't interrupt me.
     </div>
   </div>
 
-  <div class="lesson">
-    <h2>📝 Quick Practice</h2>
 
-    <p><strong>Question:</strong></p>
+  <div class="topic">
+    <h2>10. Emphasis with Auxiliary Verbs</h2>
 
     <p>
-      Identify the verb in this sentence:
+      We can use <strong>do, does</strong> or <strong>did</strong>
+      to emphasise an affirmative statement.
     </p>
 
     <div class="example">
-      The students <strong>study</strong> English.
+      <strong>Example:</strong><br>
+      I do understand your point.
+      <br><br>
+      She did complete the assignment on time.
     </div>
 
-    <p>
-      ✅ Answer: <strong>study</strong>
-    </p>
+    <div class="mistake">
+      <strong>⚠️ Common mistake:</strong><br>
+      Do not use "did" with another past-tense verb.
+      <br><br>
+      ❌ She did completed the work.<br>
+      ✅ She did complete the work.
+    </div>
   </div>
+
+
+  <div class="practice">
+
+    <h2>🧠 C1 Grammar Practice</h2>
+
+    <ol>
+
+      <li>
+        If I ______ harder last year, I would be more confident now.
+        <br><br>
+        A) studied<br>
+        B) had studied<br>
+        C) would study<br>
+        D) have studied
+      </li>
+
+      <li>
+        Rarely ______ such an impressive performance.
+        <br><br>
+        A) I have seen<br>
+        B) have I seen<br>
+        C) I saw<br>
+        D) saw I
+      </li>
+
+      <li>
+        She isn't answering. She ______ be asleep.
+        <br><br>
+        A) must<br>
+        B) should have<br>
+        C) would<br>
+        D) can't have
+      </li>
+
+      <li>
+        ______ his homework, he went out with his friends.
+        <br><br>
+        A) Finished<br>
+        B) Having finished<br>
+        C) Has finished<br>
+        D) Finish
+      </li>
+
+      <li>
+        It was the teacher ______ explained the concept.
+        <br><br>
+        A) which<br>
+        B) whose<br>
+        C) who<br>
+        D) where
+      </li>
+
+      <li>
+        The scientist is believed ______ a major discovery.
+        <br><br>
+        A) make<br>
+        B) making<br>
+        C) to have made<br>
+        D) made
+      </li>
+
+      <li>
+        I wish I ______ more carefully for the examination.
+        <br><br>
+        A) study<br>
+        B) studied<br>
+        C) had studied<br>
+        D) would study
+      </li>
+
+      <li>
+        She ______ complete the assignment before the deadline.
+        <br><br>
+        A) did<br>
+        B) did to<br>
+        C) did completed<br>
+        D) does completed
+      </li>
+
+    </ol>
+
+
+    <div class="answers">
+
+      <h3>✅ Answer Key</h3>
+
+      <p>
+        1. B — had studied<br>
+        2. B — have I seen<br>
+        3. A — must<br>
+        4. B — Having finished<br>
+        5. C — who<br>
+        6. C — to have made<br>
+        7. C — had studied<br>
+        8. A — did
+      </p>
+
+    </div>
+
+  </div>
+
 
   <a class="back" href="english.html">← Back to English</a>
+  <a class="back" href="subjects.html">📚 Subjects</a>
   <a class="back" href="index.html">🏠 Home</a>
 
 </div>
