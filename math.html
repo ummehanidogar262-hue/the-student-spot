@@ -4,7 +4,7 @@ math.html
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mathematics | The Student Spot</title>
+  <title>Math | The Student Spot</title>
 
   <style>
     body {
@@ -12,40 +12,68 @@ math.html
       font-family: Arial, sans-serif;
       background: #fff7fb;
       color: #333;
-      text-align: center;
+      line-height: 1.7;
     }
 
     header {
       background: #d9b8ff;
-      padding: 40px 20px;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
     }
 
     .container {
       max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 35px 20px;
     }
 
-    .cards {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .card {
+    .topic,
+    .practice {
       background: white;
-      padding: 25px;
-      border-radius: 15px;
-      width: 220px;
+      padding: 28px;
+      margin: 25px 0;
+      border-radius: 18px;
       box-shadow: 0 4px 12px #ddd;
     }
 
-    .card h2 {
+    h2 {
       color: #7b4bb7;
     }
 
-    a {
+    .box {
+      background: #f6edff;
+      padding: 18px;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    .example {
+      border-left: 4px solid #7b4bb7;
+      padding-left: 15px;
+      margin: 15px 0;
+    }
+
+    .tip {
+      background: #fff0f5;
+      padding: 18px;
+      border-radius: 12px;
+    }
+
+    .answers {
+      background: #f6edff;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 20px 10px;
       color: #7b4bb7;
       text-decoration: none;
       font-weight: bold;
@@ -55,49 +83,287 @@ math.html
 
 <body>
 
-  <header>
-    <h1>➗ Mathematics</h1>
-    <p>Learn mathematics step by step 💜</p>
-  </header>
+<header>
+  <h1>➗ Mathematics</h1>
+  <p>Learn concepts, understand examples and practise your skills.</p>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="cards">
+  <div class="topic">
+    <h2>1. Algebra</h2>
 
-      <div class="card">
-        <h2>🔢 Numbers</h2>
-        <p>Learn about numbers, operations and basic calculations.</p>
-      </div>
+    <p>
+      Algebra uses letters and symbols to represent unknown values.
+    </p>
 
-      <div class="card">
-        <h2>➗ Fractions</h2>
-        <p>Understand fractions, decimals and percentages.</p>
-      </div>
+    <div class="box">
+      <strong>Example:</strong><br><br>
+      3x + 5 = 20<br><br>
 
-      <div class="card">
-        <h2>📐 Geometry</h2>
-        <p>Explore shapes, angles, measurements and formulas.</p>
-      </div>
-
-      <div class="card">
-        <h2>📊 Algebra</h2>
-        <p>Practice expressions, equations and variables.</p>
-      </div>
-
-      <div class="card">
-        <h2>📝 Practice</h2>
-        <p>Test your mathematical skills with practice questions.</p>
-      </div>
-
+      3x = 15<br>
+      x = 5
     </div>
 
-    <br><br>
+    <div class="tip">
+      💡 Always perform the same operation on both sides of an equation.
+    </div>
+  </div>
 
-    <a href="subjects.html">← Back to Subjects</a>
-    <br><br>
-    <a href="index.html">🏠 Back to Home</a>
+
+  <div class="topic">
+    <h2>2. Fractions</h2>
+
+    <p>
+      A fraction represents part of a whole.
+    </p>
+
+    <div class="example">
+      <strong>Example:</strong><br><br>
+
+      1/2 + 1/4<br><br>
+
+      Convert 1/2 into quarters:<br>
+      1/2 = 2/4<br><br>
+
+      Therefore:<br>
+      2/4 + 1/4 = 3/4
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>3. Percentages</h2>
+
+    <p>
+      A percentage represents a value out of 100.
+    </p>
+
+    <div class="box">
+      <strong>Example:</strong><br><br>
+
+      What is 20% of 150?<br><br>
+
+      20/100 × 150 = 30<br><br>
+
+      Answer: <strong>30</strong>
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>4. Ratios</h2>
+
+    <p>
+      A ratio compares two or more quantities.
+    </p>
+
+    <div class="example">
+      <strong>Example:</strong><br><br>
+
+      The ratio of boys to girls is 2:3.<br>
+      If there are 10 boys, there are 15 girls.
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>5. Geometry</h2>
+
+    <p>
+      Geometry deals with shapes, sizes, angles and properties of space.
+    </p>
+
+    <div class="box">
+      <strong>Important formulas:</strong><br><br>
+
+      Rectangle area = length × width<br><br>
+
+      Triangle area = 1/2 × base × height<br><br>
+
+      Circle area = πr²
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>6. Pythagorean Theorem</h2>
+
+    <p>
+      In a right-angled triangle:
+    </p>
+
+    <div class="box">
+      <strong>a² + b² = c²</strong>
+    </div>
+
+    <div class="example">
+      If a = 3 and b = 4:<br><br>
+
+      3² + 4² = c²<br>
+      9 + 16 = c²<br>
+      25 = c²<br>
+      c = 5
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>7. Statistics</h2>
+
+    <p>
+      Statistics involves collecting, analysing and interpreting data.
+    </p>
+
+    <div class="box">
+      <strong>Mean:</strong> Add all values and divide by the number of values.
+      <br><br>
+
+      Example:<br>
+      4, 6, 8<br><br>
+
+      Mean = (4 + 6 + 8) ÷ 3<br>
+      Mean = 6
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>8. Probability</h2>
+
+    <p>
+      Probability measures how likely an event is to happen.
+    </p>
+
+    <div class="box">
+      Probability =
+      <br><br>
+      Number of favourable outcomes ÷ Total number of possible outcomes
+    </div>
+
+    <div class="example">
+      A fair coin has two possible outcomes.
+      <br><br>
+      Probability of heads = 1/2
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>9. Integers</h2>
+
+    <p>
+      Integers include positive numbers, negative numbers and zero.
+    </p>
+
+    <div class="example">
+      <strong>Examples:</strong><br><br>
+
+      -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5
+    </div>
+
+    <div class="tip">
+      💡 Remember: subtracting a negative number is equivalent to adding
+      a positive number.
+      <br><br>
+      Example: 7 - (-3) = 10
+    </div>
+  </div>
+
+
+  <div class="topic">
+    <h2>10. Problem Solving</h2>
+
+    <p>
+      Good mathematical problem solving requires careful reading,
+      planning and checking.
+    </p>
+
+    <div class="box">
+      <strong>Four-step method:</strong>
+      <ol>
+        <li>Understand the problem.</li>
+        <li>Choose a strategy.</li>
+        <li>Solve it carefully.</li>
+        <li>Check your answer.</li>
+      </ol>
+    </div>
+  </div>
+
+
+  <div class="practice">
+
+    <h2>🧠 Math Practice</h2>
+
+    <ol>
+
+      <li>
+        Solve: 2x + 6 = 16
+        <br><br>
+        A) 3<br>
+        B) 4<br>
+        C) 5<br>
+        D) 6
+      </li>
+
+      <li>
+        What is 25% of 200?
+        <br><br>
+        A) 25<br>
+        B) 40<br>
+        C) 50<br>
+        D) 75
+      </li>
+
+      <li>
+        What is the area of a rectangle with length 8 cm
+        and width 5 cm?
+        <br><br>
+        A) 13 cm²<br>
+        B) 26 cm²<br>
+        C) 40 cm²<br>
+        D) 80 cm²
+      </li>
+
+      <li>
+        What is the mean of 5, 10 and 15?
+        <br><br>
+        A) 5<br>
+        B) 10<br>
+        C) 15<br>
+        D) 20
+      </li>
+
+      <li>
+        A fair coin is tossed once. What is the probability of getting heads?
+        <br><br>
+        A) 1/4<br>
+        B) 1/3<br>
+        C) 1/2<br>
+        D) 1
+      </li>
+
+    </ol>
+
+    <div class="answers">
+      <h3>✅ Answer Key</h3>
+
+      <p>
+        1. B — 4<br>
+        2. C — 50<br>
+        3. C — 40 cm²<br>
+        4. B — 10<br>
+        5. C — 1/2
+      </p>
+    </div>
 
   </div>
+
+
+  <a class="back" href="subjects.html">← Back to Subjects</a>
+  <a class="back" href="index.html">🏠 Home</a>
+
+</div>
 
 </body>
 </html>
