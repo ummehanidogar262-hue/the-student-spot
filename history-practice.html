@@ -1,1 +1,1208 @@
 history-practice
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>History Practice | The Student Spot</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffaf5;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #ead7c0;
+      text-align: center;
+      padding: 50px 20px;
+      border-bottom: 4px solid #b58b62;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+      color: #5d4028;
+    }
+
+    header p {
+      font-size: 17px;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .intro,
+    .gallery,
+    .questions,
+    .footer-box {
+      background: white;
+      padding: 30px;
+      margin: 25px 0;
+      border-radius: 18px;
+      box-shadow: 0 4px 14px #ddd;
+    }
+
+    h2 {
+      color: #7a5231;
+    }
+
+    .intro-note {
+      background: #f8eee3;
+      padding: 18px;
+      border-radius: 12px;
+      border-left: 5px solid #b58b62;
+    }
+
+    /* IMAGE GALLERY */
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .history-image {
+      background: #fafafa;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid #ddd;
+    }
+
+    .history-image img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .history-image p {
+      margin: 0;
+      padding: 12px;
+      text-align: center;
+      font-weight: bold;
+      color: #65462e;
+    }
+
+    .history-image small {
+      display: block;
+      padding: 0 12px 12px;
+      text-align: center;
+      color: #777;
+    }
+
+    /* QUESTION CARDS */
+
+    .section-title {
+      background: #f4e7d7;
+      padding: 14px 18px;
+      border-radius: 12px;
+      margin-top: 30px;
+      color: #65462e;
+    }
+
+    .question {
+      background: #fffdf9;
+      padding: 17px;
+      margin: 12px 0;
+      border-radius: 12px;
+      border-left: 4px solid #c39a70;
+    }
+
+    .question strong {
+      color: #4d3827;
+    }
+
+    .answer {
+      margin-top: 7px;
+      padding: 10px 13px;
+      background: #f4f8ef;
+      border-radius: 9px;
+      color: #315c36;
+    }
+
+    .answer strong {
+      color: #315c36;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 10px;
+      padding: 11px 18px;
+      border-radius: 10px;
+      background: #ead7c0;
+      color: #5d4028;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back:hover {
+      background: #dcc1a1;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .intro,
+      .gallery,
+      .questions {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>📚 History Practice</h1>
+  <p>Ancient • Medieval • World • Important People • Pakistan History</p>
+</header>
+
+<div class="container">
+
+  <!-- INTRO -->
+
+  <div class="intro">
+
+    <h2>📖 History Practice Center</h2>
+
+    <p>
+      Welcome to the History Practice section of The Student Spot.
+      This page brings together important facts from ancient history,
+      medieval history, world history and Pakistan history.
+    </p>
+
+    <div class="intro-note">
+      <strong>Study tip:</strong>
+      Read each question first, try to answer it yourself,
+      and then check the answer underneath.
+    </div>
+
+  </div>
+
+
+  <!-- HISTORICAL IMAGE GALLERY -->
+
+  <div class="gallery">
+
+    <h2>🏛️ Historical Visuals</h2>
+
+    <div class="gallery-grid">
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Great_Pyramid_of_Giza.jpg"
+          alt="Great Pyramid of Giza">
+        <p>Great Pyramid of Giza</p>
+        <small>Ancient Egypt</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Mohenjo-daro.jpg"
+          alt="Mohenjo-daro archaeological ruins">
+        <p>Mohenjo-daro</p>
+        <small>Indus Valley Civilization</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Bust_of_Alexander_the_Great.jpg"
+          alt="Bust of Alexander the Great">
+        <p>Alexander the Great</p>
+        <small>Ancient Greek history</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Colosseum_-_Rome.jpg"
+          alt="Colosseum in Rome">
+        <p>Colosseum</p>
+        <small>Ancient Rome</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Great_wall_of_china.jpg"
+          alt="Great Wall of China">
+        <p>Great Wall of China</p>
+        <small>Chinese history</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/The_Taj_Mahal,.jpg"
+          alt="Taj Mahal">
+        <p>Taj Mahal</p>
+        <small>Mughal period</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Magna_Carta.jpg"
+          alt="Magna Carta">
+        <p>Magna Carta</p>
+        <small>Medieval England</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Quaid_e_azam.jpg"
+          alt="Quaid-e-Azam portrait">
+        <p>Quaid-e-Azam</p>
+        <small>Muhammad Ali Jinnah</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Jinnah_portrait.jpg"
+          alt="Muhammad Ali Jinnah portrait">
+        <p>Muhammad Ali Jinnah</p>
+        <small>Founder of Pakistan</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Allama_Iqbal.jpg"
+          alt="Allama Iqbal portrait">
+        <p>Allama Iqbal</p>
+        <small>Poet and philosopher</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/SirSyedAhmedKhan.jpg"
+          alt="Sir Syed Ahmad Khan">
+        <p>Sir Syed Ahmad Khan</p>
+        <small>Educational reformer</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Pakistan_resolution.jpg"
+          alt="Pakistan historical monument">
+        <p>Pakistan Movement</p>
+        <small>Historical Pakistan</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/World_War_II.jpg"
+          alt="World War II historical material">
+        <p>World War II</p>
+        <small>1939–1945</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Great_Pyramid_Giza.jpg"
+          alt="Great Pyramid of Giza">
+        <p>Ancient Civilization</p>
+        <small>Egypt</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tajmahal.jpg"
+          alt="Taj Mahal">
+        <p>Taj Mahal</p>
+        <small>Mughal architecture</small>
+      </div>
+
+      <div class="history-image">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Syed_Ahmad_Khan.jpg"
+          alt="Sir Syed Ahmad Khan">
+        <p>Sir Syed Ahmad Khan</p>
+        <small>South Asian history</small>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- QUESTIONS -->
+
+  <div class="questions">
+
+    <h2>🧠 160 Short History Questions with Answers</h2>
+
+
+    <!-- ANCIENT HISTORY -->
+
+    <h3 class="section-title">🏺 Part 1 — Ancient History</h3>
+
+    <div class="question">
+      <strong>1. What is ancient history?</strong>
+      <div class="answer"><strong>Answer:</strong> Ancient history is the study of early human civilizations and societies.</div>
+    </div>
+
+    <div class="question">
+      <strong>2. Where did the ancient Egyptian civilization develop?</strong>
+      <div class="answer"><strong>Answer:</strong> It developed mainly along the Nile River.</div>
+    </div>
+
+    <div class="question">
+      <strong>3. Why was the Nile River important to ancient Egypt?</strong>
+      <div class="answer"><strong>Answer:</strong> It provided water, fertile soil and a means of transportation.</div>
+    </div>
+
+    <div class="question">
+      <strong>4. What were pyramids?</strong>
+      <div class="answer"><strong>Answer:</strong> Pyramids were large monumental structures built in ancient Egypt, often as royal tombs.</div>
+    </div>
+
+    <div class="question">
+      <strong>5. What is the Great Pyramid of Giza?</strong>
+      <div class="answer"><strong>Answer:</strong> It is the largest and oldest of the three major pyramids at Giza.</div>
+    </div>
+
+    <div class="question">
+      <strong>6. What was a pharaoh?</strong>
+      <div class="answer"><strong>Answer:</strong> A pharaoh was a ruler of ancient Egypt.</div>
+    </div>
+
+    <div class="question">
+      <strong>7. What writing system was used by ancient Egyptians?</strong>
+      <div class="answer"><strong>Answer:</strong> They used hieroglyphic writing.</div>
+    </div>
+
+    <div class="question">
+      <strong>8. What was papyrus?</strong>
+      <div class="answer"><strong>Answer:</strong> Papyrus was a writing material made from a plant that grew near the Nile.</div>
+    </div>
+
+    <div class="question">
+      <strong>9. What was Mesopotamia?</strong>
+      <div class="answer"><strong>Answer:</strong> Mesopotamia was an ancient region between the Tigris and Euphrates rivers.</div>
+    </div>
+
+    <div class="question">
+      <strong>10. Which civilization developed in Mesopotamia?</strong>
+      <div class="answer"><strong>Answer:</strong> Several civilizations developed there, including the Sumerians, Babylonians and Assyrians.</div>
+    </div>
+
+    <div class="question">
+      <strong>11. What was cuneiform?</strong>
+      <div class="answer"><strong>Answer:</strong> Cuneiform was an early writing system used in Mesopotamia.</div>
+    </div>
+
+    <div class="question">
+      <strong>12. What was the Code of Hammurabi?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a famous collection of laws created under Babylonian king Hammurabi.</div>
+    </div>
+
+    <div class="question">
+      <strong>13. Where did the Indus Valley Civilization develop?</strong>
+      <div class="answer"><strong>Answer:</strong> It developed mainly in parts of present-day Pakistan and northwestern India.</div>
+    </div>
+
+    <div class="question">
+      <strong>14. Name two important cities of the Indus Valley Civilization.</strong>
+      <div class="answer"><strong>Answer:</strong> Mohenjo-daro and Harappa.</div>
+    </div>
+
+    <div class="question">
+      <strong>15. Where is Mohenjo-daro located?</strong>
+      <div class="answer"><strong>Answer:</strong> It is located in Sindh, Pakistan.</div>
+    </div>
+
+    <div class="question">
+      <strong>16. What was the Great Bath?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a large brick-built structure at Mohenjo-daro, probably used for bathing or ritual purposes.</div>
+    </div>
+
+    <div class="question">
+      <strong>17. What was a major feature of Indus Valley cities?</strong>
+      <div class="answer"><strong>Answer:</strong> They had planned streets and sophisticated drainage systems.</div>
+    </div>
+
+    <div class="question">
+      <strong>18. What was ancient Greece known for?</strong>
+      <div class="answer"><strong>Answer:</strong> It was known for philosophy, art, science, literature and political ideas.</div>
+    </div>
+
+    <div class="question">
+      <strong>19. What was a Greek city-state?</strong>
+      <div class="answer"><strong>Answer:</strong> It was an independent city and its surrounding territory.</div>
+    </div>
+
+    <div class="question">
+      <strong>20. What was Athens famous for?</strong>
+      <div class="answer"><strong>Answer:</strong> Athens became famous for democracy, philosophy, art and learning.</div>
+    </div>
+
+    <div class="question">
+      <strong>21. What was Sparta famous for?</strong>
+      <div class="answer"><strong>Answer:</strong> Sparta was known for its military-oriented society.</div>
+    </div>
+
+    <div class="question">
+      <strong>22. Who was Socrates?</strong>
+      <div class="answer"><strong>Answer:</strong> Socrates was an influential ancient Greek philosopher.</div>
+    </div>
+
+    <div class="question">
+      <strong>23. Who was Plato?</strong>
+      <div class="answer"><strong>Answer:</strong> Plato was a Greek philosopher and student of Socrates.</div>
+    </div>
+
+    <div class="question">
+      <strong>24. Who was Aristotle?</strong>
+      <div class="answer"><strong>Answer:</strong> Aristotle was a Greek philosopher and teacher of Alexander the Great.</div>
+    </div>
+
+    <div class="question">
+      <strong>25. Who was Alexander the Great?</strong>
+      <div class="answer"><strong>Answer:</strong> Alexander was a Macedonian ruler who created a large empire across parts of Europe, Asia and Egypt.</div>
+    </div>
+
+    <div class="question">
+      <strong>26. What was ancient Rome?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a civilization that developed from the city of Rome and became a major Mediterranean power.</div>
+    </div>
+
+    <div class="question">
+      <strong>27. What was the Roman Republic?</strong>
+      <div class="answer"><strong>Answer:</strong> It was the period when Rome was governed as a republic before the Roman Empire.</div>
+    </div>
+
+    <div class="question">
+      <strong>28. What was the Roman Empire?</strong>
+      <div class="answer"><strong>Answer:</strong> It was the imperial state that developed from Rome and controlled extensive territories.</div>
+    </div>
+
+    <div class="question">
+      <strong>29. What was the Colosseum?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a large Roman amphitheatre in Rome used for public spectacles.</div>
+    </div>
+
+    <div class="question">
+      <strong>30. Why were Roman roads important?</strong>
+      <div class="answer"><strong>Answer:</strong> They helped transport people, goods and armies across the Roman territories.</div>
+    </div>
+
+
+    <!-- MEDIEVAL HISTORY -->
+
+    <h3 class="section-title">🏰 Part 2 — Medieval History</h3>
+
+    <div class="question">
+      <strong>31. What is medieval history?</strong>
+      <div class="answer"><strong>Answer:</strong> Medieval history generally refers to the period between ancient and early modern history.</div>
+    </div>
+
+    <div class="question">
+      <strong>32. What was feudalism?</strong>
+      <div class="answer"><strong>Answer:</strong> Feudalism was a social and political system based on landholding and relationships of service and loyalty.</div>
+    </div>
+
+    <div class="question">
+      <strong>33. What was a castle?</strong>
+      <div class="answer"><strong>Answer:</strong> A castle was a fortified residence used by rulers or nobles.</div>
+    </div>
+
+    <div class="question">
+      <strong>34. What was the Magna Carta?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a charter issued in England in 1215 that placed certain limits on royal power.</div>
+    </div>
+
+    <div class="question">
+      <strong>35. Who was King John of England?</strong>
+      <div class="answer"><strong>Answer:</strong> King John was the English king associated with the issuing of the Magna Carta in 1215.</div>
+    </div>
+
+    <div class="question">
+      <strong>36. What was the Silk Road?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a network of trade routes connecting regions of Asia with Europe and the Middle East.</div>
+    </div>
+
+    <div class="question">
+      <strong>37. Why was the Silk Road important?</strong>
+      <div class="answer"><strong>Answer:</strong> It encouraged trade and the exchange of ideas, technologies and cultures.</div>
+    </div>
+
+    <div class="question">
+      <strong>38. What was the Byzantine Empire?</strong>
+      <div class="answer"><strong>Answer:</strong> It was the eastern continuation of the Roman Empire, centered on Constantinople.</div>
+    </div>
+
+    <div class="question">
+      <strong>39. What was Constantinople?</strong>
+      <div class="answer"><strong>Answer:</strong> Constantinople was a major city and capital of the Byzantine Empire.</div>
+    </div>
+
+    <div class="question">
+      <strong>40. What was the Renaissance?</strong>
+      <div class="answer"><strong>Answer:</strong> The Renaissance was a major cultural movement that began in Europe and encouraged renewed interest in classical learning and the arts.</div>
+    </div>
+
+    <div class="question">
+      <strong>41. What does Renaissance mean?</strong>
+      <div class="answer"><strong>Answer:</strong> The word Renaissance means “rebirth.”</div>
+    </div>
+
+    <div class="question">
+      <strong>42. Who was Leonardo da Vinci?</strong>
+      <div class="answer"><strong>Answer:</strong> Leonardo da Vinci was an Italian artist, inventor and scholar of the Renaissance.</div>
+    </div>
+
+    <div class="question">
+      <strong>43. Who was Michelangelo?</strong>
+      <div class="answer"><strong>Answer:</strong> Michelangelo was an Italian Renaissance artist famous for sculpture, painting and architecture.</div>
+    </div>
+
+    <div class="question">
+      <strong>44. What was the Mughal Empire?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a major empire that ruled much of the Indian subcontinent for several centuries.</div>
+    </div>
+
+    <div class="question">
+      <strong>45. Who founded the Mughal Empire?</strong>
+      <div class="answer"><strong>Answer:</strong> Babur founded the Mughal Empire after his victory at the First Battle of Panipat in 1526.</div>
+    </div>
+
+    <div class="question">
+      <strong>46. Who was Akbar?</strong>
+      <div class="answer"><strong>Answer:</strong> Akbar was a major Mughal emperor who ruled from 1556 to 1605.</div>
+    </div>
+
+    <div class="question">
+      <strong>47. Who built the Taj Mahal?</strong>
+      <div class="answer"><strong>Answer:</strong> Mughal emperor Shah Jahan commissioned the Taj Mahal.</div>
+    </div>
+
+    <div class="question">
+      <strong>48. Why is the Taj Mahal historically important?</strong>
+      <div class="answer"><strong>Answer:</strong> It is a major example of Mughal architecture and a famous historical monument.</div>
+    </div>
+
+    <div class="question">
+      <strong>49. What was the Delhi Sultanate?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a series of Muslim dynasties that ruled large parts of northern India from Delhi.</div>
+    </div>
+
+    <div class="question">
+      <strong>50. What was the importance of trade during medieval times?</strong>
+      <div class="answer"><strong>Answer:</strong> Trade connected different regions and allowed goods, ideas and technologies to spread.</div>
+    </div>
+
+
+    <!-- IMPORTANT PEOPLE -->
+
+    <h3 class="section-title">👤 Part 3 — Important People</h3>
+
+    <div class="question">
+      <strong>51. Who was Hammurabi?</strong>
+      <div class="answer"><strong>Answer:</strong> Hammurabi was a Babylonian king famous for his written law code.</div>
+    </div>
+
+    <div class="question">
+      <strong>52. Who was Cleopatra VII?</strong>
+      <div class="answer"><strong>Answer:</strong> Cleopatra VII was the last active ruler of the Ptolemaic Kingdom of Egypt.</div>
+    </div>
+
+    <div class="question">
+      <strong>53. Who was Julius Caesar?</strong>
+      <div class="answer"><strong>Answer:</strong> Julius Caesar was a Roman military leader and statesman who played a major role in the transformation of Rome.</div>
+    </div>
+
+    <div class="question">
+      <strong>54. Who was Augustus?</strong>
+      <div class="answer"><strong>Answer:</strong> Augustus was the first Roman emperor.</div>
+    </div>
+
+    <div class="question">
+      <strong>55. Who was Confucius?</strong>
+      <div class="answer"><strong>Answer:</strong> Confucius was a Chinese teacher and philosopher whose ideas strongly influenced Chinese society.</div>
+    </div>
+
+    <div class="question">
+      <strong>56. Who was Ibn Sina?</strong>
+      <div class="answer"><strong>Answer:</strong> Ibn Sina was a famous Persian polymath and physician whose works influenced medicine and philosophy.</div>
+    </div>
+
+    <div class="question">
+      <strong>57. Who was Ibn Khaldun?</strong>
+      <div class="answer"><strong>Answer:</strong> Ibn Khaldun was a North African historian and thinker known for his work on society and history.</div>
+    </div>
+
+    <div class="question">
+      <strong>58. Who was Genghis Khan?</strong>
+      <div class="answer"><strong>Answer:</strong> Genghis Khan founded and led the Mongol Empire.</div>
+    </div>
+
+    <div class="question">
+      <strong>59. Who was Joan of Arc?</strong>
+      <div class="answer"><strong>Answer:</strong> Joan of Arc was a French historical figure associated with the Hundred Years' War.</div>
+    </div>
+
+    <div class="question">
+      <strong>60. Who was Martin Luther?</strong>
+      <div class="answer"><strong>Answer:</strong> Martin Luther was a German theologian whose writings helped begin the Protestant Reformation.</div>
+    </div>
+
+    <div class="question">
+      <strong>61. Who was Napoleon Bonaparte?</strong>
+      <div class="answer"><strong>Answer:</strong> Napoleon was a French military and political leader who became emperor of France.</div>
+    </div>
+
+    <div class="question">
+      <strong>62. Who was George Washington?</strong>
+      <div class="answer"><strong>Answer:</strong> George Washington was a leading figure in the American Revolution and the first U.S. president.</div>
+    </div>
+
+    <div class="question">
+      <strong>63. Who was Abraham Lincoln?</strong>
+      <div class="answer"><strong>Answer:</strong> Abraham Lincoln was the 16th president of the United States.</div>
+    </div>
+
+    <div class="question">
+      <strong>64. Who was Mahatma Gandhi?</strong>
+      <div class="answer"><strong>Answer:</strong> Mahatma Gandhi was a major leader of India's independence movement who promoted nonviolent resistance.</div>
+    </div>
+
+    <div class="question">
+      <strong>65. Who was Nelson Mandela?</strong>
+      <div class="answer"><strong>Answer:</strong> Nelson Mandela was a South African leader who became the country's first Black president.</div>
+    </div>
+
+    <div class="question">
+      <strong>66. Who was Sir Syed Ahmad Khan?</strong>
+      <div class="answer"><strong>Answer:</strong> Sir Syed Ahmad Khan was an educational reformer who promoted modern education among Muslims of South Asia.</div>
+    </div>
+
+    <div class="question">
+      <strong>67. What institution is strongly associated with Sir Syed Ahmad Khan?</strong>
+      <div class="answer"><strong>Answer:</strong> Muhammadan Anglo-Oriental College, which later became Aligarh Muslim University.</div>
+    </div>
+
+    <div class="question">
+      <strong>68. Who was Allama Muhammad Iqbal?</strong>
+      <div class="answer"><strong>Answer:</strong> Allama Iqbal was a poet, philosopher and important thinker of South Asia.</div>
+    </div>
+
+    <div class="question">
+      <strong>69. What is Allama Iqbal known for?</strong>
+      <div class="answer"><strong>Answer:</strong> He is widely remembered for his poetry and philosophical ideas about Muslim political and social awakening.</div>
+    </div>
+
+    <div class="question">
+      <strong>70. Who was Muhammad Ali Jinnah?</strong>
+      <div class="answer"><strong>Answer:</strong> Muhammad Ali Jinnah was the leader of the All-India Muslim League and the founder and first Governor-General of Pakistan.</div>
+    </div>
+
+    <div class="question">
+      <strong>71. What title is commonly associated with Muhammad Ali Jinnah?</strong>
+      <div class="answer"><strong>Answer:</strong> Quaid-e-Azam, meaning “Great Leader.”</div>
+    </div>
+
+    <div class="question">
+      <strong>72. Who was Fatima Jinnah?</strong>
+      <div class="answer"><strong>Answer:</strong> Fatima Jinnah was a political leader and the sister of Muhammad Ali Jinnah.</div>
+    </div>
+
+    <div class="question">
+      <strong>73. Why is Fatima Jinnah important in Pakistan's history?</strong>
+      <div class="answer"><strong>Answer:</strong> She supported the Pakistan Movement and later became an important political figure.</div>
+    </div>
+
+    <div class="question">
+      <strong>74. Who was Sir Muhammad Shafi?</strong>
+      <div class="answer"><strong>Answer:</strong> Sir Muhammad Shafi was a prominent Muslim political leader in British India.</div>
+    </div>
+
+    <div class="question">
+      <strong>75. Who was Liaquat Ali Khan?</strong>
+      <div class="answer"><strong>Answer:</strong> Liaquat Ali Khan was Pakistan's first Prime Minister.</div>
+    </div>
+
+
+    <!-- IMPORTANT EVENTS -->
+
+    <h3 class="section-title">🌍 Part 4 — Important Events</h3>
+
+    <div class="question">
+      <strong>76. What was the First Battle of Panipat?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a major battle fought in 1526 in which Babur defeated Ibrahim Lodi.</div>
+    </div>
+
+    <div class="question">
+      <strong>77. What was the Renaissance?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a European cultural movement that encouraged renewed interest in classical learning and the arts.</div>
+    </div>
+
+    <div class="question">
+      <strong>78. What was the Protestant Reformation?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a major religious movement in Europe that challenged aspects of the Western Church.</div>
+    </div>
+
+    <div class="question">
+      <strong>79. What was the American Revolution?</strong>
+      <div class="answer"><strong>Answer:</strong> It was the struggle through which the thirteen American colonies gained independence from Britain.</div>
+    </div>
+
+    <div class="question">
+      <strong>80. When was the Declaration of Independence adopted?</strong>
+      <div class="answer"><strong>Answer:</strong> It was adopted on July 4, 1776.</div>
+    </div>
+
+    <div class="question">
+      <strong>81. What was the French Revolution?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a major political and social revolution in France that began in 1789.</div>
+    </div>
+
+    <div class="question">
+      <strong>82. What was the Industrial Revolution?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a period of major technological and economic change involving mechanized production and factories.</div>
+    </div>
+
+    <div class="question">
+      <strong>83. Where did the Industrial Revolution begin?</strong>
+      <div class="answer"><strong>Answer:</strong> It began in Britain.</div>
+    </div>
+
+    <div class="question">
+      <strong>84. What was World War I?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a major international conflict fought mainly in Europe from 1914 to 1918.</div>
+    </div>
+
+    <div class="question">
+      <strong>85. When did World War I begin?</strong>
+      <div class="answer"><strong>Answer:</strong> World War I began in 1914.</div>
+    </div>
+
+    <div class="question">
+      <strong>86. When did World War I end?</strong>
+      <div class="answer"><strong>Answer:</strong> The fighting ended in 1918.</div>
+    </div>
+
+    <div class="question">
+      <strong>87. What event helped trigger World War I?</strong>
+      <div class="answer"><strong>Answer:</strong> The assassination of Archduke Franz Ferdinand in 1914 was the immediate trigger.</div>
+    </div>
+
+    <div class="question">
+      <strong>88. What was World War II?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a global conflict fought from 1939 to 1945.</div>
+    </div>
+
+    <div class="question">
+      <strong>89. When did World War II begin?</strong>
+      <div class="answer"><strong>Answer:</strong> World War II began in 1939.</div>
+    </div>
+
+    <div class="question">
+      <strong>90. When did World War II end?</strong>
+      <div class="answer"><strong>Answer:</strong> World War II ended in 1945.</div>
+    </div>
+
+    <div class="question">
+      <strong>91. What was the United Nations created for?</strong>
+      <div class="answer"><strong>Answer:</strong> It was created to promote international cooperation and help maintain international peace and security.</div>
+    </div>
+
+    <div class="question">
+      <strong>92. When was the United Nations established?</strong>
+      <div class="answer"><strong>Answer:</strong> The United Nations was established in 1945.</div>
+    </div>
+
+    <div class="question">
+      <strong>93. What was the Cold War?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a prolonged period of political and military tension between the United States and the Soviet Union and their allies.</div>
+    </div>
+
+    <div class="question">
+      <strong>94. What was the Space Race?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a period of competition between the United States and Soviet Union in space exploration.</div>
+    </div>
+
+    <div class="question">
+      <strong>95. Who was the first human to travel into space?</strong>
+      <div class="answer"><strong>Answer:</strong> Yuri Gagarin of the Soviet Union.</div>
+    </div>
+
+    <div class="question">
+      <strong>96. Who was the first person to walk on the Moon?</strong>
+      <div class="answer"><strong>Answer:</strong> Neil Armstrong.</div>
+    </div>
+
+    <div class="question">
+      <strong>97. What was the fall of the Berlin Wall?</strong>
+      <div class="answer"><strong>Answer:</strong> It was the opening and eventual removal of the barrier separating East and West Berlin in 1989.</div>
+    </div>
+
+    <div class="question">
+      <strong>98. Why was the fall of the Berlin Wall important?</strong>
+      <div class="answer"><strong>Answer:</strong> It became a major symbol of the decline of Cold War divisions in Europe.</div>
+    </div>
+
+    <div class="question">
+      <strong>99. What was the Civil Rights Movement in the United States?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a movement seeking equal rights and an end to racial segregation and discrimination.</div>
+    </div>
+
+    <div class="question">
+      <strong>100. Who was Martin Luther King Jr.?</strong>
+      <div class="answer"><strong>Answer:</strong> He was a major American civil rights leader who advocated nonviolent protest.</div>
+    </div>
+
+
+    <!-- PAKISTAN HISTORY -->
+
+    <h3 class="section-title">🇵🇰 Part 5 — Pakistan History</h3>
+
+    <div class="question">
+      <strong>101. What was the Pakistan Movement?</strong>
+      <div class="answer"><strong>Answer:</strong> It was the political movement that sought a separate homeland for Muslims of the Indian subcontinent.</div>
+    </div>
+
+    <div class="question">
+      <strong>102. What was the All-India Muslim League?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a political organization founded in 1906 that became the leading political organization of the Pakistan Movement.</div>
+    </div>
+
+    <div class="question">
+      <strong>103. When was the All-India Muslim League founded?</strong>
+      <div class="answer"><strong>Answer:</strong> It was founded in 1906.</div>
+    </div>
+
+    <div class="question">
+      <strong>104. Where was the All-India Muslim League founded?</strong>
+      <div class="answer"><strong>Answer:</strong> It was founded at Dhaka.</div>
+    </div>
+
+    <div class="question">
+      <strong>105. What was the Lucknow Pact?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a 1916 agreement between the Indian National Congress and the All-India Muslim League.</div>
+    </div>
+
+    <div class="question">
+      <strong>106. What was the Allahabad Address?</strong>
+      <div class="answer"><strong>Answer:</strong> It was Allama Iqbal's 1930 presidential address to the Muslim League session at Allahabad.</div>
+    </div>
+
+    <div class="question">
+      <strong>107. Why is the Allahabad Address important?</strong>
+      <div class="answer"><strong>Answer:</strong> It presented Iqbal's ideas about the political future of Muslims in northwestern India.</div>
+    </div>
+
+    <div class="question">
+      <strong>108. What was the Nehru Report?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a 1928 constitutional proposal prepared under Motilal Nehru.</div>
+    </div>
+
+    <div class="question">
+      <strong>109. What were Jinnah's Fourteen Points?</strong>
+      <div class="answer"><strong>Answer:</strong> They were constitutional demands presented by Muhammad Ali Jinnah in 1929.</div>
+    </div>
+
+    <div class="question">
+      <strong>110. What was the Government of India Act 1935?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a major constitutional law that introduced provincial autonomy and other changes in British India.</div>
+    </div>
+
+    <div class="question">
+      <strong>111. What was the Lahore Resolution?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a resolution passed by the Muslim League in 1940 calling for independent states in Muslim-majority areas.</div>
+    </div>
+
+    <div class="question">
+      <strong>112. When was the Lahore Resolution passed?</strong>
+      <div class="answer"><strong>Answer:</strong> It was passed on March 23, 1940.</div>
+    </div>
+
+    <div class="question">
+      <strong>113. Where was the Lahore Resolution passed?</strong>
+      <div class="answer"><strong>Answer:</strong> It was passed at Lahore.</div>
+    </div>
+
+    <div class="question">
+      <strong>114. What is March 23 remembered for in Pakistan?</strong>
+      <div class="answer"><strong>Answer:</strong> It is associated with the Lahore Resolution of 1940 and later became Pakistan Day.</div>
+    </div>
+
+    <div class="question">
+      <strong>115. What was the Cripps Mission?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a British mission sent to India in 1942 with proposals for constitutional arrangements after World War II.</div>
+    </div>
+
+    <div class="question">
+      <strong>116. What was the Cabinet Mission Plan?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a 1946 British proposal for the constitutional future of India.</div>
+    </div>
+
+    <div class="question">
+      <strong>117. What was the 3 June Plan?</strong>
+      <div class="answer"><strong>Answer:</strong> It was the British plan announced in 1947 for the partition of British India.</div>
+    </div>
+
+    <div class="question">
+      <strong>118. When did Pakistan become independent?</strong>
+      <div class="answer"><strong>Answer:</strong> Pakistan became independent in August 1947.</div>
+    </div>
+
+    <div class="question">
+      <strong>119. When is Pakistan's Independence Day observed?</strong>
+      <div class="answer"><strong>Answer:</strong> It is observed on August 14.</div>
+    </div>
+
+    <div class="question">
+      <strong>120. Who became the first Governor-General of Pakistan?</strong>
+      <div class="answer"><strong>Answer:</strong> Muhammad Ali Jinnah.</div>
+    </div>
+
+    <div class="question">
+      <strong>121. Who became the first Prime Minister of Pakistan?</strong>
+      <div class="answer"><strong>Answer:</strong> Liaquat Ali Khan.</div>
+    </div>
+
+    <div class="question">
+      <strong>122. What was the Objectives Resolution?</strong>
+      <div class="answer"><strong>Answer:</strong> It was a foundational constitutional resolution adopted by Pakistan's Constituent Assembly in 1949.</div>
+    </div>
+
+    <div class="question">
+      <strong>123. When was the Objectives Resolution adopted?</strong>
+      <div class="answer"><strong>Answer:</strong> It was adopted in March 1949.</div>
+    </div>
+
+    <div class="question">
+      <strong>124. When did Pakistan's first constitution come into force?</strong>
+      <div class="answer"><strong>Answer:</strong> The first Constitution of Pakistan came into force in 1956.</div>
+    </div>
+
+    <div class="question">
+      <strong>125. What type of state did the 1956 Constitution establish?</strong>
+      <div class="answer"><strong>Answer:</strong> It established Pakistan as an Islamic Republic.</div>
+    </div>
+
+    <div class="question">
+      <strong>126. When was the Constitution of 1962 introduced?</strong>
+      <div class="answer"><strong>Answer:</strong> It came into force in 1962.</div>
+    </div>
+
+    <div class="question">
+      <strong>127. When was the Constitution of 1973 adopted?</strong>
+      <div class="answer"><strong>Answer:</strong> It was adopted in 1973.</div>
+    </div>
+
+    <div class="question">
+      <strong>128. Why is the 1973 Constitution important?</strong>
+      <div class="answer"><strong>Answer:</strong> It remains the basic constitutional framework of Pakistan, with amendments made over time.</div>
+    </div>
+
+    <div class="question">
+      <strong>129. Who was Fatima Jinnah?</strong>
+      <div class="answer"><strong>Answer:</strong> She was a prominent leader of the Pakistan Movement and the sister of Muhammad Ali Jinnah.</div>
+    </div>
+
+    <div class="question">
+      <strong>130. Why is Allama Iqbal important to Pakistan's history?</strong>
+      <div class="answer"><strong>Answer:</strong> His political and philosophical ideas influenced Muslim political thought in South Asia.</div>
+    </div>
+
+
+    <!-- GENERAL WORLD HISTORY -->
+
+    <h3 class="section-title">🌎 Part 6 — World History Review</h3>
+
+    <div class="question">
+      <strong>131. What is a civilization?</strong>
+      <div class="answer"><strong>Answer:</strong> A civilization is a complex human society with organized institutions, culture and systems of living.</div>
+    </div>
+
+    <div class="question">
+      <strong>132. Why are rivers important in early civilizations?</strong>
+      <div class="answer"><strong>Answer:</strong> Rivers provided water, fertile land, transportation and resources.</div>
+    </div>
+
+    <div class="question">
+      <strong>133. What is archaeology?</strong>
+      <div class="answer"><strong>Answer:</strong> Archaeology is the study of past human societies through material remains.</div>
+    </div>
+
+    <div class="question">
+      <strong>134. What is a primary historical source?</strong>
+      <div class="answer"><strong>Answer:</strong> A primary source is evidence created during the period being studied.</div>
+    </div>
+
+    <div class="question">
+      <strong>135. What is a secondary historical source?</strong>
+      <div class="answer"><strong>Answer:</strong> A secondary source is a later work that interprets or analyzes historical evidence.</div>
+    </div>
+
+    <div class="question">
+      <strong>136. Why are historical maps useful?</strong>
+      <div class="answer"><strong>Answer:</strong> They help show changing borders, territories, trade routes and locations.</div>
+    </div>
+
+    <div class="question">
+      <strong>137. What is an empire?</strong>
+      <div class="answer"><strong>Answer:</strong> An empire is a large political system in which one state or ruler controls other territories or peoples.</div>
+    </div>
+
+    <div class="question">
+      <strong>138. What is a monarchy?</strong>
+      <div class="answer"><strong>Answer:</strong> A monarchy is a system of government headed by a monarch.</div>
+    </div>
+
+    <div class="question">
+      <strong>139. What is a republic?</strong>
+      <div class="answer"><strong>Answer:</strong> A republic is a form of government in which political authority is exercised through representatives or institutions rather than a hereditary monarch.</div>
+    </div>
+
+    <div class="question">
+      <strong>140. What is democracy?</strong>
+      <div class="answer"><strong>Answer:</strong> Democracy is a system in which political power is exercised by the people, directly or through representatives.</div>
+    </div>
+
+    <div class="question">
+      <strong>141. Why is historical evidence important?</strong>
+      <div class="answer"><strong>Answer:</strong> Evidence helps historians investigate and understand the past.</div>
+    </div>
+
+    <div class="question">
+      <strong>142. What is chronology?</strong>
+      <div class="answer"><strong>Answer:</strong> Chronology is the arrangement of events in their time order.</div>
+    </div>
+
+    <div class="question">
+      <strong>143. What is a historical timeline?</strong>
+      <div class="answer"><strong>Answer:</strong> A timeline displays events in chronological order.</div>
+    </div>
+
+    <div class="question">
+      <strong>144. Why do historians compare different sources?</strong>
+      <div class="answer"><strong>Answer:</strong> Comparing sources can help identify differences, similarities and possible biases.</div>
+    </div>
+
+    <div class="question">
+      <strong>145. What is cultural heritage?</strong>
+      <div class="answer"><strong>Answer:</strong> Cultural heritage includes traditions, monuments, objects and practices inherited from the past.</div>
+    </div>
+
+    <div class="question">
+      <strong>146. Why should historical monuments be protected?</strong>
+      <div class="answer"><strong>Answer:</strong> They preserve evidence of the past and help future generations learn about history.</div>
+    </div>
+
+    <div class="question">
+      <strong>147. What is migration?</strong>
+      <div class="answer"><strong>Answer:</strong> Migration is the movement of people from one place to another.</div>
+    </div>
+
+    <div class="question">
+      <strong>148. How can migration affect history?</strong>
+      <div class="answer"><strong>Answer:</strong> Migration can spread languages, cultures, technologies and ideas between regions.</div>
+    </div>
+
+    <div class="question">
+      <strong>149. What is trade?</strong>
+      <div class="answer"><strong>Answer:</strong> Trade is the exchange of goods and services between people or regions.</div>
+    </div>
+
+    <div class="question">
+      <strong>150. Why is trade important in history?</strong>
+      <div class="answer"><strong>Answer:</strong> Trade connected societies and encouraged the movement of goods, ideas and technologies.</div>
+    </div>
+
+    <div class="question">
+      <strong>151. What is a revolution?</strong>
+      <div class="answer"><strong>Answer:</strong> A revolution is a major and often rapid change in political, social or economic conditions.</div>
+    </div>
+
+    <div class="question">
+      <strong>152. What is independence?</strong>
+      <div class="answer"><strong>Answer:</strong> Independence is the condition of being politically free from the control of another state.</div>
+    </div>
+
+    <div class="question">
+      <strong>153. What is colonialism?</strong>
+      <div class="answer"><strong>Answer:</strong> Colonialism is a system in which a powerful country controls another territory and its people.</div>
+    </div>
+
+    <div class="question">
+      <strong>154. Why did European powers establish colonies?</strong>
+      <div class="answer"><strong>Answer:</strong> European powers pursued various goals including trade, resources, strategic influence and political power.</div>
+    </div>
+
+    <div class="question">
+      <strong>155. What is nationalism?</strong>
+      <div class="answer"><strong>Answer:</strong> Nationalism is a strong sense of identification with and support for a nation.</div>
+    </div>
+
+    <div class="question">
+      <strong>156. What is a treaty?</strong>
+      <div class="answer"><strong>Answer:</strong> A treaty is a formal agreement between states or other political entities.</div>
+    </div>
+
+    <div class="question">
+      <strong>157. What is diplomacy?</strong>
+      <div class="answer"><strong>Answer:</strong> Diplomacy is the practice of managing relations and negotiations between states.</div>
+    </div>
+
+    <div class="question">
+      <strong>158. Why is studying history useful?</strong>
+      <div class="answer"><strong>Answer:</strong> History helps us understand how societies changed and how past events influenced the present.</div>
+    </div>
+
+    <div class="question">
+      <strong>159. What can students learn from historical mistakes?</strong>
+      <div class="answer"><strong>Answer:</strong> Students can examine their causes and consequences and use that knowledge to make better decisions in the future.</div>
+    </div>
+
+    <div class="question">
+      <strong>160. Why is history important?</strong>
+      <div class="answer"><strong>Answer:</strong> History helps us understand people, civilizations, events, cultures and the development of the modern world.</div>
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <div class="footer-box">
+
+    <h2>🎓 Keep Learning</h2>
+
+    <p>
+      Great job! You have completed the History Practice section.
+      Use the other History pages for deeper study of Ancient History,
+      Important People, Important Events and Pakistan History.
+    </p>
+
+    <a class="back" href="history.html">
+      ← Back to History
+    </a>
+
+    <a class="back" href="subjects.html">
+      📚 Subjects
+    </a>
+
+    <a class="back" href="index.html">
+      🏠 Home
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
