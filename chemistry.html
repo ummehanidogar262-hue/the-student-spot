@@ -1,1 +1,840 @@
 chemistry.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry | The Student Spot</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5fbff;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #b9ddff;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .lesson,
+    .diagram-box,
+    .questions,
+    .answers {
+      background: white;
+      padding: 28px;
+      margin: 25px 0;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px #ddd;
+    }
+
+    h2 {
+      color: #2875ad;
+    }
+
+    h3 {
+      color: #3d83b5;
+    }
+
+    .example {
+      background: #eaf6ff;
+      padding: 18px;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    .question {
+      background: #f7fcff;
+      padding: 15px;
+      margin: 12px 0;
+      border-radius: 10px;
+    }
+
+    .answers {
+      background: #eaf6ff;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 20px 10px;
+      color: #2875ad;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* DIAGRAM 1 - ATOM */
+
+    .atom {
+      width: 220px;
+      height: 220px;
+      margin: 25px auto;
+      position: relative;
+      border: 3px solid #6fa9d6;
+      border-radius: 50%;
+    }
+
+    .orbit1,
+    .orbit2 {
+      position: absolute;
+      border: 2px solid #9bc8e8;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .orbit1 {
+      width: 150px;
+      height: 150px;
+    }
+
+    .orbit2 {
+      width: 90px;
+      height: 90px;
+    }
+
+    .nucleus {
+      position: absolute;
+      width: 65px;
+      height: 65px;
+      background: #9fd3f2;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      line-height: 65px;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    .electron {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #2875ad;
+      border-radius: 50%;
+    }
+
+    .e1 {
+      top: 30px;
+      left: 100px;
+    }
+
+    .e2 {
+      bottom: 30px;
+      left: 100px;
+    }
+
+    .e3 {
+      left: 30px;
+      top: 100px;
+    }
+
+    .e4 {
+      right: 30px;
+      top: 100px;
+    }
+
+
+    /* DIAGRAM 2 - STATES OF MATTER */
+
+    .states {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .state {
+      width: 180px;
+      padding: 15px;
+      border-radius: 15px;
+      background: #eef8ff;
+    }
+
+    .particles {
+      height: 120px;
+      position: relative;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+    }
+
+    .particle {
+      width: 14px;
+      height: 14px;
+      background: #2875ad;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .solid .p1 { left: 40px; top: 35px; }
+    .solid .p2 { left: 70px; top: 35px; }
+    .solid .p3 { left: 100px; top: 35px; }
+    .solid .p4 { left: 40px; top: 65px; }
+    .solid .p5 { left: 70px; top: 65px; }
+    .solid .p6 { left: 100px; top: 65px; }
+
+    .liquid .p1 { left: 30px; top: 70px; }
+    .liquid .p2 { left: 70px; top: 50px; }
+    .liquid .p3 { left: 110px; top: 75px; }
+    .liquid .p4 { left: 80px; top: 85px; }
+    .liquid .p5 { left: 125px; top: 45px; }
+
+    .gas .p1 { left: 25px; top: 20px; }
+    .gas .p2 { left: 120px; top: 35px; }
+    .gas .p3 { left: 70px; top: 75px; }
+    .gas .p4 { left: 140px; top: 85px; }
+    .gas .p5 { left: 45px; top: 55px; }
+
+
+    /* DIAGRAM 3 - FILTRATION */
+
+    .filtration {
+      text-align: center;
+    }
+
+    .mixture,
+    .filter-paper,
+    .container-glass {
+      margin: 15px auto;
+    }
+
+    .mixture {
+      width: 140px;
+      height: 70px;
+      background: #d6ecff;
+      border-radius: 50% 50% 10px 10px;
+      padding-top: 20px;
+    }
+
+    .filter-paper {
+      width: 160px;
+      height: 25px;
+      background: #eee;
+      border-radius: 50%;
+      border: 2px solid #aaa;
+    }
+
+    .container-glass {
+      width: 120px;
+      height: 80px;
+      border: 3px solid #6fa9d6;
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+      padding-top: 15px;
+    }
+
+
+    /* DIAGRAM 4 - PH SCALE */
+
+    .ph-scale {
+      display: flex;
+      height: 55px;
+      margin: 20px 0;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .acid {
+      flex: 1;
+      background: #ffc1c1;
+      padding-top: 15px;
+    }
+
+    .neutral {
+      flex: 1;
+      background: #fff0a8;
+      padding-top: 15px;
+    }
+
+    .alkaline {
+      flex: 1;
+      background: #bde7c4;
+      padding-top: 15px;
+    }
+
+
+    /* DIAGRAM 5 - COMBUSTION */
+
+    .fire-triangle {
+      width: 220px;
+      height: 190px;
+      margin: 25px auto;
+      position: relative;
+      text-align: center;
+    }
+
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 110px solid transparent;
+      border-right: 110px solid transparent;
+      border-bottom: 180px solid #ffd27d;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .fire-text {
+      position: absolute;
+      top: 70px;
+      width: 100%;
+      font-weight: bold;
+    }
+
+
+    /* DIAGRAM 6 - PARTICLES */
+
+    .particle-diagram {
+      display: flex;
+      justify-content: space-around;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .particle-type {
+      width: 200px;
+      background: #eef8ff;
+      padding: 15px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .particle-box {
+      height: 120px;
+      background: white;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .many-particle {
+      width: 13px;
+      height: 13px;
+      background: #2875ad;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .p-a { left: 30px; top: 30px; }
+    .p-b { left: 65px; top: 30px; }
+    .p-c { left: 100px; top: 30px; }
+    .p-d { left: 135px; top: 30px; }
+    .p-e { left: 30px; top: 65px; }
+    .p-f { left: 65px; top: 65px; }
+    .p-g { left: 100px; top: 65px; }
+    .p-h { left: 135px; top: 65px; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🧪 Chemistry</h1>
+  <p>Explore atoms, matter, reactions and the world of chemistry.</p>
+</header>
+
+<div class="container">
+
+  <div class="lesson">
+
+    <h2>📖 Chemistry Basics</h2>
+
+    <p>
+      Chemistry is the study of matter, its properties, structure,
+      composition and the changes it undergoes.
+    </p>
+
+    <div class="example">
+      <strong>Remember:</strong><br><br>
+      Matter has mass and occupies space.
+      It can exist as a solid, liquid or gas.
+    </div>
+
+    <h3>Important Topics</h3>
+
+    <ul>
+      <li>Atoms and elements</li>
+      <li>States of matter</li>
+      <li>Compounds and mixtures</li>
+      <li>Chemical reactions</li>
+      <li>Acids and bases</li>
+      <li>Separation techniques</li>
+      <li>Density and combustion</li>
+    </ul>
+
+  </div>
+
+
+  <!-- DIAGRAM 1 -->
+
+  <div class="diagram-box">
+
+    <h2>⚛️ Diagram 1 — Structure of an Atom</h2>
+
+    <div class="atom">
+      <div class="orbit1"></div>
+      <div class="orbit2"></div>
+
+      <div class="nucleus">
+        Nucleus
+      </div>
+
+      <div class="electron e1"></div>
+      <div class="electron e2"></div>
+      <div class="electron e3"></div>
+      <div class="electron e4"></div>
+    </div>
+
+    <p>
+      <strong>Nucleus:</strong> contains protons and neutrons.
+      <br>
+      <strong>Electrons:</strong> move around the nucleus.
+    </p>
+
+  </div>
+
+
+  <!-- DIAGRAM 2 -->
+
+  <div class="diagram-box">
+
+    <h2>🧊 Diagram 2 — States of Matter</h2>
+
+    <div class="states">
+
+      <div class="state">
+
+        <h3>Solid</h3>
+
+        <div class="particles solid">
+          <span class="particle p1"></span>
+          <span class="particle p2"></span>
+          <span class="particle p3"></span>
+          <span class="particle p4"></span>
+          <span class="particle p5"></span>
+          <span class="particle p6"></span>
+        </div>
+
+        <p>Particles are closely packed.</p>
+
+      </div>
+
+
+      <div class="state">
+
+        <h3>Liquid</h3>
+
+        <div class="particles liquid">
+          <span class="particle p1"></span>
+          <span class="particle p2"></span>
+          <span class="particle p3"></span>
+          <span class="particle p4"></span>
+          <span class="particle p5"></span>
+        </div>
+
+        <p>Particles can move around each other.</p>
+
+      </div>
+
+
+      <div class="state">
+
+        <h3>Gas</h3>
+
+        <div class="particles gas">
+          <span class="particle p1"></span>
+          <span class="particle p2"></span>
+          <span class="particle p3"></span>
+          <span class="particle p4"></span>
+          <span class="particle p5"></span>
+        </div>
+
+        <p>Particles are far apart and move freely.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- DIAGRAM 3 -->
+
+  <div class="diagram-box">
+
+    <h2>🧪 Diagram 3 — Filtration</h2>
+
+    <div class="filtration">
+
+      <div class="mixture">
+        Mixture
+        <br>
+        + solid
+      </div>
+
+      ↓
+
+      <div class="filter-paper">
+        Filter paper
+      </div>
+
+      ↓
+
+      <div class="container-glass">
+        Filtrate
+      </div>
+
+      <p>
+        Filtration separates an <strong>insoluble solid</strong>
+        from a liquid.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- DIAGRAM 4 -->
+
+  <div class="diagram-box">
+
+    <h2>📊 Diagram 4 — pH Scale</h2>
+
+    <div class="ph-scale">
+
+      <div class="acid">
+        0–6<br>Acidic
+      </div>
+
+      <div class="neutral">
+        7<br>Neutral
+      </div>
+
+      <div class="alkaline">
+        8–14<br>Alkaline
+      </div>
+
+    </div>
+
+    <p>
+      Lower pH values are more acidic, while higher pH values
+      are more alkaline.
+    </p>
+
+  </div>
+
+
+  <!-- DIAGRAM 5 -->
+
+  <div class="diagram-box">
+
+    <h2>🔥 Diagram 5 — Combustion Triangle</h2>
+
+    <div class="fire-triangle">
+
+      <div class="triangle"></div>
+
+      <div class="fire-text">
+        🔥 FIRE
+        <br><br>
+        Heat + Fuel + Oxygen
+      </div>
+
+    </div>
+
+    <p>
+      Combustion requires three important things:
+      <strong>fuel, oxygen and heat.</strong>
+    </p>
+
+  </div>
+
+
+  <!-- DIAGRAM 6 -->
+
+  <div class="diagram-box">
+
+    <h2>🔬 Diagram 6 — Particle Arrangement</h2>
+
+    <div class="particle-diagram">
+
+      <div class="particle-type">
+
+        <h3>Solid</h3>
+
+        <div class="particle-box">
+
+          <span class="many-particle p-a"></span>
+          <span class="many-particle p-b"></span>
+          <span class="many-particle p-c"></span>
+          <span class="many-particle p-d"></span>
+          <span class="many-particle p-e"></span>
+          <span class="many-particle p-f"></span>
+          <span class="many-particle p-g"></span>
+          <span class="many-particle p-h"></span>
+
+        </div>
+
+        <p>Fixed arrangement</p>
+
+      </div>
+
+
+      <div class="particle-type">
+
+        <h3>Liquid</h3>
+
+        <div class="particle-box">
+
+          <span class="many-particle p-a"></span>
+          <span class="many-particle p-c"></span>
+          <span class="many-particle p-e"></span>
+          <span class="many-particle p-g"></span>
+          <span class="many-particle p-d"></span>
+          <span class="many-particle p-h"></span>
+
+        </div>
+
+        <p>Less ordered arrangement</p>
+
+      </div>
+
+
+      <div class="particle-type">
+
+        <h3>Gas</h3>
+
+        <div class="particle-box">
+
+          <span class="many-particle p-a"></span>
+          <span class="many-particle p-d"></span>
+          <span class="many-particle p-e"></span>
+          <span class="many-particle p-h"></span>
+
+        </div>
+
+        <p>Particles far apart</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- QUESTIONS -->
+
+  <div class="questions">
+
+    <h2>🧠 55 Chemistry Questions</h2>
+
+    <p>Try the questions yourself before looking at the answers.</p>
+
+    <div class="question"><strong>1.</strong> What is matter?</div>
+
+    <div class="question"><strong>2.</strong> Name the three common states of matter.</div>
+
+    <div class="question"><strong>3.</strong> What happens to particles when a solid is heated?</div>
+
+    <div class="question"><strong>4.</strong> Why does a liquid take the shape of its container?</div>
+
+    <div class="question"><strong>5.</strong> Why can gases be compressed more easily than solids?</div>
+
+    <div class="question"><strong>6.</strong> What is an atom?</div>
+
+    <div class="question"><strong>7.</strong> Name the three main subatomic particles.</div>
+
+    <div class="question"><strong>8.</strong> Which subatomic particle has a positive charge?</div>
+
+    <div class="question"><strong>9.</strong> Which subatomic particle has a negative charge?</div>
+
+    <div class="question"><strong>10.</strong> Which subatomic particle has no electrical charge?</div>
+
+    <div class="question"><strong>11.</strong> Where are protons and neutrons found?</div>
+
+    <div class="question"><strong>12.</strong> Where are electrons found?</div>
+
+    <div class="question"><strong>13.</strong> What is an element?</div>
+
+    <div class="question"><strong>14.</strong> What is a chemical symbol?</div>
+
+    <div class="question"><strong>15.</strong> What does atomic number tell us?</div>
+
+    <div class="question"><strong>16.</strong> What is a compound?</div>
+
+    <div class="question"><strong>17.</strong> Give one difference between an element and a compound.</div>
+
+    <div class="question"><strong>18.</strong> What is a mixture?</div>
+
+    <div class="question"><strong>19.</strong> Give one difference between a mixture and a compound.</div>
+
+    <div class="question"><strong>20.</strong> What is a molecule?</div>
+
+    <div class="question"><strong>21.</strong> What is a physical change?</div>
+
+    <div class="question"><strong>22.</strong> Give one example of a physical change.</div>
+
+    <div class="question"><strong>23.</strong> What is a chemical change?</div>
+
+    <div class="question"><strong>24.</strong> Give one example of a chemical change.</div>
+
+    <div class="question"><strong>25.</strong> Name two signs of a chemical reaction.</div>
+
+    <div class="question"><strong>26.</strong> What is a chemical reaction?</div>
+
+    <div class="question"><strong>27.</strong> What are reactants?</div>
+
+    <div class="question"><strong>28.</strong> What are products?</div>
+
+    <div class="question"><strong>29.</strong> Why must chemical equations be balanced?</div>
+
+    <div class="question"><strong>30.</strong> What does conservation of mass mean?</div>
+
+    <div class="question"><strong>31.</strong> What is an acid?</div>
+
+    <div class="question"><strong>32.</strong> What is a base?</div>
+
+    <div class="question"><strong>33.</strong> What does the pH scale measure?</div>
+
+    <div class="question"><strong>34.</strong> What pH value is neutral?</div>
+
+    <div class="question"><strong>35.</strong> Is pH 3 acidic or alkaline?</div>
+
+    <div class="question"><strong>36.</strong> Is pH 11 acidic or alkaline?</div>
+
+    <div class="question"><strong>37.</strong> What happens during neutralisation?</div>
+
+    <div class="question"><strong>38.</strong> What is an indicator?</div>
+
+    <div class="question"><strong>39.</strong> What colour does blue litmus turn in an acid?</div>
+
+    <div class="question"><strong>40.</strong> What colour does red litmus turn in an alkaline solution?</div>
+
+    <div class="question"><strong>41.</strong> What is filtration used for?</div>
+
+    <div class="question"><strong>42.</strong> What is evaporation used for?</div>
+
+    <div class="question"><strong>43.</strong> What is distillation?</div>
+
+    <div class="question"><strong>44.</strong> What is chromatography used to separate?</div>
+
+    <div class="question"><strong>45.</strong> Why can salt be separated from saltwater by evaporation?</div>
+
+    <div class="question"><strong>46.</strong> What is density?</div>
+
+    <div class="question"><strong>47.</strong> Write the formula for density.</div>
+
+    <div class="question"><strong>48.</strong> A substance has a mass of 60 g and a volume of 20 cm³. Calculate its density.</div>
+
+    <div class="question"><strong>49.</strong> Why does ice float on liquid water?</div>
+
+    <div class="question"><strong>50.</strong> What happens to particles when a liquid changes into a gas?</div>
+
+    <div class="question"><strong>51.</strong> What is combustion?</div>
+
+    <div class="question"><strong>52.</strong> Why is oxygen important for combustion?</div>
+
+    <div class="question"><strong>53.</strong> What is rusting?</div>
+
+    <div class="question"><strong>54.</strong> What two substances are needed for iron to rust?</div>
+
+    <div class="question"><strong>55.</strong> Why is chemistry important in everyday life?</div>
+
+  </div>
+
+
+  <!-- ANSWERS -->
+
+  <div class="answers">
+
+    <h2>✅ Answer Key</h2>
+
+    <p>
+      1. Anything that has mass and occupies space.<br>
+      2. Solid, liquid and gas.<br>
+      3. Their particles gain energy and vibrate faster.<br>
+      4. Its particles can move around each other.<br>
+      5. Gas particles are far apart.<br>
+      6. The smallest unit of an element that retains its properties.<br>
+      7. Protons, neutrons and electrons.<br>
+      8. Proton.<br>
+      9. Electron.<br>
+      10. Neutron.<br>
+      11. In the nucleus.<br>
+      12. Around the nucleus.<br>
+      13. A pure substance containing one type of atom.<br>
+      14. A one- or two-letter abbreviation for an element.<br>
+      15. The number of protons in an atom.<br>
+      16. A substance made from two or more elements chemically joined.<br>
+      17. An element contains one type of atom; a compound contains different elements chemically joined.<br>
+      18. Two or more substances physically combined.<br>
+      19. Mixtures can usually be separated physically; compounds require chemical changes.<br>
+      20. Two or more atoms chemically bonded together.<br>
+      21. A change where no new substance is formed.<br>
+      22. Melting ice.<br>
+      23. A change where new substances are formed.<br>
+      24. Rusting iron.<br>
+      25. Colour change, gas production, temperature change or a precipitate.<br>
+      26. A process in which reactants become products.<br>
+      27. Starting substances in a reaction.<br>
+      28. New substances formed in a reaction.<br>
+      29. To obey conservation of mass.<br>
+      30. Matter is not created or destroyed in a chemical reaction.<br>
+      31. A substance with a pH below 7.<br>
+      32. A substance that reacts with acids and is generally alkaline in water.<br>
+      33. How acidic or alkaline a solution is.<br>
+      34. 7.<br>
+      35. Acidic.<br>
+      36. Alkaline.<br>
+      37. An acid reacts with a base to form salt and water.<br>
+      38. A substance that changes colour depending on pH.<br>
+      39. Red.<br>
+      40. Blue.<br>
+      41. Separating an insoluble solid from a liquid.<br>
+      42. Separating a dissolved solid from a solution.<br>
+      43. Separating substances using differences in boiling points.<br>
+      44. Dissolved substances such as pigments in ink.<br>
+      45. Water evaporates while salt remains behind.<br>
+      46. Mass per unit volume.<br>
+      47. Density = mass ÷ volume.<br>
+      48. 3 g/cm³.<br>
+      49. Ice is less dense than liquid water.<br>
+      50. They gain energy and move farther apart.<br>
+      51. A chemical reaction in which a substance burns and releases energy.<br>
+      52. Oxygen supports combustion.<br>
+      53. Corrosion of iron involving oxygen and water.<br>
+      54. Oxygen and water.<br>
+      55. Chemistry helps us understand materials, medicines, food, energy and many everyday processes.
+    </p>
+
+  </div>
+
+
+  <a class="back" href="science.html">← Back to Science</a>
+  <a class="back" href="subjects.html">📚 Subjects</a>
+  <a class="back" href="index.html">🏠 Home</a>
+
+</div>
+
+</body>
+</html>
