@@ -118,6 +118,81 @@ biology.html
 .p3 {
   left: 75px;
   bottom: 15px;
+}.plant-cell {
+  width: 330px;
+  height: 220px;
+  margin: 25px auto;
+  background: #e6f6df;
+  border: 7px solid #4f9b5f;
+  border-radius: 25px;
+  position: relative;
+}
+
+.plant-nucleus {
+  width: 65px;
+  height: 65px;
+  background: #a8c9f0;
+  border: 3px solid #5279aa;
+  border-radius: 50%;
+  position: absolute;
+  left: 130px;
+  top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.chloroplast {
+  position: absolute;
+  width: 65px;
+  height: 25px;
+  background: #8dcc8c;
+  border: 2px solid #4f8f55;
+  border-radius: 50%;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.c1 {
+  left: 25px;
+  top: 35px;
+}
+
+.c2 {
+  right: 25px;
+  bottom: 35px;
+}
+
+.vacuole {
+  position: absolute;
+  width: 90px;
+  height: 55px;
+  background: #c8e8f5;
+  border: 2px solid #6ca9c2;
+  border-radius: 15px;
+  left: 20px;
+  bottom: 70px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.plant-label {
+  position: absolute;
+  right: 20px;
+  top: 95px;
+  background: white;
+  padding: 5px 8px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: bold;
 }
     .back {
       display: inline-block;
@@ -189,7 +264,37 @@ biology.html
     </ul>
 
   </div>
+<div class="diagram-box">
 
+  <h2>🌱 Diagram 2 — Plant Cell</h2>
+
+  <div class="plant-cell">
+
+    <div class="plant-nucleus">
+      Nucleus
+    </div>
+
+    <div class="chloroplast c1">Chloroplast</div>
+    <div class="chloroplast c2">Chloroplast</div>
+
+    <div class="vacuole">
+      Large Vacuole
+    </div>
+
+    <div class="plant-label">
+      Cell Wall
+    </div>
+
+  </div>
+
+  <p>
+    <strong>Cell wall:</strong> gives the plant cell support and shape.<br>
+    <strong>Chloroplasts:</strong> contain chlorophyll and carry out photosynthesis.<br>
+    <strong>Large vacuole:</strong> contains cell sap and helps maintain pressure.<br>
+    <strong>Nucleus:</strong> controls the activities of the cell.
+  </p>
+
+</div>
 
   <div class="questions">
 
