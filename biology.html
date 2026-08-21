@@ -8,376 +8,135 @@ biology.html
   <title>Biology | The Student Spot</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f5fff8;
-      color: #333;
+      background: #f4fbf6;
+      color: #26352b;
       line-height: 1.7;
     }
 
     header {
-      background: #b8e6c1;
+      background: linear-gradient(135deg, #b7e4c7, #d8f3dc);
       text-align: center;
-      padding: 45px 20px;
+      padding: 50px 20px;
+      border-bottom: 4px solid #74a57f;
     }
 
     header h1 {
       margin: 0;
-      font-size: 40px;
+      font-size: 42px;
+      color: #174d2a;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
     }
 
     .container {
-      max-width: 950px;
+      max-width: 1000px;
       margin: auto;
       padding: 30px 20px;
     }
 
     .lesson,
     .diagram-box,
-    .questions,
-    .answers {
+    .questions {
       background: white;
-      padding: 28px;
+      padding: 30px;
       margin: 25px 0;
       border-radius: 18px;
-      box-shadow: 0 4px 12px #ddd;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
     }
 
     h2 {
-      color: #34804a;
+      color: #28753d;
+      margin-top: 0;
     }
 
     .example {
-      background: #eaf8ed;
+      background: #edf8f0;
       padding: 18px;
-      border-radius: 12px;
-      margin: 15px 0;
+      border-left: 5px solid #4f9d69;
+      border-radius: 10px;
+    }
+
+    .diagram {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      display: block;
+      margin: 25px auto;
+      background: white;
+      border: 1px solid #c9d8cc;
+      border-radius: 10px;
+    }
+
+    .diagram-title {
+      text-align: center;
+      font-weight: bold;
+      color: #285c35;
+      margin-bottom: 10px;
     }
 
     .question {
-      background: #f7fff9;
-      padding: 15px;
+      background: #f7fcf8;
+      padding: 16px 18px;
       margin: 12px 0;
       border-radius: 10px;
+      border-left: 4px solid #6eaa7b;
     }
 
-    .answers {
-      background: #eaf8ed;
+    .question strong {
+      color: #234f2e;
     }
 
-    /* =========================
-       ANIMAL CELL
-       ========================= */
-
-    .cell-diagram {
-      width: 300px;
-      height: 220px;
-      margin: 25px auto;
-      background: #dff4e5;
-      border: 6px solid #65a878;
-      border-radius: 50%;
-      position: relative;
-    }
-
-    .cell-nucleus {
-      width: 75px;
-      height: 75px;
-      background: #a8c9f0;
-      border: 3px solid #5279aa;
-      border-radius: 50%;
-      position: absolute;
-      left: 105px;
-      top: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-    }
-
-    .cell-part {
-      position: absolute;
-      background: white;
-      padding: 5px 9px;
+    .answer {
+      margin-top: 8px;
+      padding: 10px 12px;
+      background: #edf8f0;
       border-radius: 8px;
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    .p1 {
-      left: 15px;
-      top: 35px;
-    }
-
-    .p2 {
-      right: 10px;
-      top: 55px;
-    }
-
-    .p3 {
-      left: 75px;
-      bottom: 15px;
-    }
-
-    /* =========================
-       PLANT CELL
-       ========================= */
-
-    .plant-cell {
-      width: 330px;
-      height: 220px;
-      margin: 25px auto;
-      background: #e6f6df;
-      border: 7px solid #4f9b5f;
-      border-radius: 25px;
-      position: relative;
-    }
-
-    .plant-nucleus {
-      width: 65px;
-      height: 65px;
-      background: #a8c9f0;
-      border: 3px solid #5279aa;
-      border-radius: 50%;
-      position: absolute;
-      left: 130px;
-      top: 75px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      font-weight: bold;
-    }
-
-    .chloroplast {
-      position: absolute;
-      width: 70px;
-      height: 28px;
-      background: #8dcc8c;
-      border: 2px solid #4f8f55;
-      border-radius: 50%;
-      font-size: 9px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-    }
-
-    .c1 {
-      left: 20px;
-      top: 30px;
-    }
-
-    .c2 {
-      right: 20px;
-      bottom: 30px;
-    }
-
-    .vacuole {
-      position: absolute;
-      width: 90px;
-      height: 55px;
-      background: #c8e8f5;
-      border: 2px solid #6ca9c2;
-      border-radius: 15px;
-      left: 20px;
-      bottom: 70px;
-      font-size: 11px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    /* =========================
-       RESPIRATORY SYSTEM
-       ========================= */
-
-    .lungs-diagram {
-      width: 330px;
-      height: 280px;
-      margin: 25px auto;
-      position: relative;
-      background: #f3faff;
-      border: 3px solid #b5dce9;
-      border-radius: 20px;
-    }
-
-    .trachea {
-      position: absolute;
-      width: 25px;
-      height: 90px;
-      background: #f2a6b3;
-      border-radius: 12px;
-      left: 150px;
-      top: 20px;
-      text-align: center;
-      font-size: 9px;
-      padding-top: 5px;
-      font-weight: bold;
-    }
-
-    .left-lung,
-    .right-lung {
-      position: absolute;
-      width: 95px;
-      height: 135px;
-      background: #ffc4cf;
-      border: 3px solid #d77b8d;
-      border-radius: 50%;
-      top: 105px;
-      text-align: center;
-      padding-top: 40px;
-      box-sizing: border-box;
-      font-weight: bold;
-      font-size: 12px;
-    }
-
-    .left-lung {
-      left: 35px;
-    }
-
-    .right-lung {
-      right: 35px;
-    }
-
-    .bronchi {
-      position: absolute;
-      top: 115px;
-      left: 125px;
-      width: 80px;
-      text-align: center;
-      font-size: 11px;
-      font-weight: bold;
-    }
-
-    /* =========================
-       CIRCULATORY SYSTEM
-       ========================= */
-
-    .circulatory-diagram {
-      width: 340px;
-      height: 280px;
-      margin: 25px auto;
-      position: relative;
-      background: #fff0f2;
-      border: 3px solid #e88b9a;
-      border-radius: 20px;
-    }
-
-    .heart-shape {
-      position: absolute;
-      left: 135px;
-      top: 65px;
-      font-size: 70px;
-      text-align: center;
-    }
-
-    .heart-shape span {
-      display: block;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .blood-vessel {
-      position: absolute;
-      background: white;
-      padding: 8px;
-      border: 2px solid #e88b9a;
-      border-radius: 10px;
-      font-size: 11px;
-      font-weight: bold;
-    }
-
-    .top-vessel {
-      top: 20px;
-      left: 75px;
-    }
-
-    .bottom-vessel {
-      bottom: 20px;
-      left: 75px;
-    }
-
-    .circulation-path {
-      position: absolute;
-      bottom: 65px;
-      width: 100%;
-      text-align: center;
-      font-weight: bold;
-      font-size: 13px;
-    }
-
-    /* =========================
-       PHOTOSYNTHESIS
-       ========================= */
-
-    .photosynthesis-diagram {
-      text-align: center;
-      background: #f3fff0;
-      padding: 25px;
-      border-radius: 15px;
-    }
-
-    .sun {
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .arrow {
-      font-size: 30px;
-      margin: 8px;
-    }
-
-    .plant {
-      font-size: 70px;
-      margin: 10px;
-    }
-
-    .inputs,
-    .result {
-      display: inline-block;
-      background: white;
-      padding: 12px 18px;
-      margin: 8px;
-      border-radius: 12px;
-      font-weight: bold;
-      border: 2px solid #8fc98f;
-    }
-
-    /* =========================
-       FOOD CHAIN
-       ========================= */
-
-    .food-chain {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin: 25px 0;
-    }
-
-    .food-item {
-      background: #f0fae9;
-      border: 2px solid #75a96c;
-      padding: 15px;
-      border-radius: 15px;
-      text-align: center;
-      font-weight: bold;
-    }
-
-    .food-arrow {
-      font-size: 28px;
-      font-weight: bold;
+      color: #245d31;
     }
 
     .back {
       display: inline-block;
-      margin: 20px 10px;
-      color: #34804a;
+      margin: 15px 8px;
+      padding: 10px 16px;
+      background: #d9f0df;
+      color: #245d31;
       text-decoration: none;
       font-weight: bold;
+      border-radius: 10px;
+    }
+
+    .back:hover {
+      background: #bfe2c8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+      background: #d8f3dc;
+      color: #285c35;
+    }
+
+    @media (max-width: 650px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .lesson,
+      .diagram-box,
+      .questions {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -386,571 +145,1342 @@ biology.html
 
 <header>
   <h1>🧬 Biology</h1>
-  <p>Explore cells, organs, plants, animals and the amazing world of life.</p>
+  <p>Learn about cells, plants, animals, the human body and life processes.</p>
 </header>
 
 <div class="container">
 
-  <!-- BIOLOGY GUIDE -->
+  <!-- INTRODUCTION -->
 
   <div class="lesson">
-
-    <h2>📖 Quick Biology Guide</h2>
+    <h2>📖 Biology — Quick Introduction</h2>
 
     <p>
-      Biology is the study of living organisms and how they grow,
-      survive, reproduce and interact with their environment.
+      Biology is the branch of science that studies living organisms.
+      It helps us understand plants, animals, microorganisms and the
+      human body.
     </p>
 
     <div class="example">
-      <strong>Important idea:</strong><br><br>
-      The cell is the basic structural and functional unit of life.
-      Different cells have different structures and functions.
+      <strong>Important idea:</strong><br>
+      All living organisms are made of cells. Cells are the basic
+      structural and functional units of life.
     </div>
-
   </div>
 
 
-  <!-- DIAGRAM 1 -->
+  <!-- ========================= -->
+  <!-- DIAGRAM 1 — ANIMAL CELL -->
+  <!-- ========================= -->
 
   <div class="diagram-box">
 
     <h2>🔬 Diagram 1 — Animal Cell</h2>
 
-    <div class="cell-diagram">
+    <p class="diagram-title">
+      Scientific-style labelled diagram of an animal cell
+    </p>
 
-      <div class="cell-nucleus">
+    <svg class="diagram" viewBox="0 0 900 550">
+
+      <!-- Cell membrane -->
+      <ellipse
+        cx="450"
+        cy="280"
+        rx="260"
+        ry="190"
+        fill="#f8eef7"
+        stroke="#222"
+        stroke-width="5"
+      />
+
+      <!-- Cytoplasm -->
+      <ellipse
+        cx="450"
+        cy="280"
+        rx="245"
+        ry="175"
+        fill="#fdf7fc"
+        stroke="#777"
+        stroke-width="2"
+      />
+
+      <!-- Nucleus -->
+      <circle
+        cx="450"
+        cy="280"
+        r="75"
+        fill="#d9c7ef"
+        stroke="#333"
+        stroke-width="4"
+      />
+
+      <!-- Nucleolus -->
+      <circle
+        cx="450"
+        cy="280"
+        r="20"
+        fill="#8d69b5"
+      />
+
+      <!-- Mitochondrion 1 -->
+      <ellipse
+        cx="315"
+        cy="180"
+        rx="60"
+        ry="28"
+        fill="#f1c48b"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <path
+        d="M275 180 Q295 155 315 180 T355 180"
+        fill="none"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <!-- Mitochondrion 2 -->
+      <ellipse
+        cx="600"
+        cy="365"
+        rx="60"
+        ry="28"
+        fill="#f1c48b"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <path
+        d="M560 365 Q580 340 600 365 T640 365"
+        fill="none"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <!-- Mitochondrion 3 -->
+      <ellipse
+        cx="575"
+        cy="190"
+        rx="50"
+        ry="24"
+        fill="#f1c48b"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <path
+        d="M540 190 Q555 170 575 190 T610 190"
+        fill="none"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <!-- Labels -->
+
+      <line x1="450" y1="205" x2="450" y2="85"
+            stroke="#222" stroke-width="2"/>
+
+      <text x="390" y="65"
+            font-size="22"
+            font-family="Arial">
         Nucleus
-      </div>
+      </text>
 
-      <div class="cell-part p1">
+      <line x1="315" y1="152" x2="150" y2="95"
+            stroke="#222" stroke-width="2"/>
+
+      <text x="35" y="90"
+            font-size="20"
+            font-family="Arial">
+        Mitochondrion
+      </text>
+
+      <line x1="600" y1="393" x2="745" y2="455"
+            stroke="#222" stroke-width="2"/>
+
+      <text x="675" y="485"
+            font-size="20"
+            font-family="Arial">
+        Mitochondrion
+      </text>
+
+      <line x1="575" y1="166" x2="750" y2="115"
+            stroke="#222" stroke-width="2"/>
+
+      <text x="700" y="100"
+            font-size="20"
+            font-family="Arial">
+        Mitochondrion
+      </text>
+
+      <line x1="220" y1="280" x2="55" y2="280"
+            stroke="#222" stroke-width="2"/>
+
+      <text x="20" y="260"
+            font-size="20"
+            font-family="Arial">
         Cytoplasm
-      </div>
+      </text>
 
-      <div class="cell-part p2">
-        Mitochondria
-      </div>
+      <line x1="260" y1="425" x2="100" y2="500"
+            stroke="#222" stroke-width="2"/>
 
-      <div class="cell-part p3">
-        Cell Membrane
-      </div>
+      <text x="20" y="530"
+            font-size="20"
+            font-family="Arial">
+        Cell membrane
+      </text>
 
-    </div>
+    </svg>
 
     <p>
-      <strong>Nucleus:</strong> controls cell activities.<br>
-      <strong>Cytoplasm:</strong> where many chemical reactions occur.<br>
-      <strong>Mitochondria:</strong> release energy from food.<br>
-      <strong>Cell membrane:</strong> controls what enters and leaves the cell.
+      The main structures shown are the cell membrane, cytoplasm,
+      nucleus and mitochondria.
     </p>
 
   </div>
 
 
-  <!-- DIAGRAM 2 -->
+  <!-- ========================= -->
+  <!-- DIAGRAM 2 — PLANT CELL -->
+  <!-- ========================= -->
 
   <div class="diagram-box">
 
     <h2>🌱 Diagram 2 — Plant Cell</h2>
 
-    <div class="plant-cell">
+    <p class="diagram-title">
+      Scientific-style labelled diagram of a plant cell
+    </p>
 
-      <div class="plant-nucleus">
+    <svg class="diagram" viewBox="0 0 900 550">
+
+      <!-- Cell wall -->
+      <rect
+        x="160"
+        y="90"
+        width="580"
+        height="370"
+        rx="25"
+        fill="#e6f2dc"
+        stroke="#222"
+        stroke-width="7"
+      />
+
+      <!-- Cell membrane -->
+      <rect
+        x="175"
+        y="105"
+        width="550"
+        height="340"
+        rx="20"
+        fill="none"
+        stroke="#4d784f"
+        stroke-width="3"
+      />
+
+      <!-- Large vacuole -->
+      <rect
+        x="330"
+        y="150"
+        width="280"
+        height="260"
+        rx="55"
+        fill="#d9f0f7"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <text
+        x="390"
+        y="285"
+        font-size="22"
+        font-family="Arial">
+        Large vacuole
+      </text>
+
+      <!-- Nucleus -->
+      <circle
+        cx="250"
+        cy="270"
+        r="55"
+        fill="#d9c7ef"
+        stroke="#333"
+        stroke-width="4"
+      />
+
+      <text
+        x="215"
+        y="276"
+        font-size="17"
+        font-family="Arial">
         Nucleus
-      </div>
+      </text>
 
-      <div class="chloroplast c1">
+      <!-- Chloroplasts -->
+
+      <ellipse
+        cx="650"
+        cy="150"
+        rx="55"
+        ry="25"
+        fill="#83bd76"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <line x1="620" y1="150" x2="680" y2="150"
+            stroke="#333" stroke-width="2"/>
+
+      <ellipse
+        cx="650"
+        cy="400"
+        rx="55"
+        ry="25"
+        fill="#83bd76"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <line x1="620" y1="400" x2="680" y2="400"
+            stroke="#333" stroke-width="2"/>
+
+      <ellipse
+        cx="235"
+        cy="390"
+        rx="55"
+        ry="25"
+        fill="#83bd76"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <line x1="205" y1="390" x2="265" y2="390"
+            stroke="#333" stroke-width="2"/>
+
+      <!-- Labels -->
+
+      <line x1="300" y1="90" x2="300" y2="45"
+            stroke="#222" stroke-width="2"/>
+
+      <text x="235" y="35"
+            font-size="21"
+            font-family="Arial">
+        Cell wall
+      </text>
+
+      <line x1="175" y1="150" x2="55" y2="105"
+            stroke="#222" stroke-width="2"/>
+
+      <text x="15" y="95"
+            font-size="20"
+            font-family="Arial">
+        Cell membrane
+      </text>
+
+      <line x1="650" y1="125" x2="785" y2="70"
+            stroke="#222" stroke-width="2"/>
+
+      <text x="730" y="55"
+            font-size="20"
+            font-family="Arial">
         Chloroplast
-      </div>
+      </text>
 
-      <div class="chloroplast c2">
+      <line x1="650" y1="425" x2="790" y2="480"
+            stroke="#222" stroke-width="2"/>
+
+      <text x="720" y="515"
+            font-size="20"
+            font-family="Arial">
         Chloroplast
-      </div>
+      </text>
 
-      <div class="vacuole">
-        Large<br>Vacuole
-      </div>
-
-    </div>
+    </svg>
 
     <p>
-      <strong>Cell wall:</strong> gives support and shape.<br>
-      <strong>Chloroplasts:</strong> carry out photosynthesis.<br>
-      <strong>Large vacuole:</strong> contains cell sap.<br>
-      <strong>Nucleus:</strong> controls cell activities.
+      Plant cells contain a cell wall, cell membrane, cytoplasm,
+      nucleus, chloroplasts and a large permanent vacuole.
     </p>
 
   </div>
 
 
-  <!-- DIAGRAM 3 -->
+  <!-- ========================= -->
+  <!-- DIAGRAM 3 — RESPIRATORY -->
+  <!-- ========================= -->
 
   <div class="diagram-box">
 
     <h2>🫁 Diagram 3 — Human Respiratory System</h2>
 
-    <div class="lungs-diagram">
+    <p class="diagram-title">
+      Scientific-style diagram of the human respiratory system
+    </p>
 
-      <div class="trachea">
+    <svg class="diagram" viewBox="0 0 900 650">
+
+      <!-- Trachea -->
+      <rect
+        x="425"
+        y="50"
+        width="50"
+        height="200"
+        fill="#eeeeee"
+        stroke="#222"
+        stroke-width="4"
+      />
+
+      <!-- Tracheal rings -->
+      <path
+        d="M430 80 H470
+           M430 110 H470
+           M430 140 H470
+           M430 170 H470
+           M430 200 H470
+           M430 230 H470"
+        stroke="#777"
+        stroke-width="4"
+      />
+
+      <!-- Bronchi -->
+      <path
+        d="M450 245 L310 320
+           M450 245 L590 320"
+        fill="none"
+        stroke="#555"
+        stroke-width="22"
+      />
+
+      <!-- Left lung -->
+      <path
+        d="M310 300
+           C190 275 130 380 170 500
+           C195 575 275 590 330 520
+           C350 485 345 390 310 300 Z"
+        fill="#eeb7bd"
+        stroke="#222"
+        stroke-width="4"
+      />
+
+      <!-- Right lung -->
+      <path
+        d="M590 300
+           C710 275 770 380 730 500
+           C705 575 625 590 570 520
+           C550 485 555 390 590 300 Z"
+        fill="#eeb7bd"
+        stroke="#222"
+        stroke-width="4"
+      />
+
+      <!-- Bronchioles -->
+      <path
+        d="M310 320 L245 390
+           M310 320 L280 455
+           M590 320 L655 390
+           M590 320 L620 455"
+        fill="none"
+        stroke="#777"
+        stroke-width="9"
+      />
+
+      <!-- Labels -->
+
+      <text x="500" y="100"
+            font-size="22"
+            font-family="Arial">
         Trachea
-      </div>
+      </text>
 
-      <div class="left-lung">
-        Left Lung
-      </div>
+      <line x1="475" y1="245" x2="650" y2="245"
+            stroke="#222" stroke-width="2"/>
 
-      <div class="right-lung">
-        Right Lung
-      </div>
-
-      <div class="bronchi">
+      <text x="655" y="252"
+            font-size="21"
+            font-family="Arial">
         Bronchi
-      </div>
+      </text>
 
-    </div>
+      <text x="190" y="405"
+            font-size="22"
+            font-family="Arial">
+        Left lung
+      </text>
+
+      <text x="620" y="405"
+            font-size="22"
+            font-family="Arial">
+        Right lung
+      </text>
+
+      <line x1="280" y1="455" x2="80" y2="540"
+            stroke="#222" stroke-width="2"/>
+
+      <text x="20" y="575"
+            font-size="20"
+            font-family="Arial">
+        Bronchioles
+      </text>
+
+      <text x="370" y="620"
+            font-size="21"
+            font-family="Arial">
+        Alveoli are located at the ends of bronchioles
+      </text>
+
+    </svg>
 
     <p>
-      Air travels through the <strong>trachea</strong> and into the
-      <strong>bronchi</strong>, which lead to the lungs.
-      Gas exchange takes place in tiny structures called
-      <strong>alveoli</strong>.
+      Air travels through the trachea into the bronchi and then
+      through smaller bronchioles to the alveoli, where gas exchange occurs.
     </p>
 
   </div>
 
 
-  <!-- DIAGRAM 4 -->
+  <!-- ========================= -->
+  <!-- DIAGRAM 4 — HEART -->
+  <!-- ========================= -->
 
   <div class="diagram-box">
 
-    <h2>🫀 Diagram 4 — Human Circulatory System</h2>
+    <h2>❤️ Diagram 4 — Human Heart and Blood Circulation</h2>
 
-    <div class="circulatory-diagram">
+    <p class="diagram-title">
+      Simplified scientific diagram showing the four chambers of the heart
+    </p>
 
-      <div class="heart-shape">
-        ❤️
-        <span>Heart</span>
-      </div>
+    <svg class="diagram" viewBox="0 0 900 600">
 
-      <div class="blood-vessel top-vessel">
-        Oxygen-rich blood
-      </div>
+      <!-- Heart outline -->
+      <path
+        d="M450 500
+           C400 450 250 350 250 200
+           C250 100 370 90 450 190
+           C530 90 650 100 650 200
+           C650 350 500 450 450 500 Z"
+        fill="#f3b4b9"
+        stroke="#222"
+        stroke-width="5"
+      />
 
-      <div class="blood-vessel bottom-vessel">
+      <!-- Septum -->
+      <line
+        x1="450"
+        y1="190"
+        x2="450"
+        y2="470"
+        stroke="#333"
+        stroke-width="5"
+      />
+
+      <!-- Chambers -->
+      <path
+        d="M300 180
+           Q360 150 440 200
+           L440 315
+           Q350 300 290 330
+           Z"
+        fill="#b9d8f0"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <path
+        d="M460 200
+           Q540 150 600 180
+           L610 330
+           Q550 300 460 315
+           Z"
+        fill="#efc0c0"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <path
+        d="M300 335
+           Q370 300 440 330
+           L440 450
+           Q350 440 300 380
+           Z"
+        fill="#9fc8e8"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <path
+        d="M460 330
+           Q530 300 600 335
+           L600 380
+           Q550 440 460 450
+           Z"
+        fill="#e89ca3"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <!-- Labels -->
+
+      <text x="315" y="250"
+            font-size="19"
+            font-family="Arial">
+        Right atrium
+      </text>
+
+      <text x="485" y="250"
+            font-size="19"
+            font-family="Arial">
+        Left atrium
+      </text>
+
+      <text x="315" y="395"
+            font-size="19"
+            font-family="Arial">
+        Right ventricle
+      </text>
+
+      <text x="475" y="395"
+            font-size="19"
+            font-family="Arial">
+        Left ventricle
+      </text>
+
+      <!-- Blood vessels -->
+
+      <path
+        d="M270 220 L120 130"
+        stroke="#4d7fb8"
+        stroke-width="15"
+        fill="none"
+      />
+
+      <text x="25" y="105"
+            font-size="20"
+            font-family="Arial">
         Oxygen-poor blood
-      </div>
+      </text>
 
-      <div class="circulation-path">
-        Heart → Body → Heart
-      </div>
+      <path
+        d="M630 220 L780 130"
+        stroke="#c84d55"
+        stroke-width="15"
+        fill="none"
+      />
 
-    </div>
+      <text x="650" y="105"
+            font-size="20"
+            font-family="Arial">
+        Oxygen-rich blood
+      </text>
+
+      <text x="330" y="550"
+            font-size="22"
+            font-family="Arial">
+        Heart pumps blood around the body
+      </text>
+
+    </svg>
 
     <p>
-      The <strong>heart</strong> pumps blood around the body.
-      Blood vessels carry blood to and from different parts of the body.
+      The heart has four chambers. It pumps blood through the pulmonary
+      and systemic circulations to supply the body with oxygen and nutrients.
     </p>
 
   </div>
 
 
-  <!-- DIAGRAM 5 -->
+  <!-- ========================= -->
+  <!-- DIAGRAM 5 — PHOTOSYNTHESIS -->
+  <!-- ========================= -->
 
   <div class="diagram-box">
 
     <h2>🌿 Diagram 5 — Photosynthesis</h2>
 
-    <div class="photosynthesis-diagram">
+    <p class="diagram-title">
+      Scientific diagram showing the inputs and products of photosynthesis
+    </p>
 
-      <div class="sun">
-        ☀️ Sunlight
-      </div>
+    <svg class="diagram" viewBox="0 0 900 550">
 
-      <div class="arrow">
-        ↓
-      </div>
+      <!-- Sun -->
+      <circle
+        cx="450"
+        cy="80"
+        r="50"
+        fill="#f2d36b"
+        stroke="#333"
+        stroke-width="4"
+      />
 
-      <div class="plant">
-        🌱
-      </div>
+      <text x="420" y="87"
+            font-size="21"
+            font-family="Arial">
+        Light
+      </text>
 
-      <div class="inputs">
-        💧 Water + 🌫️ Carbon Dioxide
-      </div>
+      <!-- Plant -->
+      <path
+        d="M450 470 L450 240"
+        stroke="#4d8b45"
+        stroke-width="16"
+      />
 
-      <div class="arrow">
-        ↓
-      </div>
+      <!-- Leaves -->
+      <ellipse
+        cx="360"
+        cy="300"
+        rx="110"
+        ry="45"
+        fill="#75ad68"
+        stroke="#333"
+        stroke-width="3"
+        transform="rotate(-25 360 300)"
+      />
 
-      <div class="result">
-        🍬 Glucose + 💨 Oxygen
-      </div>
+      <ellipse
+        cx="540"
+        cy="270"
+        rx="110"
+        ry="45"
+        fill="#75ad68"
+        stroke="#333"
+        stroke-width="3"
+        transform="rotate(25 540 270)"
+      />
 
-    </div>
+      <!-- Sunlight arrow -->
+      <line x1="450" y1="135" x2="450" y2="210"
+            stroke="#b88718" stroke-width="6"/>
+
+      <polygon
+        points="450,225 438,205 462,205"
+        fill="#b88718"
+      />
+
+      <!-- Carbon dioxide -->
+      <text x="35" y="255"
+            font-size="22"
+            font-family="Arial">
+        Carbon dioxide
+      </text>
+
+      <line x1="220" y1="260" x2="310" y2="285"
+            stroke="#555" stroke-width="5"/>
+
+      <polygon
+        points="315,286 295,277 300,298"
+        fill="#555"
+      />
+
+      <!-- Water -->
+      <text x="65" y="430"
+            font-size="22"
+            font-family="Arial">
+        Water
+      </text>
+
+      <line x1="170" y1="420" x2="400" y2="410"
+            stroke="#4d7fb8" stroke-width="5"/>
+
+      <polygon
+        points="410,410 390,400 391,420"
+        fill="#4d7fb8"
+      />
+
+      <!-- Oxygen -->
+      <text x="670" y="255"
+            font-size="22"
+            font-family="Arial">
+        Oxygen
+      </text>
+
+      <line x1="590" y1="285" x2="660" y2="260"
+            stroke="#555" stroke-width="5"/>
+
+      <polygon
+        points="670,257 650,250 656,270"
+        fill="#555"
+      />
+
+      <!-- Glucose -->
+      <text x="670" y="430"
+            font-size="22"
+            font-family="Arial">
+        Glucose
+      </text>
+
+      <line x1="500" y1="410" x2="650" y2="420"
+            stroke="#555" stroke-width="5"/>
+
+      <polygon
+        points="660,421 640,411 642,431"
+        fill="#555"
+      />
+
+      <!-- Formula -->
+      <text x="235" y="510"
+            font-size="22"
+            font-family="Arial">
+        Carbon dioxide + Water + Light → Glucose + Oxygen
+      </text>
+
+    </svg>
 
     <p>
-      Plants use sunlight, water and carbon dioxide to make
-      glucose and release oxygen during photosynthesis.
+      Photosynthesis uses light energy to convert carbon dioxide and
+      water into glucose. Oxygen is released as a product.
     </p>
 
   </div>
 
 
-  <!-- DIAGRAM 6 -->
+  <!-- ========================= -->
+  <!-- DIAGRAM 6 — FOOD CHAIN -->
+  <!-- ========================= -->
 
   <div class="diagram-box">
 
     <h2>🐾 Diagram 6 — Food Chain</h2>
 
-    <div class="food-chain">
+    <p class="diagram-title">
+      Scientific-style food chain showing energy transfer
+    </p>
 
-      <div class="food-item">
-        🌱<br>
-        Plant<br>
+    <svg class="diagram" viewBox="0 0 900 400">
+
+      <!-- Grass -->
+      <rect
+        x="40"
+        y="120"
+        width="190"
+        height="100"
+        rx="10"
+        fill="#dcefd5"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <text x="100" y="165"
+            font-size="25"
+            font-family="Arial">
+        Grass
+      </text>
+
+      <text x="85" y="195"
+            font-size="18"
+            font-family="Arial">
         Producer
-      </div>
+      </text>
 
-      <div class="food-arrow">
-        →
-      </div>
+      <!-- Arrow -->
+      <line x1="230" y1="170"
+            x2="335" y2="170"
+            stroke="#333"
+            stroke-width="6"/>
 
-      <div class="food-item">
-        🐇<br>
-        Rabbit<br>
+      <polygon
+        points="345,170 320,155 320,185"
+        fill="#333"
+      />
+
+      <!-- Rabbit -->
+      <rect
+        x="345"
+        y="120"
+        width="190"
+        height="100"
+        rx="10"
+        fill="#e8efd9"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <text x="405" y="165"
+            font-size="25"
+            font-family="Arial">
+        Rabbit
+      </text>
+
+      <text x="385" y="195"
+            font-size="18"
+            font-family="Arial">
         Herbivore
-      </div>
+      </text>
 
-      <div class="food-arrow">
-        →
-      </div>
+      <!-- Arrow -->
+      <line x1="535" y1="170"
+            x2="640" y2="170"
+            stroke="#333"
+            stroke-width="6"/>
 
-      <div class="food-item">
-        🦊<br>
-        Fox<br>
+      <polygon
+        points="650,170 625,155 625,185"
+        fill="#333"
+      />
+
+      <!-- Fox -->
+      <rect
+        x="650"
+        y="120"
+        width="190"
+        height="100"
+        rx="10"
+        fill="#f2dddd"
+        stroke="#333"
+        stroke-width="3"
+      />
+
+      <text x="715" y="165"
+            font-size="25"
+            font-family="Arial">
+        Fox
+      </text>
+
+      <text x="700" y="195"
+            font-size="18"
+            font-family="Arial">
         Carnivore
-      </div>
+      </text>
 
-    </div>
+      <!-- Energy label -->
+      <text x="290" y="290"
+            font-size="22"
+            font-family="Arial">
+        Direction of energy transfer →
+      </text>
+
+      <text x="220" y="340"
+            font-size="20"
+            font-family="Arial">
+        Producer → Primary consumer → Secondary consumer
+      </text>
+
+    </svg>
 
     <p>
-      A food chain shows how energy passes from one organism
-      to another when they eat each other.
+      In this food chain, grass is the producer, the rabbit is the
+      primary consumer and the fox is the secondary consumer.
+      The arrows show the direction of energy transfer.
     </p>
 
   </div>
 
 
-  <!-- PRACTICE QUESTIONS -->
+  <!-- ========================= -->
+  <!-- 55 SHORT QUESTIONS -->
+  <!-- ========================= -->
 
   <div class="questions">
 
-    <h2>🧠 Biology Practice — 55 Questions</h2>
+    <h2>🧠 Biology — 55 Short Questions with Answers</h2>
 
     <div class="question">
-      <strong>1.</strong> What is the basic unit of life?<br>
-      A) Organ &nbsp; B) Cell &nbsp; C) Tissue &nbsp; D) System
+      <strong>1. What is biology?</strong>
+      <div class="answer">
+        Answer: Biology is the branch of science that studies living organisms.
+      </div>
     </div>
 
     <div class="question">
-      <strong>2.</strong> Which part controls most activities of a cell?<br>
-      A) Nucleus &nbsp; B) Cell wall &nbsp; C) Vacuole &nbsp; D) Cytoplasm
+      <strong>2. What is the basic unit of life?</strong>
+      <div class="answer">
+        Answer: The cell is the basic unit of life.
+      </div>
     </div>
 
     <div class="question">
-      <strong>3.</strong> Which organelle releases energy from food?<br>
-      A) Nucleus &nbsp; B) Chloroplast &nbsp; C) Mitochondria &nbsp; D) Vacuole
+      <strong>3. What is the function of the nucleus?</strong>
+      <div class="answer">
+        Answer: The nucleus controls many activities of the cell and contains genetic material.
+      </div>
     </div>
 
     <div class="question">
-      <strong>4.</strong> Which structure is found in plant cells but not animal cells?<br>
-      A) Cell membrane &nbsp; B) Cytoplasm &nbsp; C) Cell wall &nbsp; D) Nucleus
+      <strong>4. What is the function of the cell membrane?</strong>
+      <div class="answer">
+        Answer: The cell membrane controls the movement of substances into and out of the cell.
+      </div>
     </div>
 
     <div class="question">
-      <strong>5.</strong> What is the green pigment used in photosynthesis?<br>
-      A) Chlorophyll &nbsp; B) Glucose &nbsp; C) Oxygen &nbsp; D) Protein
+      <strong>5. What is cytoplasm?</strong>
+      <div class="answer">
+        Answer: Cytoplasm is the jelly-like material in a cell where many chemical reactions occur.
+      </div>
     </div>
 
     <div class="question">
-      <strong>6.</strong> What gas do plants take in during photosynthesis?<br>
-      A) Oxygen &nbsp; B) Nitrogen &nbsp; C) Carbon dioxide &nbsp; D) Hydrogen
+      <strong>6. What is the function of mitochondria?</strong>
+      <div class="answer">
+        Answer: Mitochondria are the sites of aerobic respiration and release energy for the cell.
+      </div>
     </div>
 
     <div class="question">
-      <strong>7.</strong> What gas is released during photosynthesis?<br>
-      A) Oxygen &nbsp; B) Carbon dioxide &nbsp; C) Nitrogen &nbsp; D) Hydrogen
+      <strong>7. What is the function of the cell wall?</strong>
+      <div class="answer">
+        Answer: The cell wall supports the plant cell and helps it maintain its shape.
+      </div>
     </div>
 
     <div class="question">
-      <strong>8.</strong> Which organ pumps blood around the body?<br>
-      A) Lung &nbsp; B) Heart &nbsp; C) Kidney &nbsp; D) Liver
+      <strong>8. What is the function of chloroplasts?</strong>
+      <div class="answer">
+        Answer: Chloroplasts contain chlorophyll and are the sites of photosynthesis.
+      </div>
     </div>
 
     <div class="question">
-      <strong>9.</strong> Which system is responsible for breathing?<br>
-      A) Digestive system &nbsp; B) Respiratory system &nbsp; C) Nervous system &nbsp; D) Skeletal system
+      <strong>9. What is the function of the large vacuole?</strong>
+      <div class="answer">
+        Answer: The large vacuole contains cell sap and helps maintain pressure inside the plant cell.
+      </div>
     </div>
 
     <div class="question">
-      <strong>10.</strong> Where does gas exchange occur in the lungs?<br>
-      A) Trachea &nbsp; B) Bronchi &nbsp; C) Alveoli &nbsp; D) Nose
+      <strong>10. Give one difference between a plant cell and an animal cell.</strong>
+      <div class="answer">
+        Answer: A plant cell has a cell wall and chloroplasts, while an animal cell does not.
+      </div>
     </div>
 
     <div class="question">
-      <strong>11.</strong> Which tube carries air toward the lungs?<br>
-      A) Trachea &nbsp; B) Oesophagus &nbsp; C) Artery &nbsp; D) Vein
+      <strong>11. What is photosynthesis?</strong>
+      <div class="answer">
+        Answer: Photosynthesis is the process by which green plants use light energy to make glucose from carbon dioxide and water.
+      </div>
     </div>
 
     <div class="question">
-      <strong>12.</strong> What do red blood cells mainly transport?<br>
-      A) Oxygen &nbsp; B) Food only &nbsp; C) Bones &nbsp; D) Hormones only
+      <strong>12. Which gas is needed for photosynthesis?</strong>
+      <div class="answer">
+        Answer: Carbon dioxide is needed for photosynthesis.
+      </div>
     </div>
 
     <div class="question">
-      <strong>13.</strong> What do plants use as a source of energy for photosynthesis?<br>
-      A) Soil &nbsp; B) Sunlight &nbsp; C) Oxygen &nbsp; D) Protein
+      <strong>13. Which gas is released during photosynthesis?</strong>
+      <div class="answer">
+        Answer: Oxygen is released during photosynthesis.
+      </div>
     </div>
 
     <div class="question">
-      <strong>14.</strong> Which structure controls what enters and leaves a cell?<br>
-      A) Nucleus &nbsp; B) Cell membrane &nbsp; C) Chloroplast &nbsp; D) Ribosome
+      <strong>14. What is chlorophyll?</strong>
+      <div class="answer">
+        Answer: Chlorophyll is the green pigment that absorbs light energy for photosynthesis.
+      </div>
     </div>
 
     <div class="question">
-      <strong>15.</strong> Which part gives a plant cell extra support?<br>
-      A) Cell wall &nbsp; B) Nucleus &nbsp; C) Cytoplasm &nbsp; D) Mitochondria
+      <strong>15. Why do plants need light?</strong>
+      <div class="answer">
+        Answer: Plants need light energy to carry out photosynthesis.
+      </div>
     </div>
 
     <div class="question">
-      <strong>16.</strong> What is a group of similar cells working together called?<br>
-      A) Tissue &nbsp; B) Organism &nbsp; C) Organ system &nbsp; D) Species
+      <strong>16. What are the raw materials of photosynthesis?</strong>
+      <div class="answer">
+        Answer: Carbon dioxide and water are the raw materials of photosynthesis.
+      </div>
     </div>
 
     <div class="question">
-      <strong>17.</strong> What is a group of tissues working together called?<br>
-      A) Cell &nbsp; B) Organ &nbsp; C) Molecule &nbsp; D) Species
+      <strong>17. What food is produced during photosynthesis?</strong>
+      <div class="answer">
+        Answer: Glucose is produced during photosynthesis.
+      </div>
     </div>
 
     <div class="question">
-      <strong>18.</strong> Which organ helps digest food?<br>
-      A) Stomach &nbsp; B) Heart &nbsp; C) Lung &nbsp; D) Brain
+      <strong>18. What is respiration?</strong>
+      <div class="answer">
+        Answer: Respiration is the process by which cells release energy from food.
+      </div>
     </div>
 
     <div class="question">
-      <strong>19.</strong> Which organ absorbs most digested nutrients?<br>
-      A) Large intestine &nbsp; B) Small intestine &nbsp; C) Stomach &nbsp; D) Liver
+      <strong>19. What is the main function of the respiratory system?</strong>
+      <div class="answer">
+        Answer: Its main function is to obtain oxygen and remove carbon dioxide from the body.
+      </div>
     </div>
 
     <div class="question">
-      <strong>20.</strong> Which organ removes many wastes from the blood?<br>
-      A) Kidney &nbsp; B) Heart &nbsp; C) Lung &nbsp; D) Stomach
+      <strong>20. What is the trachea?</strong>
+      <div class="answer">
+        Answer: The trachea is a tube that carries air from the throat towards the bronchi.
+      </div>
     </div>
 
     <div class="question">
-      <strong>21.</strong> What is an organism?<br>
-      A) A living thing &nbsp; B) A cell part &nbsp; C) A chemical &nbsp; D) A mineral
+      <strong>21. What are bronchi?</strong>
+      <div class="answer">
+        Answer: The bronchi are the two main branches of the trachea that carry air into the lungs.
+      </div>
     </div>
 
     <div class="question">
-      <strong>22.</strong> Which is a producer?<br>
-      A) Grass &nbsp; B) Rabbit &nbsp; C) Fox &nbsp; D) Eagle
+      <strong>22. What are alveoli?</strong>
+      <div class="answer">
+        Answer: Alveoli are tiny air sacs in the lungs where gas exchange occurs.
+      </div>
     </div>
 
     <div class="question">
-      <strong>23.</strong> Which organism is a herbivore?<br>
-      A) Rabbit &nbsp; B) Lion &nbsp; C) Eagle &nbsp; D) Snake
+      <strong>23. What happens during gas exchange?</strong>
+      <div class="answer">
+        Answer: Oxygen moves from the alveoli into the blood, while carbon dioxide moves from the blood into the alveoli.
+      </div>
     </div>
 
     <div class="question">
-      <strong>24.</strong> Which organism is a carnivore?<br>
-      A) Grass &nbsp; B) Rabbit &nbsp; C) Fox &nbsp; D) Plant
+      <strong>24. What is the function of the heart?</strong>
+      <div class="answer">
+        Answer: The heart pumps blood around the body.
+      </div>
     </div>
 
     <div class="question">
-      <strong>25.</strong> What does a food chain show?<br>
-      A) Energy transfer &nbsp; B) Weather &nbsp; C) Cell size &nbsp; D) Planet movement
+      <strong>25. What is the circulatory system?</strong>
+      <div class="answer">
+        Answer: The circulatory system consists of the heart, blood and blood vessels and transports substances around the body.
+      </div>
     </div>
 
     <div class="question">
-      <strong>26.</strong> What do decomposers help break down?<br>
-      A) Dead organisms &nbsp; B) Sunlight &nbsp; C) Clouds &nbsp; D) Rocks only
+      <strong>26. What are arteries?</strong>
+      <div class="answer">
+        Answer: Arteries are blood vessels that carry blood away from the heart.
+      </div>
     </div>
 
     <div class="question">
-      <strong>27.</strong> Which organ is mainly responsible for thinking?<br>
-      A) Brain &nbsp; B) Heart &nbsp; C) Kidney &nbsp; D) Lung
+      <strong>27. What are veins?</strong>
+      <div class="answer">
+        Answer: Veins are blood vessels that carry blood towards the heart.
+      </div>
     </div>
 
     <div class="question">
-      <strong>28.</strong> Which system carries messages around the body?<br>
-      A) Nervous system &nbsp; B) Digestive system &nbsp; C) Respiratory system &nbsp; D) Skeletal system
+      <strong>28. What are capillaries?</strong>
+      <div class="answer">
+        Answer: Capillaries are tiny blood vessels where substances are exchanged between blood and tissues.
+      </div>
     </div>
 
     <div class="question">
-      <strong>29.</strong> What is respiration used for?<br>
-      A) Releasing energy from food &nbsp; B) Making bones &nbsp; C) Producing sunlight &nbsp; D) Making soil
+      <strong>29. What do red blood cells transport?</strong>
+      <div class="answer">
+        Answer: Red blood cells mainly transport oxygen around the body.
+      </div>
     </div>
 
     <div class="question">
-      <strong>30.</strong> Which nutrient is mainly needed for growth and repair?<br>
-      A) Protein &nbsp; B) Water &nbsp; C) Fibre &nbsp; D) Salt
+      <strong>30. Why is blood important?</strong>
+      <div class="answer">
+        Answer: Blood transports oxygen, nutrients, hormones and waste substances around the body.
+      </div>
     </div>
 
     <div class="question">
-      <strong>31.</strong> Which nutrient provides a major source of energy?<br>
-      A) Carbohydrates &nbsp; B) Minerals &nbsp; C) Water &nbsp; D) Vitamins
+      <strong>31. What is digestion?</strong>
+      <div class="answer">
+        Answer: Digestion is the breakdown of large food molecules into smaller soluble substances that can be absorbed.
+      </div>
     </div>
 
     <div class="question">
-      <strong>32.</strong> Which vitamin is produced in the skin with sunlight exposure?<br>
-      A) Vitamin A &nbsp; B) Vitamin B12 &nbsp; C) Vitamin C &nbsp; D) Vitamin D
+      <strong>32. Where does digestion begin?</strong>
+      <div class="answer">
+        Answer: Digestion begins in the mouth.
+      </div>
     </div>
 
     <div class="question">
-      <strong>33.</strong> Which blood vessels carry blood away from the heart?<br>
-      A) Arteries &nbsp; B) Veins &nbsp; C) Capillaries &nbsp; D) Alveoli
+      <strong>33. What is the function of the stomach?</strong>
+      <div class="answer">
+        Answer: The stomach stores and mixes food and begins the digestion of proteins.
+      </div>
     </div>
 
     <div class="question">
-      <strong>34.</strong> Which blood vessels carry blood toward the heart?<br>
-      A) Arteries &nbsp; B) Veins &nbsp; C) Bronchi &nbsp; D) Nephrons
+      <strong>34. What is the function of the small intestine?</strong>
+      <div class="answer">
+        Answer: The small intestine completes much of digestion and absorbs digested nutrients.
+      </div>
     </div>
 
     <div class="question">
-      <strong>35.</strong> Which blood vessels are very small and allow exchange with tissues?<br>
-      A) Capillaries &nbsp; B) Arteries &nbsp; C) Veins &nbsp; D) Bronchi
+      <strong>35. What is the function of the large intestine?</strong>
+      <div class="answer">
+        Answer: The large intestine absorbs water from undigested food and helps form faeces.
+      </div>
     </div>
 
     <div class="question">
-      <strong>36.</strong> What is reproduction?<br>
-      A) Producing offspring &nbsp; B) Digesting food &nbsp; C) Moving blood &nbsp; D) Breathing
+      <strong>36. What is a nutrient?</strong>
+      <div class="answer">
+        Answer: A nutrient is a substance needed by the body for energy, growth, repair or normal functioning.
+      </div>
     </div>
 
     <div class="question">
-      <strong>37.</strong> What is adaptation?<br>
-      A) A feature that helps an organism survive &nbsp; B) A type of cell &nbsp; C) A digestive enzyme &nbsp; D) A blood vessel
+      <strong>37. Why does the body need proteins?</strong>
+      <div class="answer">
+        Answer: Proteins are needed mainly for growth and repair of body tissues.
+      </div>
     </div>
 
     <div class="question">
-      <strong>38.</strong> Which animal is adapted to living in water?<br>
-      A) Fish &nbsp; B) Camel &nbsp; C) Eagle &nbsp; D) Tiger
+      <strong>38. What is a food chain?</strong>
+      <div class="answer">
+        Answer: A food chain shows how energy is transferred from one organism to another through feeding.
+      </div>
     </div>
 
     <div class="question">
-      <strong>39.</strong> What is a habitat?<br>
-      A) The place where an organism lives &nbsp; B) A cell organelle &nbsp; C) A type of tissue &nbsp; D) A food nutrient
+      <strong>39. What is a producer?</strong>
+      <div class="answer">
+        Answer: A producer is an organism that makes its own food, usually by photosynthesis.
+      </div>
     </div>
 
     <div class="question">
-      <strong>40.</strong> What is an ecosystem?<br>
-      A) Living organisms and their environment interacting &nbsp; B) One cell &nbsp; C) One organ &nbsp; D) One species only
+      <strong>40. What is a consumer?</strong>
+      <div class="answer">
+        Answer: A consumer is an organism that obtains food by eating other organisms.
+      </div>
     </div>
 
     <div class="question">
-      <strong>41.</strong> Which factor is non-living?<br>
-      A) Sunlight &nbsp; B) Rabbit &nbsp; C) Tree &nbsp; D) Bacteria
+      <strong>41. What is a herbivore?</strong>
+      <div class="answer">
+        Answer: A herbivore is an animal that mainly eats plants.
+      </div>
     </div>
 
     <div class="question">
-      <strong>42.</strong> Which factor is living?<br>
-      A) Temperature &nbsp; B) Water &nbsp; C) Plant &nbsp; D) Light
+      <strong>42. What is a carnivore?</strong>
+      <div class="answer">
+        Answer: A carnivore is an animal that mainly eats other animals.
+      </div>
     </div>
 
     <div class="question">
-      <strong>43.</strong> Why are chloroplasts important?<br>
-      A) They carry out photosynthesis &nbsp; B) They pump blood &nbsp; C) They digest food &nbsp; D) They carry oxygen
+      <strong>43. What is an omnivore?</strong>
+      <div class="answer">
+        Answer: An omnivore eats both plant material and animal material.
+      </div>
     </div>
 
     <div class="question">
-      <strong>44.</strong> What substance is produced as food during photosynthesis?<br>
-      A) Glucose &nbsp; B) Oxygen only &nbsp; C) Carbon dioxide &nbsp; D) Nitrogen
+      <strong>44. What are decomposers?</strong>
+      <div class="answer">
+        Answer: Decomposers break down dead organisms and return nutrients to the environment.
+      </div>
     </div>
 
     <div class="question">
-      <strong>45.</strong> What happens to a plant's rate of photosynthesis if it receives suitable light, water and carbon dioxide?<br>
-      A) It can photosynthesise &nbsp; B) It stops immediately &nbsp; C) It cannot use chlorophyll &nbsp; D) It becomes an animal
+      <strong>45. What is a habitat?</strong>
+      <div class="answer">
+        Answer: A habitat is the place where an organism normally lives.
+      </div>
     </div>
 
     <div class="question">
-      <strong>46.</strong> Which organ helps exchange oxygen and carbon dioxide?<br>
-      A) Lungs &nbsp; B) Stomach &nbsp; C) Kidney &nbsp; D) Brain
+      <strong>46. What is an ecosystem?</strong>
+      <div class="answer">
+        Answer: An ecosystem consists of living organisms interacting with one another and with their physical environment.
+      </div>
     </div>
 
     <div class="question">
-      <strong>47.</strong> Which organ is part of the digestive system?<br>
-      A) Stomach &nbsp; B) Heart &nbsp; C) Lung &nbsp; D) Brain
+      <strong>47. What is an adaptation?</strong>
+      <div class="answer">
+        Answer: An adaptation is a feature that helps an organism survive and reproduce in its environment.
+      </div>
     </div>
 
     <div class="question">
-      <strong>48.</strong> Which system supports and protects the body?<br>
-      A) Skeletal system &nbsp; B) Digestive system &nbsp; C) Respiratory system &nbsp; D) Circulatory system
+      <strong>48. What is reproduction?</strong>
+      <div class="answer">
+        Answer: Reproduction is the biological process by which organisms produce offspring.
+      </div>
     </div>
 
     <div class="question">
-      <strong>49.</strong> Which structure connects muscles to bones?<br>
-      A) Tendon &nbsp; B) Alveolus &nbsp; C) Neuron &nbsp; D) Vein
+      <strong>49. Why is reproduction important?</strong>
+      <div class="answer">
+        Answer: Reproduction allows organisms to produce new individuals and continue their species.
+      </div>
     </div>
 
     <div class="question">
-      <strong>50.</strong> Which structure connects bones to other bones?<br>
-      A) Ligament &nbsp; B) Tendon &nbsp; C) Bronchus &nbsp; D) Artery
+      <strong>50. What is an organ?</strong>
+      <div class="answer">
+        Answer: An organ is a structure made of different tissues working together to perform a particular function.
+      </div>
     </div>
 
     <div class="question">
-      <strong>51.</strong> Which cell structure contains genetic material and controls cell activities?<br>
-      A) Nucleus &nbsp; B) Vacuole &nbsp; C) Cell wall &nbsp; D) Cytoplasm
+      <strong>51. What is an organ system?</strong>
+      <div class="answer">
+        Answer: An organ system is a group of organs working together to perform one or more important functions.
+      </div>
     </div>
 
     <div class="question">
-      <strong>52.</strong> Why do plants need water for photosynthesis?<br>
-      A) Water is a raw material used in the process &nbsp; B) Water provides sunlight &nbsp; C) Water is glucose &nbsp; D) Water is chlorophyll
+      <strong>52. What is the function of the nervous system?</strong>
+      <div class="answer">
+        Answer: The nervous system receives information and coordinates responses in the body.
+      </div>
     </div>
 
     <div class="question">
-      <strong>53.</strong> Which sequence correctly represents a simple food chain?<br>
-      A) Plant → Rabbit → Fox &nbsp; B) Fox → Rabbit → Plant &nbsp; C) Rabbit → Plant → Fox &nbsp; D) Fox → Plant → Rabbit
+      <strong>53. What is the skeletal system?</strong>
+      <div class="answer">
+        Answer: The skeletal system is the framework of bones that supports and protects the body.
+      </div>
     </div>
 
     <div class="question">
-      <strong>54.</strong> Which process allows organisms to produce more of their own kind?<br>
-      A) Reproduction &nbsp; B) Digestion &nbsp; C) Respiration &nbsp; D) Circulation
+      <strong>54. What is the difference between living and non-living things?</strong>
+      <div class="answer">
+        Answer: Living things perform life processes such as nutrition, respiration, growth and reproduction, while non-living things do not.
+      </div>
     </div>
 
     <div class="question">
-      <strong>55.</strong> Which statement best describes biology?<br>
-      A) The study of living things &nbsp; B) The study of numbers only &nbsp; C) The study of planets only &nbsp; D) The study of machines only
+      <strong>55. Why is biology important?</strong>
+      <div class="answer">
+        Answer: Biology helps us understand living organisms, the human body, health, plants, animals and the environment.
+      </div>
     </div>
 
   </div>
 
 
-  <!-- ANSWERS -->
+  <!-- NAVIGATION -->
 
-  <div class="answers">
+  <a class="back" href="subjects.html">
+    ← Back to Subjects
+  </a>
 
-    <h2>✅ Answer Key</h2>
-
-    <p>
-      1-B &nbsp; 2-A &nbsp; 3-C &nbsp; 4-C &nbsp; 5-A<br>
-      6-C &nbsp; 7-A &nbsp; 8-B &nbsp; 9-B &nbsp; 10-C<br>
-      11-A &nbsp; 12-A &nbsp; 13-B &nbsp; 14-B &nbsp; 15-A<br>
-      16-A &nbsp; 17-B &nbsp; 18-A &nbsp; 19-B &nbsp; 20-A<br>
-      21-A &nbsp; 22-A &nbsp; 23-A &nbsp; 24-C &nbsp; 25-A<br>
-      26-A &nbsp; 27-A &nbsp; 28-A &nbsp; 29-A &nbsp; 30-A<br>
-      31-A &nbsp; 32-D &nbsp; 33-A &nbsp; 34-B &nbsp; 35-A<br>
-      36-A &nbsp; 37-A &nbsp; 38-A &nbsp; 39-A &nbsp; 40-A<br>
-      41-A &nbsp; 42-C &nbsp; 43-A &nbsp; 44-A &nbsp; 45-A<br>
-      46-A &nbsp; 47-A &nbsp; 48-A &nbsp; 49-A &nbsp; 50-A<br>
-      51-A &nbsp; 52-A &nbsp; 53-A &nbsp; 54-A &nbsp; 55-A
-    </p>
-
-  </div>
-
-
-  <a class="back" href="subjects.html">← Back to Subjects</a>
-  <a class="back" href="index.html">🏠 Home</a>
+  <a class="back" href="index.html">
+    🏠 Home
+  </a>
 
 </div>
+
+<footer>
+  © 2026 The Student Spot — Biology
+</footer>
 
 </body>
 </html>
