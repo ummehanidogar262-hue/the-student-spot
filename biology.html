@@ -63,7 +63,62 @@ biology.html
     .answers {
       background: #eaf8ed;
     }
+.diagram-box {
+  background: white;
+  padding: 28px;
+  margin: 25px 0;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px #ddd;
+}
 
+.cell-diagram {
+  width: 300px;
+  height: 220px;
+  margin: 25px auto;
+  background: #dff4e5;
+  border: 6px solid #65a878;
+  border-radius: 50%;
+  position: relative;
+}
+
+.cell-nucleus {
+  width: 75px;
+  height: 75px;
+  background: #a8c9f0;
+  border: 3px solid #5279aa;
+  border-radius: 50%;
+  position: absolute;
+  left: 105px;
+  top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.cell-part {
+  position: absolute;
+  background: white;
+  padding: 5px 9px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.p1 {
+  left: 20px;
+  top: 35px;
+}
+
+.p2 {
+  right: 15px;
+  top: 55px;
+}
+
+.p3 {
+  left: 75px;
+  bottom: 15px;
+}
     .back {
       display: inline-block;
       margin: 20px 10px;
@@ -98,7 +153,30 @@ biology.html
       The cell is the basic structural and functional unit of life.
       Different cells have different structures and functions.
     </div>
+<div class="diagram-box">
 
+  <h2>🔬 Diagram 1 — Animal Cell</h2>
+
+  <div class="cell-diagram">
+
+    <div class="cell-nucleus">
+      Nucleus
+    </div>
+
+    <div class="cell-part p1">Cytoplasm</div>
+    <div class="cell-part p2">Mitochondria</div>
+    <div class="cell-part p3">Cell Membrane</div>
+
+  </div>
+
+  <p>
+    <strong>Nucleus:</strong> controls the activities of the cell.<br>
+    <strong>Cytoplasm:</strong> where many chemical reactions occur.<br>
+    <strong>Mitochondria:</strong> release energy from food.<br>
+    <strong>Cell membrane:</strong> controls what enters and leaves the cell.
+  </p>
+
+</div>
     <h3>Key topics</h3>
 
     <ul>
