@@ -1,25 +1,492 @@
 notes.html
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Study Notes | The Student Spot</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Notes | The Student Spot</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #d9b8ff;
+      text-align: center;
+      padding: 42px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #4f2878;
+      font-size: 38px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      font-size: 17px;
+    }
+
+    .layout {
+      max-width: 1150px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 25px;
+    }
+
+    /* SUBJECT SIDEBAR */
+
+    .sidebar {
+      background: white;
+      padding: 22px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px #ddd;
+      height: fit-content;
+    }
+
+    .sidebar h2 {
+      color: #7b4bb7;
+      font-size: 21px;
+      margin-top: 0;
+    }
+
+    .subject-btn {
+      width: 100%;
+      border: none;
+      background: #faf5ff;
+      color: #633d8c;
+      padding: 12px;
+      margin: 6px 0;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 15px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .subject-btn:hover {
+      background: #eadcff;
+    }
+
+    .subject-btn.active {
+      background: #d9b8ff;
+      color: #4f2878;
+    }
+
+    /* NOTES AREA */
+
+    .notes-area {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px #ddd;
+    }
+
+    .notes-area h2 {
+      color: #7b4bb7;
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    .description {
+      background: #f7efff;
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 420px;
+      resize: vertical;
+      border: 2px solid #d9b8ff;
+      border-radius: 14px;
+      padding: 18px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      outline: none;
+    }
+
+    textarea:focus {
+      border-color: #7b4bb7;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .action-btn {
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .save-btn {
+      background: #7b4bb7;
+      color: white;
+    }
+
+    .save-btn:hover {
+      background: #633d8c;
+    }
+
+    .clear-btn {
+      background: #f2d6dc;
+      color: #7a2938;
+    }
+
+    .clear-btn:hover {
+      background: #e9bcc5;
+    }
+
+    .subject-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #7b4bb7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .subject-link:hover {
+      text-decoration: underline;
+    }
+
+    .status {
+      margin-top: 12px;
+      font-weight: bold;
+      color: #4d8a58;
+      min-height: 24px;
+    }
+
+    .tips {
+      background: #fff8e8;
+      border-left: 5px solid #e2bd63;
+      padding: 16px;
+      border-radius: 10px;
+      margin-top: 25px;
+    }
+
+    .bottom {
+      text-align: center;
+      margin: 35px 0 45px;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 22px;
+      background: #7b4bb7;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .back:hover {
+      background: #633d8c;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 750px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+
+      .sidebar h2 {
+        text-align: center;
+      }
+
+      .subject-btn {
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 31px;
+      }
+
+      .notes-area {
+        padding: 22px;
+      }
+
+      textarea {
+        min-height: 350px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <h1>📚 The Student Spot</h1>
-    <h2>Study Notes</h2>
 
-    <p>Welcome to the Study Notes section!</p>
+<header>
+  <h1>📝 My Study Notes</h1>
+  <p>Write, save and organize your notes with The Student Spot.</p>
+</header>
 
-    <h3>Choose a Subject</h3>
 
-    <p>📘 English</p>
-    <p>➗ Mathematics</p>
-    <p>🔬 Science</p>
-    <p>🌍 History & Geography</p>
+<div class="layout">
 
-    <br>
+  <!-- SUBJECT SIDEBAR -->
 
-    <a href="index.html">🏠 Back to Home</a>
+  <aside class="sidebar">
+
+    <h2>📚 Subjects</h2>
+
+    <button class="subject-btn active" onclick="selectSubject('English', 'math?')">
+      🇬🇧 English
+    </button>
+
+    <button class="subject-btn" onclick="selectSubject('Mathematics', 'math.html')">
+      ➗ Mathematics
+    </button>
+
+    <button class="subject-btn" onclick="selectSubject('Biology', 'biology.html')">
+      🧬 Biology
+    </button>
+
+    <button class="subject-btn" onclick="selectSubject('Chemistry', 'chemistry.html')">
+      🧪 Chemistry
+    </button>
+
+    <button class="subject-btn" onclick="selectSubject('Earth Science', 'earth-science.html')">
+      🌍 Earth Science
+    </button>
+
+    <button class="subject-btn" onclick="selectSubject('History', 'history.html')">
+      🏺 History
+    </button>
+
+    <button class="subject-btn" onclick="selectSubject('Geography', 'geography.html')">
+      🗺️ Geography
+    </button>
+
+  </aside>
+
+
+  <!-- NOTES EDITOR -->
+
+  <main class="notes-area">
+
+    <h2 id="subjectTitle">🇬🇧 English Notes</h2>
+
+    <div class="description" id="description">
+      Write vocabulary, grammar rules, writing ideas, examples or
+      anything else you want to remember.
+    </div>
+
+    <textarea
+      id="notesBox"
+      placeholder="Start writing your notes here..."
+      spellcheck="true"></textarea>
+
+    <div class="buttons">
+
+      <button class="action-btn save-btn" onclick="saveNotes()">
+        💾 Save Notes
+      </button>
+
+      <button class="action-btn clear-btn" onclick="clearNotes()">
+        🗑️ Clear Notes
+      </button>
+
+    </div>
+
+    <div class="status" id="status"></div>
+
+    <a
+      class="subject-link"
+      id="subjectLink"
+      href="index.html">
+      📖 Open English Page →
+    </a>
+
+    <div class="tips">
+      <strong>💡 Notes Tip:</strong>
+      Write short explanations in your own words. You can also
+      add examples, important definitions, formulas and questions
+      you want to review later.
+    </div>
+
+  </main>
+
+</div>
+
+
+<!-- BOTTOM BUTTONS -->
+
+<div class="bottom">
+
+  <a class="back" href="index.html">🏠 Back to Home</a>
+
+  <a class="back" href="subjects.html">📚 Go to Subjects</a>
+
+</div>
+
+
+<script>
+
+  let currentSubject = "English";
+
+  const subjectDescriptions = {
+
+    "English":
+      "Write vocabulary, grammar rules, writing ideas, examples or anything else you want to remember.",
+
+    "Mathematics":
+      "Write formulas, methods, worked examples, mistakes and important mathematical rules.",
+
+    "Biology":
+      "Write definitions, processes, diagrams to remember and important biological facts.",
+
+    "Chemistry":
+      "Write chemical definitions, formulas, reactions, properties and important concepts.",
+
+    "Earth Science":
+      "Write notes about Earth's structure, rocks, landforms, natural processes and the environment.",
+
+    "History":
+      "Write important dates, people, events, causes, consequences and historical facts.",
+
+    "Geography":
+      "Write geographical definitions, places, processes, maps, climate facts and key information."
+  };
+
+
+  const subjectLinks = {
+
+    "English": "index.html",
+
+    "Mathematics": "math.html",
+
+    "Biology": "biology.html",
+
+    "Chemistry": "chemistry.html",
+
+    "Earth Science": "earth-science.html",
+
+    "History": "history.html",
+
+    "Geography": "geography.html"
+  };
+
+
+  function getStorageKey(subject) {
+    return "studentSpotNotes_" + subject;
+  }
+
+
+  function selectSubject(subject) {
+
+    currentSubject = subject;
+
+    document.getElementById("subjectTitle").textContent =
+      "📝 " + subject + " Notes";
+
+    document.getElementById("description").textContent =
+      subjectDescriptions[subject];
+
+    document.getElementById("subjectLink").href =
+      subjectLinks[subject];
+
+    document.getElementById("subjectLink").textContent =
+      "📖 Open " + subject + " Page →";
+
+    document.getElementById("notesBox").value =
+      localStorage.getItem(getStorageKey(subject)) || "";
+
+    document.getElementById("status").textContent = "";
+
+    const buttons = document.querySelectorAll(".subject-btn");
+
+    buttons.forEach(function(button) {
+      button.classList.remove("active");
+    });
+
+    buttons.forEach(function(button) {
+
+      if (button.textContent.includes(subject)) {
+        button.classList.add("active");
+      }
+
+    });
+  }
+
+
+  function saveNotes() {
+
+    const notes = document.getElementById("notesBox").value;
+
+    localStorage.setItem(
+      getStorageKey(currentSubject),
+      notes
+    );
+
+    document.getElementById("status").textContent =
+      "✓ Your " + currentSubject + " notes have been saved on this browser.";
+
+  }
+
+
+  function clearNotes() {
+
+    const confirmed = confirm(
+      "Are you sure you want to clear your " +
+      currentSubject +
+      " notes?"
+    );
+
+    if (!confirmed) {
+      return;
+    }
+
+    localStorage.removeItem(
+      getStorageKey(currentSubject)
+    );
+
+    document.getElementById("notesBox").value = "";
+
+    document.getElementById("status").textContent =
+      "Your " + currentSubject + " notes have been cleared.";
+
+  }
+
+
+  window.onload = function() {
+
+    document.getElementById("notesBox").value =
+      localStorage.getItem(
+        getStorageKey(currentSubject)
+      ) || "";
+
+  };
+
+</script>
+
 </body>
 </html>
+```
+
