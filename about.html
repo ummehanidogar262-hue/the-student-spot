@@ -1,9 +1,10 @@
-about.html
+about
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>About | The Student Spot</title>
 
   <style>
@@ -12,82 +13,145 @@ about.html
       font-family: Arial, sans-serif;
       background: #fff7fb;
       color: #333;
-      text-align: center;
+      line-height: 1.7;
     }
 
     header {
       background: #d9b8ff;
+      text-align: center;
       padding: 45px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 38px;
+      font-size: 40px;
+      color: #4f2878;
+    }
+
+    header p {
+      font-size: 18px;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
-      padding: 45px 20px;
+      padding: 35px 20px;
     }
 
-    .card {
+    .section {
       background: white;
       padding: 30px;
+      margin: 25px 0;
       border-radius: 18px;
       box-shadow: 0 4px 12px #ddd;
-      margin-bottom: 25px;
     }
 
-    .card h2 {
+    .section h2 {
       color: #7b4bb7;
+      margin-top: 0;
     }
 
-    a {
+    .section p {
+      font-size: 17px;
+    }
+
+    .highlight {
+      background: #f3e8ff;
+      padding: 18px;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 15px 10px;
       color: #7b4bb7;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    .back:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>💗 About The Student Spot</h1>
-    <p>A friendly place for students to learn and grow.</p>
-  </header>
+<header>
+  <h1>💜 About The Student Spot</h1>
+  <p>A simple learning space made for students.</p>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="card">
-      <h2>📚 What is The Student Spot?</h2>
+  <!-- WHAT IS THE STUDENT SPOT -->
 
-      <p>
-        The Student Spot is a student-focused website created
-        to make studying simpler, more organized, and more enjoyable.
-      </p>
+  <div class="section">
+    <h2>📚 What is The Student Spot?</h2>
 
-      <p>
-        Here you can find study notes, useful resources,
-        study tips, and different subjects to explore.
-      </p>
+    <p>
+      The Student Spot is a student-friendly educational website
+      designed to make learning easier, clearer and more enjoyable.
+    </p>
+
+    <p>
+      It brings useful study material together in one place so students
+      can learn different subjects without having to search through
+      many different pages.
+    </p>
+
+    <div class="highlight">
+      <strong>Our idea:</strong><br>
+      Learn clearly. Practice regularly. Understand more.
     </div>
 
-    <div class="card">
-      <h2>🌸 Our Goal</h2>
-
-      <p>
-        Our goal is to create a friendly learning space where
-        students can discover helpful study ideas and resources.
-      </p>
-    </div>
-
-    <br>
-
-    <a href="index.html">🏠 Back to Home</a>
-
+    <p>
+      The website includes subjects, notes, explanations, practice
+      questions, diagrams, study help and useful study tips.
+    </p>
   </div>
+
+
+  <!-- OUR GOAL -->
+
+  <div class="section">
+    <h2>🎯 Our Goal</h2>
+
+    <p>
+      Our goal is to create a simple and useful learning environment
+      where students can understand their school subjects more easily.
+    </p>
+
+    <p>
+      We want learning to feel less confusing and more organized.
+      Instead of overwhelming students with complicated information,
+      The Student Spot focuses on clear explanations and useful practice.
+    </p>
+
+    <div class="highlight">
+      <strong>We aim to help students:</strong>
+
+      <ul>
+        <li>Understand difficult topics more clearly.</li>
+        <li>Review important concepts.</li>
+        <li>Practice what they have learned.</li>
+        <li>Use diagrams and visual explanations.</li>
+        <li>Build better study habits.</li>
+        <li>Become more confident learners.</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- BACK BUTTONS -->
+
+  <div style="text-align:center;">
+    <a class="back" href="index.html">🏠 Back to Home</a>
+    <a class="back" href="resources.html">📚 View Resources</a>
+  </div>
+
+</div>
 
 </body>
 </html>
