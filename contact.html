@@ -1,92 +1,349 @@
 contact.html
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Contact | The Student Spot</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #fff7fb;
       color: #333;
-      text-align: center;
+      line-height: 1.7;
     }
 
     header {
       background: #d9b8ff;
+      text-align: center;
       padding: 45px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 38px;
+      color: #4f2878;
+      font-size: 40px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 17px;
     }
 
     .container {
-      max-width: 700px;
+      max-width: 900px;
       margin: auto;
-      padding: 45px 20px;
+      padding: 35px 20px;
     }
 
     .card {
       background: white;
       padding: 30px;
+      margin: 25px 0;
       border-radius: 18px;
       box-shadow: 0 4px 12px #ddd;
     }
 
-    .card h2 {
+    h2 {
       color: #7b4bb7;
+      margin-top: 0;
     }
 
-    .contact-button {
+    .welcome {
+      background: #f7efff;
+      border-left: 5px solid #7b4bb7;
+    }
+
+    .email-box {
+      background: #faf5ff;
+      text-align: center;
+      padding: 25px;
+      border-radius: 14px;
+    }
+
+    .email-link {
       display: inline-block;
-      margin-top: 15px;
-      padding: 12px 22px;
+      margin-top: 12px;
+      padding: 13px 22px;
       background: #7b4bb7;
       color: white;
       text-decoration: none;
-      border-radius: 25px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .email-link:hover {
+      background: #633d8c;
+    }
+
+    label {
+      display: block;
+      margin-top: 16px;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #5d397c;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      border: 2px solid #dfc9f4;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #7b4bb7;
+    }
+
+    textarea {
+      min-height: 180px;
+      resize: vertical;
+    }
+
+    .send-btn {
+      margin-top: 20px;
+      border: none;
+      padding: 13px 25px;
+      background: #7b4bb7;
+      color: white;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .send-btn:hover {
+      background: #633d8c;
+    }
+
+    .note {
+      background: #fff8e8;
+      border-left: 5px solid #e2bd63;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .bottom {
+      text-align: center;
+      margin: 35px 0 50px;
     }
 
     .back {
       display: inline-block;
-      margin-top: 25px;
-      color: #7b4bb7;
+      margin: 8px;
+      padding: 12px 22px;
+      background: #7b4bb7;
+      color: white;
       text-decoration: none;
+      border-radius: 10px;
       font-weight: bold;
+    }
+
+    .back:hover {
+      background: #633d8c;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .card {
+        padding: 22px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>💌 Contact The Student Spot</h1>
-    <p>Have a question? We'd love to hear from you!</p>
-  </header>
+<header>
+  <h1>💌 Contact The Student Spot</h1>
+  <p>Have a question, suggestion or something you'd like to share?</p>
+</header>
 
-  <div class="container">
 
-    <div class="card">
-      <h2>📚 Need Study Help?</h2>
+<div class="container">
 
-      <p>
-        If you have a question about our study resources,
-        notes, or website, you can get in touch.
-      </p>
+  <!-- FRIENDLY MESSAGE -->
 
-      <p>
-        More contact options can be added here later.
-      </p>
-    </div>
+  <div class="card welcome">
 
-    <a class="back" href="index.html">🏠 Back to Home</a>
+    <h2>💜 We'd Love to Hear From You!</h2>
+
+    <p>
+      The Student Spot is made to help students learn, practise
+      and explore their subjects in a simple and friendly way.
+    </p>
+
+    <p>
+      If you have a question, find something that needs improving,
+      have a suggestion for the website, or simply want to share
+      your feedback, you're welcome to contact us.
+    </p>
+
+    <p>
+      Your ideas can help make The Student Spot better for students.
+      🌟
+    </p>
 
   </div>
 
+
+  <!-- EMAIL -->
+
+  <div class="card">
+
+    <h2>📧 Contact by Email</h2>
+
+    <div class="email-box">
+
+      <p>
+        You can contact The Student Spot directly by email:
+      </p>
+
+      <p>
+        <strong>ummehanidogar262@gmail.com</strong>
+      </p>
+
+      <a
+        class="email-link"
+        href="mailto:ummehanidogar262@gmail.com">
+        ✉️ Send an Email
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- MESSAGE FORM -->
+
+  <div class="card">
+
+    <h2>📝 Send a Message</h2>
+
+    <p>
+      Fill in the form below. When you click
+      <strong>Send Message</strong>, your email app will open
+      with the message ready to send.
+    </p>
+
+    <form onsubmit="sendMessage(event)">
+
+      <label for="name">Your Name</label>
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        required>
+
+
+      <label for="email">Your Email</label>
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email address"
+        required>
+
+
+      <label for="message">Your Message</label>
+
+      <textarea
+        id="message"
+        placeholder="Write your message here..."
+        required></textarea>
+
+
+      <button
+        type="submit"
+        class="send-btn">
+        ✉️ Send Message
+      </button>
+
+    </form>
+
+
+    <div class="note">
+      <strong>💡 Note:</strong>
+      The form opens your email application. You will need
+      to press the final Send button in your email app.
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<div class="bottom">
+
+  <a class="back" href="index.html">
+    🏠 Back to Home
+  </a>
+
+  <a class="back" href="subjects.html">
+    📚 Back to Subjects
+  </a>
+
+</div>
+
+
+<script>
+
+  function sendMessage(event) {
+
+    event.preventDefault();
+
+    const name =
+      document.getElementById("name").value;
+
+    const email =
+      document.getElementById("email").value;
+
+    const message =
+      document.getElementById("message").value;
+
+
+    const subject =
+      "Message from The Student Spot website";
+
+
+    const body =
+      "Name: " + name +
+      "\nEmail: " + email +
+      "\n\nMessage:\n" + message;
+
+
+    const mailto =
+      "mailto:ummehanidogar262@gmail.com" +
+      "?subject=" + encodeURIComponent(subject) +
+      "&body=" + encodeURIComponent(body);
+
+
+    window.location.href = mailto;
+
+  }
+
+</script>
+
 </body>
 </html>
+```
