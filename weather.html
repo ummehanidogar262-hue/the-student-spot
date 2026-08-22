@@ -1,1 +1,382 @@
 weather
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weather & Climate | The Student Spot</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f9ff;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #b9e3f5;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      color: #245b78;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .lesson,
+    .diagram-box,
+    .questions {
+      background: white;
+      padding: 28px;
+      margin: 25px 0;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px #d7e2e8;
+    }
+
+    h2 {
+      color: #28769b;
+    }
+
+    h3 {
+      color: #3b7f9f;
+    }
+
+    .example {
+      background: #eaf7fc;
+      padding: 18px;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    .topic {
+      background: #f5fbfe;
+      border-left: 5px solid #69aecb;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    .diagram {
+      display: block;
+      width: 100%;
+      max-width: 760px;
+      height: auto;
+      margin: 20px auto;
+      border: 1px solid #d5e3e9;
+      background: #fff;
+      border-radius: 12px;
+    }
+
+    .question {
+      background: #f7fcff;
+      padding: 16px;
+      margin: 12px 0;
+      border-radius: 10px;
+      border-left: 4px solid #67a8c3;
+    }
+
+    .answer {
+      margin-top: 7px;
+      color: #276d88;
+      font-weight: bold;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 20px 10px;
+      color: #28769b;
+      text-decoration: none;
+      font-weight: bold;
+      background: white;
+      padding: 10px 16px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px #d7e2e8;
+    }
+
+    .back:hover {
+      background: #eaf7fc;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 35px;
+      padding: 25px;
+      color: #55717e;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .lesson,
+      .diagram-box,
+      .questions {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌦️ Weather & Climate</h1>
+  <p>Explore temperature, wind, humidity, rainfall, clouds, climate zones and weather events.</p>
+</header>
+
+<div class="container">
+
+  <!-- INTRODUCTION -->
+
+  <div class="lesson">
+
+    <h2>📚 Weather & Climate Guide</h2>
+
+    <p>
+      <strong>Weather</strong> describes the condition of the atmosphere
+      at a particular place and time.
+    </p>
+
+    <p>
+      <strong>Climate</strong> describes the usual pattern of weather
+      in a place over a long period of time.
+    </p>
+
+    <div class="example">
+      <strong>Remember:</strong><br><br>
+      Weather can change from hour to hour or day to day,
+      while climate describes long-term patterns.
+    </div>
+
+    <div class="topic">
+      <h3>🌡️ Temperature</h3>
+      <p>
+        Temperature tells us how hot or cold the air is.
+        It is commonly measured with a thermometer in degrees Celsius (°C).
+      </p>
+    </div>
+
+    <div class="topic">
+      <h3>💨 Wind</h3>
+      <p>
+        Wind is moving air. Wind generally moves from areas of higher
+        air pressure toward areas of lower air pressure.
+      </p>
+    </div>
+
+    <div class="topic">
+      <h3>💧 Humidity</h3>
+      <p>
+        Humidity is the amount of water vapour present in the air.
+        Relative humidity is usually expressed as a percentage.
+      </p>
+    </div>
+
+    <div class="topic">
+      <h3>🌧️ Rainfall & Precipitation</h3>
+      <p>
+        Precipitation is water that falls from clouds to Earth's surface.
+        It can include rain, snow, sleet or hail.
+      </p>
+    </div>
+
+    <div class="topic">
+      <h3>☁️ Clouds</h3>
+      <p>
+        Clouds form when moist air cools and water vapour condenses
+        into tiny water droplets or ice crystals.
+      </p>
+    </div>
+
+    <div class="topic">
+      <h3>🌍 Climate Zones</h3>
+      <p>
+        Earth's major climate zones include tropical, temperate and polar
+        regions. Climate varies with factors such as latitude, altitude
+        and distance from the sea.
+      </p>
+    </div>
+
+    <div class="topic">
+      <h3>🌪️ Weather Events</h3>
+      <p>
+        Weather events include thunderstorms, hurricanes or tropical
+        cyclones, tornadoes, floods, droughts and heatwaves.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- DIAGRAM 1 -->
+
+  <div class="diagram-box">
+
+    <h2>📊 Diagram 1 — Weather Elements</h2>
+
+    <svg class="diagram" viewBox="0 0 800 500">
+
+      <rect x="40" y="40" width="720" height="420"
+            rx="25" fill="#f7fcff"
+            stroke="#47788b" stroke-width="3"/>
+
+      <circle cx="400" cy="250" r="85"
+              fill="#dff2fa"
+              stroke="#47788b"
+              stroke-width="4"/>
+
+      <text x="345" y="245" font-size="25" font-weight="bold">
+        WEATHER
+      </text>
+
+      <text x="355" y="278" font-size="18">
+        Elements
+      </text>
+
+      <!-- Temperature -->
+      <rect x="80" y="90" width="190" height="70"
+            rx="15" fill="#fff0d8"
+            stroke="#555" stroke-width="2"/>
+      <text x="105" y="125" font-size="19">🌡 Temperature</text>
+      <text x="105" y="148" font-size="14">Hot or cold</text>
+
+      <!-- Wind -->
+      <rect x="530" y="90" width="190" height="70"
+            rx="15" fill="#e5f4fb"
+            stroke="#555" stroke-width="2"/>
+      <text x="575" y="125" font-size="19">💨 Wind</text>
+      <text x="575" y="148" font-size="14">Moving air</text>
+
+      <!-- Humidity -->
+      <rect x="80" y="330" width="190" height="70"
+            rx="15" fill="#e5f4fb"
+            stroke="#555" stroke-width="2"/>
+      <text x="105" y="365" font-size="19">💧 Humidity</text>
+      <text x="105" y="388" font-size="14">Water vapour</text>
+
+      <!-- Rain -->
+      <rect x="530" y="330" width="190" height="70"
+            rx="15" fill="#e9f3ff"
+            stroke="#555" stroke-width="2"/>
+      <text x="565" y="365" font-size="19">🌧 Rainfall</text>
+      <text x="565" y="388" font-size="14">Precipitation</text>
+
+      <line x1="270" y1="125" x2="330" y2="205"
+            stroke="#47788b" stroke-width="3"/>
+
+      <line x1="530" y1="125" x2="470" y2="205"
+            stroke="#47788b" stroke-width="3"/>
+
+      <line x1="270" y1="365" x2="330" y2="295"
+            stroke="#47788b" stroke-width="3"/>
+
+      <line x1="530" y1="365" x2="470" y2="295"
+            stroke="#47788b" stroke-width="3"/>
+
+    </svg>
+
+    <p>
+      Weather is described using several measurable elements,
+      including temperature, wind, humidity and precipitation.
+    </p>
+
+  </div>
+
+
+  <!-- DIAGRAM 2 -->
+
+  <div class="diagram-box">
+
+    <h2>🌡️ Diagram 2 — Temperature Measurement</h2>
+
+    <svg class="diagram" viewBox="0 0 700 450">
+
+      <!-- thermometer -->
+      <rect x="315" y="70" width="55" height="260"
+            rx="25" fill="#f7f7f7"
+            stroke="#333" stroke-width="3"/>
+
+      <circle cx="342" cy="345" r="48"
+              fill="#e87575"
+              stroke="#333" stroke-width="3"/>
+
+      <rect x="330" y="190" width="24" height="155"
+            fill="#e87575"/>
+
+      <!-- scale -->
+      <line x1="400" y1="90" x2="400" y2="340"
+            stroke="#333" stroke-width="3"/>
+
+      <line x1="390" y1="100" x2="420" y2="100"
+            stroke="#333" stroke-width="3"/>
+      <text x="435" y="107" font-size="18">40°C</text>
+
+      <line x1="390" y1="160" x2="420" y2="160"
+            stroke="#333" stroke-width="3"/>
+      <text x="435" y="167" font-size="18">30°C</text>
+
+      <line x1="390" y1="220" x2="420" y2="220"
+            stroke="#333" stroke-width="3"/>
+      <text x="435" y="227" font-size="18">20°C</text>
+
+      <line x1="390" y1="280" x2="420" y2="280"
+            stroke="#333" stroke-width="3"/>
+      <text x="435" y="287" font-size="18">10°C</text>
+
+      <line x1="390" y1="340" x2="420" y2="340"
+            stroke="#333" stroke-width="3"/>
+      <text x="435" y="347" font-size="18">0°C</text>
+
+      <text x="220" y="410" font-size="21" font-weight="bold">
+        Thermometer
+      </text>
+
+      <text x="250" y="435" font-size="16">
+        Measures air temperature
+      </text>
+
+    </svg>
+
+    <p>
+      A thermometer is used to measure temperature.
+      Temperature is commonly recorded in degrees Celsius.
+    </p>
+
+  </div>
+
+
+  <!-- DIAGRAM 3 -->
+
+  <div class="diagram-box">
+
+    <h2>💨 Diagram 3 — Wind and Air Pressure</h2>
+
+    <svg class="diagram" viewBox="0 0 800 430">
+
+      <rect x="60" y="80" width="250" height="250"
+            rx="25" fill="#eaf4ff"
+            stroke="#4d7190" stroke-width="4"/>
+
+      <rect x="490" y="80" width="250" height="250"
+            rx="25" fill="#fff0f0"
+            stroke="#9a5c5c" stroke-width="4"/>
+
+      <text x="125" y="135
+```
