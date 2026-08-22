@@ -1,95 +1,414 @@
-resources.html
+resources```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Study Resources | The Student Spot</title>
+
+  <title>Resources | The Student Spot</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #fff7fb;
+      background: #f8f7ff;
       color: #333;
-      text-align: center;
+      line-height: 1.8;
     }
 
     header {
-      background: #d9b8ff;
-      padding: 40px 20px;
+      background: #d8c9ff;
+      text-align: center;
+      padding: 45px 20px;
     }
 
     header h1 {
       margin: 0;
+      font-size: 40px;
+      color: #5a4499;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 35px 20px;
     }
 
-    .cards {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .card {
+    .section {
       background: white;
-      padding: 25px;
-      border-radius: 15px;
-      width: 220px;
+      padding: 30px;
+      margin: 25px 0;
+      border-radius: 18px;
       box-shadow: 0 4px 12px #ddd;
     }
 
-    .card h3 {
-      color: #7b4bb7;
+    .section h2 {
+      color: #654fa6;
+      margin-top: 0;
     }
 
-    a {
-      color: #7b4bb7;
+    .section h3 {
+      color: #765db5;
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: #f1edff;
+      padding: 20px;
+      border-radius: 14px;
+      border-left: 5px solid #8974ce;
+      margin: 20px 0;
+    }
+
+    .resource-description {
+      background: #faf9ff;
+      padding: 18px 20px;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    .resource-description h3 {
+      margin-top: 0;
+    }
+
+    .goal {
+      background: #fff8df;
+      border-left: 5px solid #e2c45c;
+    }
+
+    .how-to {
+      background: #eef8ff;
+      border-left: 5px solid #75afd4;
+    }
+
+    .useful {
+      background: #effaf2;
+      border-left: 5px solid #75b786;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 25px 10px;
+      color: #5a4499;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #d8c9ff;
+      color: #5a4499;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .section {
+        padding: 22px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>📝 Study Resources</h1>
-    <p>Helpful tools to make studying easier 💜</p>
-  </header>
+<header>
+  <h1>📚 Resources</h1>
+  <p>Discover what The Student Spot offers and how it can support your learning.</p>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="cards">
+  <!-- WHAT IS THE STUDENT SPOT -->
 
-      <div class="card">
-        <h3>📅 Study Planner</h3>
-        <p>Plan your study time and stay organized.</p>
-      </div>
+  <div class="section">
 
-      <div class="card">
-        <h3>📖 Revision</h3>
-        <p>Use simple revision methods to remember what you learn.</p>
-      </div>
+    <h2>🌟 What is The Student Spot?</h2>
 
-      <div class="card">
-        <h3>📝 Practice</h3>
-        <p>Practice questions can help you prepare for tests.</p>
-      </div>
+    <p>
+      <strong>The Student Spot</strong> is a student-friendly educational
+      website created to make learning easier, more organized and more
+      enjoyable.
+    </p>
 
+    <p>
+      It brings useful learning material together in one place so that
+      students can explore subjects, understand difficult ideas, review
+      lessons and practice what they have learned.
+    </p>
+
+    <p>
+      The website is designed with simple explanations and clear
+      organization so students can find information without feeling
+      overwhelmed.
+    </p>
+
+    <div class="highlight">
+      <strong>Our idea:</strong>
+      Learning should be clear, useful and accessible to students.
     </div>
-
-    <br><br>
-
-    <a href="index.html">🏠 Back to Home</a>
 
   </div>
 
+
+  <!-- OUR GOAL -->
+
+  <div class="section goal">
+
+    <h2>🎯 Our Goal</h2>
+
+    <p>
+      The goal of The Student Spot is to create a helpful learning space
+      where students can study at their own pace.
+    </p>
+
+    <p>
+      We want students to be able to understand lessons, revise
+      important information, practice their knowledge and become more
+      confident learners.
+    </p>
+
+    <p>
+      Instead of making learning complicated, The Student Spot aims to
+      present educational information in a straightforward,
+      student-friendly way.
+    </p>
+
+  </div>
+
+
+  <!-- HOW TO USE -->
+
+  <div class="section how-to">
+
+    <h2>🧭 How to Use The Student Spot</h2>
+
+    <p>
+      You can use the website in different ways depending on what you
+      need to study.
+    </p>
+
+    <ol>
+      <li>
+        <strong>Start from the Home page.</strong>
+        Use the navigation menu to explore the different parts of the
+        website.
+      </li>
+
+      <li>
+        <strong>Choose a subject.</strong>
+        Open the subject area you want to study and explore its topics.
+      </li>
+
+      <li>
+        <strong>Read the explanations.</strong>
+        Take your time to understand the main ideas before moving on.
+      </li>
+
+      <li>
+        <strong>Use the available learning material.</strong>
+        The website includes different types of educational material
+        designed to support your learning.
+      </li>
+
+      <li>
+        <strong>Review what you learned.</strong>
+        Return to topics when you need another explanation or revision.
+      </li>
+    </ol>
+
+    <div class="highlight">
+      <strong>Tip:</strong>
+      You don't have to use everything at once. Choose the resource
+      that matches what you need at that moment.
+    </div>
+
+  </div>
+
+
+  <!-- WHAT OUR RESOURCES INCLUDE -->
+
+  <div class="section">
+
+    <h2>📖 What Do Our Resources Include?</h2>
+
+    <p>
+      The Student Spot contains different kinds of learning material.
+      These resources are not meant to replace your school lessons or
+      teachers. They are designed to support your learning and revision.
+    </p>
+
+
+    <div class="resource-description">
+
+      <h3>📝 Study Notes</h3>
+
+      <p>
+        Study notes provide organized information about important
+        concepts. They can help students review a topic and find the
+        main points without going through a large amount of information
+        at once.
+      </p>
+
+    </div>
+
+
+    <div class="resource-description">
+
+      <h3>📚 Subject Resources</h3>
+
+      <p>
+        Subject resources bring together useful learning material for
+        different subjects. They help students explore topics in a
+        structured way and move from one area of learning to another.
+      </p>
+
+    </div>
+
+
+    <div class="resource-description">
+
+      <h3>🧠 Practice Questions</h3>
+
+      <p>
+        Practice questions give students an opportunity to check what
+        they understand. They can also help identify topics that need
+        more revision.
+      </p>
+
+    </div>
+
+
+    <div class="resource-description">
+
+      <h3>📊 Diagrams and Visual Learning</h3>
+
+      <p>
+        Diagrams and visual explanations can make complicated structures,
+        processes and relationships easier to understand, especially
+        in subjects such as science and geography.
+      </p>
+
+    </div>
+
+
+    <div class="resource-description">
+
+      <h3>💡 Study Tips</h3>
+
+      <p>
+        Study tips provide simple ideas for organizing revision,
+        understanding lessons, reviewing information and developing
+        useful study habits.
+      </p>
+
+    </div>
+
+
+    <div class="resource-description">
+
+      <h3>📖 Study Help</h3>
+
+      <p>
+        Study Help provides general guidance for approaching different
+        subjects and difficult topics. It is designed to help students
+        think about how they study and how they can make their learning
+        more effective.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- WHY USEFUL -->
+
+  <div class="section useful">
+
+    <h2>💡 Why Are These Resources Useful?</h2>
+
+    <p>
+      Students learn in different ways. Some students understand an idea
+      better through an explanation, while others benefit from examples,
+      questions, diagrams or reviewing information several times.
+    </p>
+
+    <p>
+      Having different types of resources gives students more than one
+      way to approach a topic.
+    </p>
+
+    <ul>
+      <li>They can make difficult information easier to review.</li>
+      <li>They can help organize learning material.</li>
+      <li>They can support revision before tests and exams.</li>
+      <li>They can help students identify areas they need to review.</li>
+      <li>They can make learning more interactive and engaging.</li>
+      <li>They can encourage students to become independent learners.</li>
+    </ul>
+
+    <div class="highlight">
+      <strong>Most importantly:</strong>
+      Resources work best when you actively think about what you are
+      learning instead of simply reading without understanding.
+    </div>
+
+  </div>
+
+
+  <!-- FINAL MESSAGE -->
+
+  <div class="section">
+
+    <h2>🌟 Keep Learning</h2>
+
+    <p>
+      The Student Spot is built to be a simple place for students to
+      learn, explore and practice.
+    </p>
+
+    <p>
+      Take your time, ask questions, review difficult topics and keep
+      building your knowledge one step at a time.
+    </p>
+
+    <div class="highlight">
+      <strong>Learn • Explore • Practice • Improve</strong>
+    </div>
+
+  </div>
+
+
+  <!-- BACK TO HOME -->
+
+  <div style="text-align: center;">
+
+    <a class="back" href="index.html">
+      🏠 Back to Home
+    </a>
+
+  </div>
+
+</div>
+
+
+<footer>
+  <p>📚 The Student Spot — Learn • Practice • Improve</p>
+</footer>
+
 </body>
 </html>
+```
