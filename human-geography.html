@@ -1,1 +1,1010 @@
 human-geography
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Human Geography | The Student Spot</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffaf4;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #f3d39b;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .lesson,
+    .diagram-box,
+    .questions {
+      background: white;
+      padding: 28px;
+      margin: 25px 0;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px #ddd;
+    }
+
+    h2 {
+      color: #9a641e;
+    }
+
+    h3 {
+      color: #8a5a19;
+    }
+
+    .example {
+      background: #fff3dc;
+      padding: 18px;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    .point {
+      background: #fff8eb;
+      padding: 12px 16px;
+      margin: 10px 0;
+      border-left: 4px solid #d69b43;
+      border-radius: 8px;
+    }
+
+    .diagram {
+      display: block;
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      margin: 20px auto;
+      border: 1px solid #ddd;
+      background: #fff;
+      border-radius: 10px;
+    }
+
+    .question {
+      background: #fffaf2;
+      padding: 16px;
+      margin: 12px 0;
+      border-radius: 10px;
+      border-left: 4px solid #d69b43;
+    }
+
+    .answer {
+      margin-top: 7px;
+      color: #765018;
+      font-weight: bold;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 20px 10px;
+      color: #9a641e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🏙️ Human Geography</h1>
+  <p>Explore people, population, settlements, migration, cities and human activities.</p>
+</header>
+
+<div class="container">
+
+  <!-- INTRODUCTION -->
+
+  <div class="lesson">
+    <h2>📚 What is Human Geography?</h2>
+
+    <p>
+      Human geography is the study of people, their activities,
+      settlements and relationships with places and the environment.
+    </p>
+
+    <div class="example">
+      <strong>Important idea:</strong><br><br>
+      Physical geography mainly studies natural features of Earth,
+      while human geography focuses on people and how they use and
+      organize space.
+    </div>
+
+    <div class="point">
+      👨‍👩‍👧 Population — where people live and how populations change.
+    </div>
+
+    <div class="point">
+      🏠 Settlements — villages, towns and cities where people live.
+    </div>
+
+    <div class="point">
+      🚶 Migration — movement of people from one place to another.
+    </div>
+
+    <div class="point">
+      🏙️ Urbanization — growth of towns and cities.
+    </div>
+
+    <div class="point">
+      🌾 Agriculture — growing crops and raising animals.
+    </div>
+
+    <div class="point">
+      💼 Economic activities — work people do to earn a living.
+    </div>
+  </div>
+
+
+  <!-- DIAGRAM 1: POPULATION DISTRIBUTION -->
+
+  <div class="diagram-box">
+    <h2>Diagram 1 — Population Distribution</h2>
+
+    <svg class="diagram" viewBox="0 0 800 450">
+
+      <rect x="80" y="60" width="640" height="320"
+            fill="#f7f1e5" stroke="#555" stroke-width="3"/>
+
+      <text x="300" y="35" font-size="24">
+        Population Distribution
+      </text>
+
+      <!-- densely populated area -->
+      <rect x="130" y="110" width="230" height="220"
+            fill="#f1d2a3" stroke="#555" stroke-width="2"/>
+
+      <text x="165" y="145" font-size="20">
+        Dense Population
+      </text>
+
+      <!-- people symbols -->
+      <circle cx="170" cy="190" r="10" fill="#555"/>
+      <circle cx="220" cy="190" r="10" fill="#555"/>
+      <circle cx="270" cy="190" r="10" fill="#555"/>
+      <circle cx="320" cy="190" r="10" fill="#555"/>
+
+      <circle cx="170" cy="240" r="10" fill="#555"/>
+      <circle cx="220" cy="240" r="10" fill="#555"/>
+      <circle cx="270" cy="240" r="10" fill="#555"/>
+      <circle cx="320" cy="240" r="10" fill="#555"/>
+
+      <circle cx="170" cy="290" r="10" fill="#555"/>
+      <circle cx="220" cy="290" r="10" fill="#555"/>
+      <circle cx="270" cy="290" r="10" fill="#555"/>
+      <circle cx="320" cy="290" r="10" fill="#555"/>
+
+      <!-- sparsely populated area -->
+      <rect x="440" y="110" width="230" height="220"
+            fill="#e4efd9" stroke="#555" stroke-width="2"/>
+
+      <text x="470" y="145" font-size="20">
+        Sparse Population
+      </text>
+
+      <circle cx="500" cy="205" r="10" fill="#777"/>
+      <circle cx="610" cy="275" r="10" fill="#777"/>
+      <circle cx="550" cy="235" r="10" fill="#777"/>
+
+      <text x="180" y="365" font-size="17">
+        Many people in a small area
+      </text>
+
+      <text x="465" y="365" font-size="17">
+        Few people over a large area
+      </text>
+
+    </svg>
+
+    <p>
+      Population distribution describes how people are spread across
+      an area. Some places are densely populated, while others are
+      sparsely populated.
+    </p>
+  </div>
+
+
+  <!-- DIAGRAM 2: POPULATION DENSITY -->
+
+  <div class="diagram-box">
+    <h2>Diagram 2 — Population Density</h2>
+
+    <svg class="diagram" viewBox="0 0 800 450">
+
+      <text x="280" y="35" font-size="24">
+        Population Density
+      </text>
+
+      <rect x="90" y="80" width="260" height="280"
+            fill="#e7f0d9" stroke="#555" stroke-width="3"/>
+
+      <rect x="450" y="80" width="260" height="280"
+            fill="#f1d6b3" stroke="#555" stroke-width="3"/>
+
+      <text x="135" y="115" font-size="20">
+        Low Density
+      </text>
+
+      <text x="500" y="115" font-size="20">
+        High Density
+      </text>
+
+      <!-- low density -->
+      <circle cx="160" cy="180" r="11" fill="#555"/>
+      <circle cx="290" cy="290" r="11" fill="#555"/>
+      <circle cx="230" cy="235" r="11" fill="#555"/>
+
+      <!-- high density -->
+      <circle cx="510" cy="170" r="10" fill="#555"/>
+      <circle cx="550" cy="170" r="10" fill="#555"/>
+      <circle cx="590" cy="170" r="10" fill="#555"/>
+      <circle cx="630" cy="170" r="10" fill="#555"/>
+
+      <circle cx="510" cy="215" r="10" fill="#555"/>
+      <circle cx="550" cy="215" r="10" fill="#555"/>
+      <circle cx="590" cy="215" r="10" fill="#555"/>
+      <circle cx="630" cy="215" r="10" fill="#555"/>
+
+      <circle cx="510" cy="260" r="10" fill="#555"/>
+      <circle cx="550" cy="260" r="10" fill="#555"/>
+      <circle cx="590" cy="260" r="10" fill="#555"/>
+      <circle cx="630" cy="260" r="10" fill="#555"/>
+
+      <circle cx="510" cy="305" r="10" fill="#555"/>
+      <circle cx="550" cy="305" r="10" fill="#555"/>
+      <circle cx="590" cy="305" r="10" fill="#555"/>
+      <circle cx="630" cy="305" r="10" fill="#555"/>
+
+      <text x="135" y="395" font-size="17">
+        Fewer people per unit area
+      </text>
+
+      <text x="485" y="395" font-size="17">
+        More people per unit area
+      </text>
+
+    </svg>
+
+    <p>
+      Population density describes the number of people living in a
+      particular unit of area, often measured as people per square kilometre.
+    </p>
+  </div>
+
+
+  <!-- DIAGRAM 3: RURAL AND URBAN SETTLEMENT -->
+
+  <div class="diagram-box">
+    <h2>Diagram 3 — Rural and Urban Settlements</h2>
+
+    <svg class="diagram" viewBox="0 0 800 450">
+
+      <text x="295" y="35" font-size="24">
+        Types of Settlement
+      </text>
+
+      <!-- rural -->
+      <rect x="60" y="80" width="310" height="300"
+            fill="#e4f1d9" stroke="#555" stroke-width="3"/>
+
+      <text x="175" y="115" font-size="22">
+        Rural Area
+      </text>
+
+      <!-- fields -->
+      <rect x="90" y="270" width="250" height="80"
+            fill="#c9dfb8" stroke="#555" stroke-width="2"/>
+
+      <!-- houses -->
+      <polygon points="120,210 155,180 190,210"
+               fill="#b97952" stroke="#555" stroke-width="2"/>
+      <rect x="130" y="210" width="60" height="50"
+            fill="#f5dfb0" stroke="#555" stroke-width="2"/>
+
+      <polygon points="235,220 265,190 295,220"
+               fill="#b97952" stroke="#555" stroke-width="2"/>
+      <rect x="245" y="220" width="50" height="40"
+            fill="#f5dfb0" stroke="#555" stroke-width="2"/>
+
+      <text x="120" y="370" font-size="17">
+        Farms and villages
+      </text>
+
+      <!-- urban -->
+      <rect x="430" y="80" width="310" height="300"
+            fill="#e8e8e8" stroke="#555" stroke-width="3"/>
+
+      <text x="545" y="115" font-size="22">
+        Urban Area
+      </text>
+
+      <rect x="470" y="190" width="55" height="140"
+            fill="#b8c8d8" stroke="#555" stroke-width="2"/>
+
+      <rect x="540" y="150" width="60" height="180"
+            fill="#aebfd0" stroke="#555" stroke-width="2"/>
+
+      <rect x="615" y="175" width="65" height="155"
+            fill="#c5d1dc" stroke="#555" stroke-width="2"/>
+
+      <line x1="450" y1="345" x2="720" y2="345"
+            stroke="#555" stroke-width="8"/>
+
+      <text x="505" y="370" font-size="17">
+        Towns and cities
+      </text>
+
+    </svg>
+
+    <p>
+      Rural settlements are generally associated with countryside,
+      farming and smaller communities. Urban settlements include
+      towns and cities with more buildings, services and infrastructure.
+    </p>
+  </div>
+
+
+  <!-- DIAGRAM 4: MIGRATION -->
+
+  <div class="diagram-box">
+    <h2>Diagram 4 — Migration</h2>
+
+    <svg class="diagram" viewBox="0 0 800 450">
+
+      <text x="330" y="35" font-size="24">
+        Human Migration
+      </text>
+
+      <!-- origin -->
+      <rect x="80" y="130" width="220" height="200"
+            rx="15" fill="#e8efd9" stroke="#555" stroke-width="3"/>
+
+      <text x="145" y="170" font-size="22">
+        Origin
+      </text>
+
+      <text x="125" y="215" font-size="18">
+        Place people
+      </text>
+
+      <text x="135" y="245" font-size="18">
+        leave
+      </text>
+
+      <!-- arrow -->
+      <line x1="310" y1="230" x2="490" y2="230"
+            stroke="#555" stroke-width="7"/>
+
+      <polygon points="490,230 465,215 465,245"
+               fill="#555"/>
+
+      <text x="340" y="205" font-size="18">
+        Movement
+      </text>
+
+      <!-- destination -->
+      <rect x="500" y="130" width="220" height="200"
+            rx="15" fill="#f2dfc1" stroke="#555" stroke-width="3"/>
+
+      <text x="555" y="170" font-size="22">
+        Destination
+      </text>
+
+      <text x="545" y="215" font-size="18">
+        Place people
+      </text>
+
+      <text x="550" y="245" font-size="18">
+        move to
+      </text>
+
+      <text x="205" y="375" font-size="18">
+        Push factors may encourage people to leave
+      </text>
+
+      <text x="205" y="405" font-size="18">
+        Pull factors may attract people to a destination
+      </text>
+
+    </svg>
+
+    <p>
+      Migration is the movement of people from one place to another.
+      Push factors encourage people to leave, while pull factors
+      attract people to another place.
+    </p>
+  </div>
+
+
+  <!-- DIAGRAM 5: URBANIZATION -->
+
+  <div class="diagram-box">
+    <h2>Diagram 5 — Urbanization</h2>
+
+    <svg class="diagram" viewBox="0 0 800 450">
+
+      <text x="300" y="35" font-size="24">
+        Growth of Urban Areas
+      </text>
+
+      <!-- rural -->
+      <rect x="70" y="100" width="210" height="230"
+            fill="#e3efd8" stroke="#555" stroke-width="3"/>
+
+      <text x="135" y="135" font-size="22">
+        Rural
+      </text>
+
+      <rect x="120" y="220" width="70" height="50"
+            fill="#f0d49d" stroke="#555" stroke-width="2"/>
+
+      <polygon points="110,220 155,180 200,220"
+               fill="#b97952" stroke="#555" stroke-width="2"/>
+
+      <text x="105" y="300" font-size="17">
+        Small settlement
+      </text>
+
+      <!-- arrow -->
+      <line x1="295" y1="215" x2="485" y2="215"
+            stroke="#555" stroke-width="7"/>
+
+      <polygon points="485,215 460,200 460,230"
+               fill="#555"/>
+
+      <text x="335" y="190" font-size="18">
+        Urbanization
+      </text>
+
+      <!-- city -->
+      <rect x="500" y="100" width="230" height="230"
+            fill="#e5e5e5" stroke="#555" stroke-width="3"/>
+
+      <text x="585" y="135" font-size="22">
+        Urban
+      </text>
+
+      <rect x="530" y="190" width="45" height="100"
+            fill="#aebdca" stroke="#555" stroke-width="2"/>
+
+      <rect x="585" y="155" width="50" height="135"
+            fill="#bdc9d3" stroke="#555" stroke-width="2"/>
+
+      <rect x="645" y="175" width="50" height="115"
+            fill="#a9bac8" stroke="#555" stroke-width="2"/>
+
+      <text x="535" y="315" font-size="17">
+        Larger city
+      </text>
+
+    </svg>
+
+    <p>
+      Urbanization is the process in which an increasing proportion
+      of people live in towns and cities. It is often associated with
+      movement from rural areas to urban areas.
+    </p>
+  </div>
+
+
+  <!-- DIAGRAM 6: ECONOMIC ACTIVITIES -->
+
+  <div class="diagram-box">
+    <h2>Diagram 6 — Economic Activities</h2>
+
+    <svg class="diagram" viewBox="0 0 800 450">
+
+      <text x="280" y="35" font-size="24">
+        Economic Activity Sectors
+      </text>
+
+      <!-- primary -->
+      <rect x="55" y="100" width="165" height="230"
+            fill="#dcebd2" stroke="#555" stroke-width="3"/>
+
+      <text x="90" y="140" font-size="20">
+        Primary
+      </text>
+
+      <text x="75" y="180" font-size="17">
+        Farming
+      </text>
+
+      <text x="75" y="210" font-size="17">
+        Fishing
+      </text>
+
+      <text x="75" y="240" font-size="17">
+        Mining
+      </text>
+
+      <text x="75" y="290" font-size="15">
+        Natural resources
+      </text>
+
+      <!-- secondary -->
+      <rect x="245" y="100" width="165" height="230"
+            fill="#e9dfc9" stroke="#555" stroke-width="3"/>
+
+      <text x="275" y="140" font-size="20">
+        Secondary
+      </text>
+
+      <text x="265" y="180" font-size="17">
+        Manufacturing
+      </text>
+
+      <text x="265" y="210" font-size="17">
+        Construction
+      </text>
+
+      <text x="265" y="250" font-size="17">
+        Processing
+      </text>
+
+      <!-- tertiary -->
+      <rect x="435" y="100" width="165" height="230"
+            fill="#dce6f0" stroke="#555" stroke-width="3"/>
+
+      <text x="470" y="140" font-size="20">
+        Tertiary
+      </text>
+
+      <text x="460" y="180" font-size="17">
+        Teaching
+      </text>
+
+      <text x="460" y="210" font-size="17">
+        Banking
+      </text>
+
+      <text x="460" y="240" font-size="17">
+        Transport
+      </text>
+
+      <!-- quaternary -->
+      <rect x="625" y="100" width="120" height="230"
+            fill="#ead9e9" stroke="#555" stroke-width="3"/>
+
+      <text x="640" y="140" font-size="18">
+        Quaternary
+      </text>
+
+      <text x="640" y="185" font-size="16">
+        Research
+      </text>
+
+      <text x="640" y="215" font-size="16">
+        Information
+      </text>
+
+      <text x="640" y="245" font-size="16">
+        Technology
+      </text>
+
+    </svg>
+
+    <p>
+      Economic activities can be grouped into sectors. Primary
+      activities obtain resources, secondary activities process
+      materials, and tertiary activities provide services.
+      Quaternary activities include knowledge and information-based work.
+    </p>
+  </div>
+
+
+  <!-- DIAGRAM 7: HUMAN-ENVIRONMENT INTERACTION -->
+
+  <div class="diagram-box">
+    <h2>Diagram 7 — Human and Environment Interaction</h2>
+
+    <svg class="diagram" viewBox="0 0 800 450">
+
+      <text x="250" y="35" font-size="24">
+        Human–Environment Interaction
+      </text>
+
+      <!-- environment -->
+      <circle cx="190" cy="210" r="110"
+              fill="#dcebd4" stroke="#555" stroke-width="4"/>
+
+      <text x="130" y="205" font-size="22">
+        Environment
+      </text>
+
+      <text x="120" y="240" font-size="17">
+        Land
+      </text>
+
+      <text x="120" y="265" font-size="17">
+        Water
+      </text>
+
+      <text x="190" y="240" font-size="17">
+        Climate
+      </text>
+
+      <!-- people -->
+      <circle cx="610" cy="210" r="110"
+              fill="#f1dfc4" stroke="#555" stroke-width="4"/>
+
+      <text x="555" y="205" font-size="22">
+        People
+      </text>
+
+      <text x="535" y="240" font-size="17">
+        Settlements
+      </text>
+
+      <text x="545" y="265" font-size="17">
+        Farming
+      </text>
+
+      <!-- arrows -->
+      <line x1="305" y1="180" x2="485" y2="180"
+            stroke="#555" stroke-width="6"/>
+
+      <polygon points="485,180 460,165 460,195"
+               fill="#555"/>
+
+      <text x="335" y="155" font-size="17">
+        People use
+      </text>
+
+      <line x1="495" y1="260" x2="315" y2="260"
+            stroke="#555" stroke-width="6"/>
+
+      <polygon points="315,260 340,245 340,275"
+               fill="#555"/>
+
+      <text x="350" y="300" font-size="17">
+        People affect
+      </text>
+
+      <text x="285" y="375" font-size="18">
+        Human activities can change the environment,
+      </text>
+
+      <text x="285" y="405" font-size="18">
+        while the environment also influences human life.
+      </text>
+
+    </svg>
+
+    <p>
+      People depend on the environment for resources such as water,
+      food and land. At the same time, human activities can change
+      the natural environment.
+    </p>
+  </div>
+
+
+  <!-- 55 QUESTIONS -->
+
+  <div class="questions">
+
+    <h2>🧠 Human Geography — 55 Short Questions with Answers</h2>
+
+    <div class="question">
+      <strong>1. What is human geography?</strong>
+      <div class="answer">Answer: Human geography is the study of people, their activities, settlements and relationships with places and the environment.</div>
+    </div>
+
+    <div class="question">
+      <strong>2. What does population mean?</strong>
+      <div class="answer">Answer: Population means the number of people living in a particular area.</div>
+    </div>
+
+    <div class="question">
+      <strong>3. What is population distribution?</strong>
+      <div class="answer">Answer: Population distribution describes how people are spread across an area.</div>
+    </div>
+
+    <div class="question">
+      <strong>4. What is population density?</strong>
+      <div class="answer">Answer: Population density is the number of people living in a unit area.</div>
+    </div>
+
+    <div class="question">
+      <strong>5. What is a densely populated area?</strong>
+      <div class="answer">Answer: It is an area where many people live in a relatively small area.</div>
+    </div>
+
+    <div class="question">
+      <strong>6. What is a sparsely populated area?</strong>
+      <div class="answer">Answer: It is an area where relatively few people live over a large area.</div>
+    </div>
+
+    <div class="question">
+      <strong>7. Name one factor affecting population distribution.</strong>
+      <div class="answer">Answer: Climate is one factor that affects population distribution.</div>
+    </div>
+
+    <div class="question">
+      <strong>8. How can water affect population distribution?</strong>
+      <div class="answer">Answer: Reliable water supplies can attract settlements and support human activities.</div>
+    </div>
+
+    <div class="question">
+      <strong>9. How can fertile soil affect population distribution?</strong>
+      <div class="answer">Answer: Fertile soil can support agriculture and encourage people to settle in an area.</div>
+    </div>
+
+    <div class="question">
+      <strong>10. How can relief affect settlement?</strong>
+      <div class="answer">Answer: Flat or gently sloping land is often easier for building, transport and farming.</div>
+    </div>
+
+    <div class="question">
+      <strong>11. What is a settlement?</strong>
+      <div class="answer">Answer: A settlement is a place where people live.</div>
+    </div>
+
+    <div class="question">
+      <strong>12. What is a rural settlement?</strong>
+      <div class="answer">Answer: A rural settlement is a settlement in the countryside, often associated with farming and smaller communities.</div>
+    </div>
+
+    <div class="question">
+      <strong>13. What is an urban settlement?</strong>
+      <div class="answer">Answer: An urban settlement is a town or city with a relatively large population and developed infrastructure.</div>
+    </div>
+
+    <div class="question">
+      <strong>14. What is a village?</strong>
+      <div class="answer">Answer: A village is a small settlement, often found in rural areas.</div>
+    </div>
+
+    <div class="question">
+      <strong>15. What is a town?</strong>
+      <div class="answer">Answer: A town is a settlement larger and generally more developed than a village.</div>
+    </div>
+
+    <div class="question">
+      <strong>16. What is a city?</strong>
+      <div class="answer">Answer: A city is a large urban settlement containing many people, buildings, services and economic activities.</div>
+    </div>
+
+    <div class="question">
+      <strong>17. What is urbanization?</strong>
+      <div class="answer">Answer: Urbanization is the process in which an increasing proportion of people live in towns and cities.</div>
+    </div>
+
+    <div class="question">
+      <strong>18. Why do people move to cities?</strong>
+      <div class="answer">Answer: People may move to cities for employment, education, healthcare and other services.</div>
+    </div>
+
+    <div class="question">
+      <strong>19. What is migration?</strong>
+      <div class="answer">Answer: Migration is the movement of people from one place to another.</div>
+    </div>
+
+    <div class="question">
+      <strong>20. What is internal migration?</strong>
+      <div class="answer">Answer: Internal migration is movement from one place to another within the same country.</div>
+    </div>
+
+    <div class="question">
+      <strong>21. What is international migration?</strong>
+      <div class="answer">Answer: International migration is movement from one country to another.</div>
+    </div>
+
+    <div class="question">
+      <strong>22. What is a push factor?</strong>
+      <div class="answer">Answer: A push factor is a condition that encourages people to leave a place.</div>
+    </div>
+
+    <div class="question">
+      <strong>23. What is a pull factor?</strong>
+      <div class="answer">Answer: A pull factor is a condition that attracts people to a new place.</div>
+    </div>
+
+    <div class="question">
+      <strong>24. Give one example of a push factor.</strong>
+      <div class="answer">Answer: Lack of employment can be a push factor.</div>
+    </div>
+
+    <div class="question">
+      <strong>25. Give one example of a pull factor.</strong>
+      <div class="answer">Answer: Better employment opportunities can be a pull factor.</div>
+    </div>
+
+    <div class="question">
+      <strong>26. What is immigration?</strong>
+      <div class="answer">Answer: Immigration is entering a country to live there.</div>
+    </div>
+
+    <div class="question">
+      <strong>27. What is emigration?</strong>
+      <div class="answer">Answer: Emigration is leaving a country to live in another country.</div>
+    </div>
+
+    <div class="question">
+      <strong>28. What is population growth?</strong>
+      <div class="answer">Answer: Population growth is an increase in the number of people in a population.</div>
+    </div>
+
+    <div class="question">
+      <strong>29. What causes natural population increase?</strong>
+      <div class="answer">Answer: Natural population increase occurs when the birth rate is higher than the death rate.</div>
+    </div>
+
+    <div class="question">
+      <strong>30. What is birth rate?</strong>
+      <div class="answer">Answer: Birth rate is the number of live births in a population during a specified period, usually expressed per 1,000 people per year.</div>
+    </div>
+
+    <div class="question">
+      <strong>31. What is death rate?</strong>
+      <div class="answer">Answer: Death rate is the number of deaths in a population during a specified period, usually expressed per 1,000 people per year.</div>
+    </div>
+
+    <div class="question">
+      <strong>32. What is life expectancy?</strong>
+      <div class="answer">Answer: Life expectancy is the average number of years a person is expected to live under current conditions.</div>
+    </div>
+
+    <div class="question">
+      <strong>33. What is a population census?</strong>
+      <div class="answer">Answer: A population census is an official count and collection of information about people living in an area.</div>
+    </div>
+
+    <div class="question">
+      <strong>34. Why is a census useful?</strong>
+      <div class="answer">Answer: Census information helps governments plan services, infrastructure and resources.</div>
+    </div>
+
+    <div class="question">
+      <strong>35. What is population structure?</strong>
+      <div class="answer">Answer: Population structure describes the characteristics of a population, such as age and sex composition.</div>
+    </div>
+
+    <div class="question">
+      <strong>36. What is an age structure?</strong>
+      <div class="answer">Answer: Age structure shows how a population is divided among different age groups.</div>
+    </div>
+
+    <div class="question">
+      <strong>37. Why is age structure important?</strong>
+      <div class="answer">Answer: Age structure helps planners understand the population's needs for schools, jobs, healthcare and other services.</div>
+    </div>
+
+    <div class="question">
+      <strong>38. What is an economic activity?</strong>
+      <div class="answer">Answer: An economic activity is work involved in producing goods or providing services.</div>
+    </div>
+
+    <div class="question">
+      <strong>39. What is the primary sector?</strong>
+      <div class="answer">Answer: The primary sector obtains raw materials and natural resources from the environment.</div>
+    </div>
+
+    <div class="question">
+      <strong>40. Give two examples of primary activities.</strong>
+      <div class="answer">Answer: Farming and fishing are examples of primary activities.</div>
+    </div>
+
+    <div class="question">
+      <strong>41. What is the secondary sector?</strong>
+      <div class="answer">Answer: The secondary sector processes raw materials and manufactures goods.</div>
+    </div>
+
+    <div class="question">
+      <strong>42. Give one example of a secondary activity.</strong>
+      <div class="answer">Answer: Manufacturing is an example of a secondary activity.</div>
+    </div>
+
+    <div class="question">
+      <strong>43. What is the tertiary sector?</strong>
+      <div class="answer">Answer: The tertiary sector provides services to people and businesses.</div>
+    </div>
+
+    <div class="question">
+      <strong>44. Give two examples of tertiary activities.</strong>
+      <div class="answer">Answer: Teaching and banking are examples of tertiary activities.</div>
+    </div>
+
+    <div class="question">
+      <strong>45. What is the quaternary sector?</strong>
+      <div class="answer">Answer: The quaternary sector includes knowledge, information, research and technology-based activities.</div>
+    </div>
+
+    <div class="question">
+      <strong>46. How does transport affect human geography?</strong>
+      <div class="answer">Answer: Transport connects places, supports trade and makes movement of people and goods easier.</div>
+    </div>
+
+    <div class="question">
+      <strong>47. How does technology affect human geography?</strong>
+      <div class="answer">Answer: Technology changes communication, transportation, employment and the way people use places.</div>
+    </div>
+
+    <div class="question">
+      <strong>48. What is human-environment interaction?</strong>
+      <div class="answer">Answer: Human-environment interaction describes how people depend on, adapt to and modify their environment.</div>
+    </div>
+
+    <div class="question">
+      <strong>49. Why do people depend on the environment?</strong>
+      <div class="answer">Answer: People depend on the environment for resources such as water, food, land and raw materials.</div>
+    </div>
+
+    <div class="question">
+      <strong>50. How can humans modify the environment?</strong>
+      <div class="answer">Answer: Humans can modify the environment through activities such as building cities, farming and constructing roads.</div>
+    </div>
+
+    <div class="question">
+      <strong>51. What is a natural resource?</strong>
+      <div class="answer">Answer: A natural resource is a useful material or feature obtained from the natural environment.</div>
+    </div>
+
+    <div class="question">
+      <strong>52. What is sustainable development?</strong>
+      <div class="answer">Answer: Sustainable development aims to meet present needs while protecting resources and opportunities for future generations.</div>
+    </div>
+
+    <div class="question">
+      <strong>53. What is a megacity?</strong>
+      <div class="answer">Answer: A megacity is a very large urban area with a population of at least 10 million people.</div>
+    </div>
+
+    <div class="question">
+      <strong>54. Why is human geography important?</strong>
+      <div class="answer">Answer: Human geography helps us understand population, settlements, migration, economic activities and relationships between people and places.</div>
+    </div>
+
+    <div class="question">
+      <strong>55. How can human geography help planners?</strong>
+      <div class="answer">Answer: It provides information that can help planners make decisions about housing, transport, services, resources and land use.</div>
+    </div>
+
+  </div>
+
+
+  <!-- NAVIGATION -->
+
+  <div style="text-align:center;">
+
+    <a class="back" href="geography.html">
+      ← Back to Geography
+    </a>
+
+    <a class="back" href="index.html">
+      🏠 Back to Home
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
+```
