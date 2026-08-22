@@ -1,1 +1,1262 @@
 ocean
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ocean & Water | The Student Spot</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2fbff;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #a9ddf2;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+      color: #145b78;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .lesson,
+    .diagram-box,
+    .questions {
+      background: white;
+      padding: 28px;
+      margin: 25px 0;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px #d8e5ea;
+    }
+
+    h2 {
+      color: #176987;
+    }
+
+    h3 {
+      color: #247d9b;
+    }
+
+    .example {
+      background: #e7f7fc;
+      padding: 18px;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    .diagram {
+      display: block;
+      width: 100%;
+      max-width: 850px;
+      height: auto;
+      margin: 20px auto;
+      border: 1px solid #c8dfe7;
+      border-radius: 12px;
+      background: #ffffff;
+    }
+
+    .question {
+      background: #f6fcff;
+      padding: 16px;
+      margin: 12px 0;
+      border-radius: 10px;
+      border-left: 4px solid #55a8c2;
+    }
+
+    .answer {
+      margin-top: 7px;
+      color: #176987;
+      font-weight: bold;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 20px 10px;
+      color: #176987;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🌊 Ocean & Water</h1>
+  <p>Explore oceans, seas, water, waves, tides and the water cycle.</p>
+</header>
+
+<div class="container">
+
+  <!-- INTRODUCTION -->
+
+  <div class="lesson">
+
+    <h2>📚 Quick Ocean & Water Guide</h2>
+
+    <p>
+      Water is one of Earth's most important natural resources.
+      Oceans, seas, rivers, lakes, glaciers and groundwater are
+      all parts of Earth's water system.
+    </p>
+
+    <div class="example">
+      <strong>Important idea:</strong><br><br>
+      Most of Earth's surface is covered by water, and the oceans
+      play an important role in Earth's climate, weather and ecosystems.
+    </div>
+
+    <h3>🌍 Main Topics</h3>
+
+    <ul>
+      <li>Oceans and seas</li>
+      <li>Freshwater and saltwater</li>
+      <li>Water cycle</li>
+      <li>Waves</li>
+      <li>Tides</li>
+      <li>Ocean currents</li>
+      <li>Water resources and conservation</li>
+    </ul>
+
+  </div>
+
+
+  <!-- DIAGRAM 1: WATER CYCLE -->
+
+  <div class="diagram-box">
+
+    <h2>Diagram 1 — The Water Cycle</h2>
+
+    <svg class="diagram" viewBox="0 0 850 500">
+
+      <!-- Sun -->
+      <circle cx="120" cy="90" r="55"
+              fill="#f7d66a"
+              stroke="#333"
+              stroke-width="3"/>
+
+      <text x="95" y="98" font-size="20">Sun</text>
+
+      <!-- Clouds -->
+      <ellipse cx="370" cy="100" rx="65" ry="30"
+               fill="#dfeaf0"
+               stroke="#555"
+               stroke-width="3"/>
+
+      <circle cx="325" cy="100" r="35"
+              fill="#dfeaf0"
+              stroke="#555"
+              stroke-width="3"/>
+
+      <circle cx="420" cy="100" r="38"
+              fill="#dfeaf0"
+              stroke="#555"
+              stroke-width="3"/>
+
+      <text x="350" y="145" font-size="18">Clouds</text>
+
+      <!-- Mountain -->
+      <polygon points="570,300 690,110 810,300"
+               fill="#d7e3e8"
+               stroke="#444"
+               stroke-width="3"/>
+
+      <polygon points="650,175 690,110 730,175"
+               fill="white"
+               stroke="#555"
+               stroke-width="2"/>
+
+      <!-- Ocean -->
+      <path d="M40 350 Q90 330 140 350
+               T240 350 T340 350
+               T440 350 T540 350
+               T640 350 T740 350
+               T840 350 L840 480 L40 480 Z"
+            fill="#83cce3"
+            stroke="#333"
+            stroke-width="3"/>
+
+      <text x="350" y="425"
+            font-size="25">Ocean / Water</text>
+
+      <!-- Evaporation -->
+      <path d="M180 340 C160 280 175 230 190 180"
+            fill="none"
+            stroke="#287f9b"
+            stroke-width="6"/>
+
+      <polygon points="190,180 178,200 202,198"
+               fill="#287f9b"/>
+
+      <text x="120" y="250"
+            font-size="18">Evaporation</text>
+
+      <!-- Condensation -->
+      <path d="M280 170 C300 150 330 140 350 135"
+            fill="none"
+            stroke="#287f9b"
+            stroke-width="5"/>
+
+      <text x="255" y="195"
+            font-size="18">Condensation</text>
+
+      <!-- Precipitation -->
+      <path d="M390 145 L390 260"
+            stroke="#287f9b"
+            stroke-width="5"/>
+
+      <polygon points="390,260 378,240 402,240"
+               fill="#287f9b"/>
+
+      <text x="405" y="220"
+            font-size="18">Precipitation</text>
+
+      <!-- Runoff -->
+      <path d="M690 300 C620 335 580 345 520 350"
+            fill="none"
+            stroke="#287f9b"
+            stroke-width="6"/>
+
+      <polygon points="520,350 545,342 540,365"
+               fill="#287f9b"/>
+
+      <text x="590" y="330"
+            font-size="18">Runoff</text>
+
+    </svg>
+
+    <p>
+      Water continuously moves between Earth's surface, atmosphere
+      and underground through evaporation, condensation,
+      precipitation, runoff and collection.
+    </p>
+
+  </div>
+
+
+  <!-- DIAGRAM 2: OCEAN ZONES -->
+
+  <div class="diagram-box">
+
+    <h2>Diagram 2 — Ocean Depth Zones</h2>
+
+    <svg class="diagram" viewBox="0 0 850 550">
+
+      <!-- Ocean -->
+      <rect x="120" y="60"
+            width="610"
+            height="420"
+            fill="#9dd9ec"
+            stroke="#333"
+            stroke-width="3"/>
+
+      <!-- Surface -->
+      <line x1="120" y1="100"
+            x2="730" y2="100"
+            stroke="#155f78"
+            stroke-width="4"/>
+
+      <text x="35" y="105"
+            font-size="18">Surface</text>
+
+      <!-- Zones -->
+      <line x1="120" y1="180"
+            x2="730" y2="180"
+            stroke="#555"
+            stroke-width="2"/>
+
+      <line x1="120" y1="280"
+            x2="730" y2="280"
+            stroke="#555"
+            stroke-width="2"/>
+
+      <line x1="120" y1="380"
+            x2="730" y2="380"
+            stroke="#555"
+            stroke-width="2"/>
+
+      <text x="260" y="150"
+            font-size="20">Sunlight Zone</text>
+
+      <text x="260" y="235"
+            font-size="20">Twilight Zone</text>
+
+      <text x="260" y="335"
+            font-size="20">Dark Zone</text>
+
+      <text x="260" y="440"
+            font-size="20">Deep Ocean</text>
+
+      <!-- Fish -->
+      <path d="M500 135 Q530 115 560 135
+               Q530 155 500 135 Z"
+            fill="#f4c95d"
+            stroke="#333"
+            stroke-width="2"/>
+
+      <polygon points="500,135 480,120 480,150"
+               fill="#f4c95d"
+               stroke="#333"
+               stroke-width="2"/>
+
+      <!-- Deep creature -->
+      <circle cx="560" cy="420"
+              r="15"
+              fill="#8d6fa8"
+              stroke="#333"
+              stroke-width="2"/>
+
+      <line x1="560" y1="405"
+            x2="560" y2="380"
+            stroke="#333"
+            stroke-width="2"/>
+
+      <circle cx="560" cy="375"
+              r="5"
+              fill="#f2d36b"/>
+
+    </svg>
+
+    <p>
+      Sunlight decreases as depth increases. Different ocean zones
+      have different conditions and support different forms of life.
+    </p>
+
+  </div>
+
+
+  <!-- DIAGRAM 3: OCEAN WAVES -->
+
+  <div class="diagram-box">
+
+    <h2>Diagram 3 — Ocean Wave</h2>
+
+    <svg class="diagram" viewBox="0 0 850 450">
+
+      <!-- Water -->
+      <path d="M40 230
+               Q100 170 160 230
+               T280 230
+               T400 230
+               T520 230
+               T640 230
+               T760 230
+               T880 230
+               L880 400
+               L40 400 Z"
+            fill="#8ed0e4"
+            stroke="#333"
+            stroke-width="3"/>
+
+      <!-- Wave -->
+      <path d="M80 230
+               Q150 80 220 230
+               Q290 350 360 230
+               Q430 100 500 230
+               Q570 350 640 230
+               Q710 100 780 230"
+            fill="none"
+            stroke="#176987"
+            stroke-width="7"/>
+
+      <!-- Crest -->
+      <line x1="220" y1="230"
+            x2="220" y2="95"
+            stroke="#333"
+            stroke-width="2"/>
+
+      <text x="180" y="75"
+            font-size="20">Crest</text>
+
+      <!-- Trough -->
+      <line x1="360" y1="230"
+            x2="360" y2="350"
+            stroke="#333"
+            stroke-width="2"/>
+
+      <text x="325" y="385"
+            font-size="20">Trough</text>
+
+      <!-- Wave height -->
+      <line x1="550" y1="230"
+            x2="550" y2="110"
+            stroke="#555"
+            stroke-width="3"/>
+
+      <text x="565" y="175"
+            font-size="18">Wave height</text>
+
+      <!-- Wavelength -->
+      <line x1="220" y1="420"
+            x2="500" y2="420"
+            stroke="#333"
+            stroke-width="3"/>
+
+      <polygon points="220,420 240,412 240,428"
+               fill="#333"/>
+
+      <polygon points="500,420 480,412 480,428"
+               fill="#333"/>
+
+      <text x="315" y="445"
+            font-size="18">Wavelength</text>
+
+    </svg>
+
+    <p>
+      A wave is a moving disturbance on the surface of water.
+      Waves have features such as a crest, trough, height and wavelength.
+    </p>
+
+  </div>
+
+
+  <!-- DIAGRAM 4: TIDES -->
+
+  <div class="diagram-box">
+
+    <h2>Diagram 4 — Tides and the Moon</h2>
+
+    <svg class="diagram" viewBox="0 0 850 500">
+
+      <!-- Earth -->
+      <circle cx="400" cy="250"
+              r="110"
+              fill="#6db7d1"
+              stroke="#333"
+              stroke-width="4"/>
+
+      <text x="360" y="258"
+            font-size="22">Earth</text>
+
+      <!-- Ocean bulges -->
+      <ellipse cx="400" cy="250"
+               rx="175"
+               ry="135"
+               fill="none"
+               stroke="#4a91ac"
+               stroke-width="25"/>
+
+      <!-- Moon -->
+      <circle cx="700" cy="250"
+              r="65"
+              fill="#d9d9d9"
+              stroke="#333"
+              stroke-width="4"/>
+
+      <circle cx="680" cy="225"
+              r="10"
+              fill="#aaa"/>
+
+      <circle cx="720" cy="275"
+              r="14"
+              fill="#aaa"/>
+
+      <text x="675" y="255"
+            font-size="20">Moon</text>
+
+      <!-- Direction -->
+      <line x1="515" y1="250"
+            x2="625" y2="250"
+            stroke="#333"
+            stroke-width="4"/>
+
+      <polygon points="625,250 605,240 605,260"
+               fill="#333"/>
+
+      <text x="535" y="225"
+            font-size="18">Gravitational effect</text>
+
+      <text x="80" y="110"
+            font-size="20">High tide</text>
+
+      <text x="80" y="400"
+            font-size="20">Low tide</text>
+
+      <line x1="120" y1="125"
+            x2="230" y2="175"
+            stroke="#333"
+            stroke-width="2"/>
+
+      <line x1="120" y1="390"
+            x2="230" y2="325"
+            stroke="#333"
+            stroke-width="2"/>
+
+    </svg>
+
+    <p>
+      Tides are regular rises and falls in sea level.
+      The gravitational effects of the Moon and Sun contribute to tides.
+    </p>
+
+  </div>
+
+
+  <!-- DIAGRAM 5: OCEAN CURRENT -->
+
+  <div class="diagram-box">
+
+    <h2>Diagram 5 — Ocean Currents</h2>
+
+    <svg class="diagram" viewBox="0 0 850 500">
+
+      <!-- Ocean -->
+      <rect x="130" y="60"
+            width="590"
+            height="350"
+            rx="20"
+            fill="#b9e4ef"
+            stroke="#333"
+            stroke-width="4"/>
+
+      <!-- Continents -->
+      <path d="M170 100
+               L260 80
+               L290 150
+               L250 210
+               L180 180 Z"
+            fill="#d8d1a8"
+            stroke="#555"
+            stroke-width="3"/>
+
+      <path d="M580 80
+               L680 110
+               L650 200
+               L590 180
+               L560 130 Z"
+            fill="#d8d1a8"
+            stroke="#555"
+            stroke-width="3"/>
+
+      <!-- Current -->
+      <path d="M330 330
+               C250 290 260 180 350 150
+               C440 120 550 150 570 230
+               C590 310 500 350 420 310"
+            fill="none"
+            stroke="#277e9b"
+            stroke-width="12"/>
+
+      <polygon points="420,310 445,302 438,328"
+               fill="#277e9b"/>
+
+      <text x="330" y="390"
+            font-size="22">Ocean current</text>
+
+      <!-- Warm current -->
+      <path d="M210 350
+               C280 390 350 390 420 350"
+            fill="none"
+            stroke="#d66b55"
+            stroke-width="9"/>
+
+      <text x="200" y="440"
+            font-size="18">Warm water movement</text>
+
+      <!-- Cold current -->
+      <path d="M600 350
+               C540 390 480 390 420 350"
+            fill="none"
+            stroke="#4c8fc1"
+            stroke-width="9"/>
+
+      <text x="540" y="440"
+            font-size="18">Cold water movement</text>
+
+    </svg>
+
+    <p>
+      Ocean currents are large-scale movements of seawater.
+      They can transport heat and influence weather and climate.
+    </p>
+
+  </div>
+
+
+  <!-- DIAGRAM 6: FRESHWATER SYSTEM -->
+
+  <div class="diagram-box">
+
+    <h2>Diagram 6 — Freshwater System</h2>
+
+    <svg class="diagram" viewBox="0 0 850 500">
+
+      <!-- Mountains -->
+      <polygon points="100,280 250,80 400,280"
+               fill="#cdd9dd"
+               stroke="#444"
+               stroke-width="3"/>
+
+      <polygon points="300,280 450,100 600,280"
+               fill="#cdd9dd"
+               stroke="#444"
+               stroke-width="3"/>
+
+      <!-- Snow -->
+      <polygon points="205,140 250,80 295,140"
+               fill="white"
+               stroke="#555"
+               stroke-width="2"/>
+
+      <polygon points="405,160 450,100 495,160"
+               fill="white"
+               stroke="#555"
+               stroke-width="2"/>
+
+      <!-- River -->
+      <path d="M300 260
+               C350 300 340 350 420 390
+               C500 430 600 420 750 450"
+            fill="none"
+            stroke="#4b9dc0"
+            stroke-width="18"/>
+
+      <text x="470" y="380"
+            font-size="20">River</text>
+
+      <!-- Lake -->
+      <ellipse cx="230" cy="390"
+               rx="100"
+               ry="45"
+               fill="#83cce3"
+               stroke="#333"
+               stroke-width="3"/>
+
+      <text x="195" y="398"
+            font-size="18">Lake</text>
+
+      <!-- Groundwater -->
+      <line x1="80" y1="450"
+            x2="770" y2="450"
+            stroke="#9a8060"
+            stroke-width="15"/>
+
+      <path d="M400 450
+               C420 430 440 430 460 450"
+            fill="none"
+            stroke="#4b9dc0"
+            stroke-width="8"/>
+
+      <text x="330" y="485"
+            font-size="18">Groundwater</text>
+
+      <!-- Glacier -->
+      <path d="M250 150
+               L275 190
+               L260 220
+               L235 185 Z"
+            fill="#eafaff"
+            stroke="#555"
+            stroke-width="2"/>
+
+      <text x="110" y="55"
+            font-size="20">Mountain snow / ice</text>
+
+    </svg>
+
+    <p>
+      Freshwater occurs in glaciers and ice sheets, groundwater,
+      lakes, rivers and other freshwater stores. It is essential
+      for people, plants and animals.
+    </p>
+
+  </div>
+
+
+  <!-- DIAGRAM 7: WATER TREATMENT -->
+
+  <div class="diagram-box">
+
+    <h2>Diagram 7 — Simple Water Treatment Process</h2>
+
+    <svg class="diagram" viewBox="0 0 900 400">
+
+      <!-- Step 1 -->
+      <rect x="40" y="130"
+            width="160"
+            height="100"
+            rx="15"
+            fill="#e2f4fa"
+            stroke="#333"
+            stroke-width="3"/>
+
+      <text x="70" y="170"
+            font-size="20">1. Collection</text>
+
+      <text x="65" y="200"
+            font-size="15">Water source</text>
+
+      <!-- Arrow -->
+      <line x1="200" y1="180"
+            x2="270" y2="180"
+            stroke="#333"
+            stroke-width="5"/>
+
+      <polygon points="270,180 250,170 250,190"
+               fill="#333"/>
+
+      <!-- Step 2 -->
+      <rect x="270" y="130"
+            width="160"
+            height="100"
+            rx="15"
+            fill="#e2f4fa"
+            stroke="#333"
+            stroke-width="3"/>
+
+      <text x="300" y="170"
+            font-size="20">2. Filtration</text>
+
+      <text x="300" y="200"
+            font-size="15">Remove particles</text>
+
+      <!-- Arrow -->
+      <line x1="430" y1="180"
+            x2="500" y2="180"
+            stroke="#333"
+            stroke-width="5"/>
+
+      <polygon points="500,180 480,170 480,190"
+               fill="#333"/>
+
+      <!-- Step 3 -->
+      <rect x="500" y="130"
+            width="160"
+            height="100"
+            rx="15"
+            fill="#e2f4fa"
+            stroke="#333"
+            stroke-width="3"/>
+
+      <text x="525" y="170"
+            font-size="20">3. Treatment</text>
+
+      <text x="525" y="200"
+            font-size="15">Disinfection</text>
+
+      <!-- Arrow -->
+      <line x1="660" y1="180"
+            x2="730" y2="180"
+            stroke="#333"
+            stroke-width="5"/>
+
+      <polygon points="730,180 710,170 710,190"
+               fill="#333"/>
+
+      <!-- Step 4 -->
+      <rect x="730" y="130"
+            width="130"
+            height="100"
+            rx="15"
+            fill="#e2f4fa"
+            stroke="#333"
+            stroke-width="3"/>
+
+      <text x="755" y="170"
+            font-size="20">4. Supply</text>
+
+      <text x="750" y="200"
+            font-size="15">Clean water</text>
+
+    </svg>
+
+    <p>
+      Water treatment removes unwanted materials and helps make
+      water suitable for its intended use.
+    </p>
+
+  </div>
+
+
+  <!-- 55 QUESTIONS -->
+
+  <div class="questions">
+
+    <h2>🧠 Ocean & Water Practice — 55 Short Questions with Answers</h2>
+
+
+    <div class="question">
+      <strong>1. What is an ocean?</strong>
+      <div class="answer">
+        Answer: An ocean is a vast body of salt water that covers a large part of Earth.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>2. What is a sea?</strong>
+      <div class="answer">
+        Answer: A sea is a smaller body of salt water that is partly enclosed by land and connected to an ocean.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>3. What is saltwater?</strong>
+      <div class="answer">
+        Answer: Saltwater is water containing dissolved salts and other minerals.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>4. What is freshwater?</strong>
+      <div class="answer">
+        Answer: Freshwater is water with very low concentrations of dissolved salts.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>5. Why are oceans important?</strong>
+      <div class="answer">
+        Answer: Oceans provide habitats, influence climate and weather, and support many human activities.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>6. What is the water cycle?</strong>
+      <div class="answer">
+        Answer: The water cycle is the continuous movement of water between Earth's surface, atmosphere and underground.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>7. What is evaporation?</strong>
+      <div class="answer">
+        Answer: Evaporation is the process in which liquid water changes into water vapour.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>8. What is condensation?</strong>
+      <div class="answer">
+        Answer: Condensation is the process in which water vapour cools and changes into liquid water.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>9. What is precipitation?</strong>
+      <div class="answer">
+        Answer: Precipitation is water that falls from clouds to Earth's surface as rain, snow, sleet or hail.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>10. What is runoff?</strong>
+      <div class="answer">
+        Answer: Runoff is water that flows over the land surface toward rivers, lakes or oceans.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>11. What is infiltration?</strong>
+      <div class="answer">
+        Answer: Infiltration is the movement of water from the surface into the soil.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>12. What is groundwater?</strong>
+      <div class="answer">
+        Answer: Groundwater is water stored below Earth's surface in soil and rocks.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>13. What is a glacier?</strong>
+      <div class="answer">
+        Answer: A glacier is a large mass of ice that forms on land and moves slowly.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>14. What is a river?</strong>
+      <div class="answer">
+        Answer: A river is a natural stream of flowing water that usually moves toward a lake, sea or ocean.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>15. What is a lake?</strong>
+      <div class="answer">
+        Answer: A lake is a body of water surrounded by land.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>16. What is a reservoir?</strong>
+      <div class="answer">
+        Answer: A reservoir is a natural or artificial place where water is stored.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>17. What is a wave?</strong>
+      <div class="answer">
+        Answer: A wave is a moving disturbance that travels across the surface of water.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>18. What is a wave crest?</strong>
+      <div class="answer">
+        Answer: The crest is the highest part of a wave.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>19. What is a wave trough?</strong>
+      <div class="answer">
+        Answer: The trough is the lowest part of a wave.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>20. What is wavelength?</strong>
+      <div class="answer">
+        Answer: Wavelength is the distance between corresponding points on successive waves, such as two crests.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>21. What is wave height?</strong>
+      <div class="answer">
+        Answer: Wave height is the vertical distance between a wave crest and its trough.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>22. What causes many ocean surface waves?</strong>
+      <div class="answer">
+        Answer: Wind transferring energy to the water commonly produces ocean surface waves.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>23. What are tides?</strong>
+      <div class="answer">
+        Answer: Tides are regular rises and falls in sea level.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>24. What mainly causes ocean tides?</strong>
+      <div class="answer">
+        Answer: The gravitational effects of the Moon and the Sun are major causes of tides.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>25. What is high tide?</strong>
+      <div class="answer">
+        Answer: High tide is the time when sea level reaches a relatively high position.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>26. What is low tide?</strong>
+      <div class="answer">
+        Answer: Low tide is the time when sea level reaches a relatively low position.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>27. What is an ocean current?</strong>
+      <div class="answer">
+        Answer: An ocean current is a large-scale movement of seawater in a particular direction.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>28. Why are ocean currents important?</strong>
+      <div class="answer">
+        Answer: Ocean currents transport heat and can influence weather and climate.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>29. What is a warm ocean current?</strong>
+      <div class="answer">
+        Answer: A warm ocean current carries relatively warm water from warmer regions toward cooler regions.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>30. What is a cold ocean current?</strong>
+      <div class="answer">
+        Answer: A cold ocean current carries relatively cold water toward warmer regions.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>31. What is salinity?</strong>
+      <div class="answer">
+        Answer: Salinity is the amount of dissolved salts in water.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>32. Why is seawater salty?</strong>
+      <div class="answer">
+        Answer: Seawater contains dissolved salts and minerals that have accumulated through natural processes.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>33. What is an estuary?</strong>
+      <div class="answer">
+        Answer: An estuary is a partly enclosed coastal area where freshwater from rivers mixes with seawater.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>34. What is a coastline?</strong>
+      <div class="answer">
+        Answer: A coastline is the boundary between land and the sea.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>35. What is a beach?</strong>
+      <div class="answer">
+        Answer: A beach is an area of sand, gravel or other loose material along a shore.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>36. What is erosion?</strong>
+      <div class="answer">
+        Answer: Erosion is the wearing away and removal of rock or soil by agents such as water, wind or ice.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>37. How can waves affect coastlines?</strong>
+      <div class="answer">
+        Answer: Waves can erode, transport and deposit material along coastlines.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>38. What is a water resource?</strong>
+      <div class="answer">
+        Answer: A water resource is a source of water that can be used by people, ecosystems or other organisms.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>39. Why is freshwater important?</strong>
+      <div class="answer">
+        Answer: Freshwater is essential for drinking, agriculture, ecosystems and many human activities.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>40. What is water conservation?</strong>
+      <div class="answer">
+        Answer: Water conservation means using and managing water carefully to reduce unnecessary waste.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>41. What is water pollution?</strong>
+      <div class="answer">
+        Answer: Water pollution occurs when harmful substances contaminate water and reduce its quality.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>42. Name one source of water pollution.</strong>
+      <div class="answer">
+        Answer: Industrial waste can be a source of water pollution.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>43. What is plastic pollution in oceans?</strong>
+      <div class="answer">
+        Answer: It is the accumulation of plastic waste in marine environments.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>44. Why can ocean pollution be harmful?</strong>
+      <div class="answer">
+        Answer: Ocean pollution can damage marine habitats and harm aquatic organisms.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>45. What is marine life?</strong>
+      <div class="answer">
+        Answer: Marine life refers to organisms that live in seas and oceans.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>46. What is an aquatic ecosystem?</strong>
+      <div class="answer">
+        Answer: An aquatic ecosystem is a community of organisms interacting with each other and with their water environment.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>47. What is a coral reef?</strong>
+      <div class="answer">
+        Answer: A coral reef is a marine ecosystem built mainly from structures produced by reef-building corals.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>48. Why are coral reefs important?</strong>
+      <div class="answer">
+        Answer: Coral reefs provide habitats for many marine organisms and support diverse ecosystems.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>49. What is the hydrosphere?</strong>
+      <div class="answer">
+        Answer: The hydrosphere includes all of Earth's water in oceans, rivers, lakes, groundwater, ice and the atmosphere.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>50. What percentage of Earth's surface is covered by water?</strong>
+      <div class="answer">
+        Answer: About 71% of Earth's surface is covered by water.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>51. Where is most of Earth's water found?</strong>
+      <div class="answer">
+        Answer: Most of Earth's water is found in the oceans as saltwater.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>52. What is desalination?</strong>
+      <div class="answer">
+        Answer: Desalination is the process of removing dissolved salts from seawater to produce freshwater.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>53. What is water treatment?</strong>
+      <div class="answer">
+        Answer: Water treatment is the process of removing contaminants or harmful substances from water.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>54. Why should people protect oceans and freshwater?</strong>
+      <div class="answer">
+        Answer: Protecting water helps preserve ecosystems, natural resources and supplies needed by people and other organisms.
+      </div>
+    </div>
+
+
+    <div class="question">
+      <strong>55. Why is water essential for life?</strong>
+      <div class="answer">
+        Answer: Water is essential for biological processes and is needed by plants, animals and humans to survive.
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- NAVIGATION -->
+
+  <div style="text-align:center;">
+
+    <a class="back" href="geography.html">
+      ← Back to Geography
+    </a>
+
+    <a class="back" href="index.html">
+      🏠 Back to Home
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
