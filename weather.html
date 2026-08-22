@@ -1,5 +1,4 @@
-weather
-```html
+weather&climate
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +17,7 @@ weather
     }
 
     header {
-      background: #b9e3f5;
+      background: #b9ddf5;
       text-align: center;
       padding: 45px 20px;
     }
@@ -26,11 +25,12 @@ weather
     header h1 {
       margin: 0;
       font-size: 40px;
-      color: #245b78;
+      color: #245b7a;
     }
 
     header p {
       font-size: 18px;
+      margin-top: 10px;
     }
 
     .container {
@@ -46,30 +46,30 @@ weather
       padding: 28px;
       margin: 25px 0;
       border-radius: 18px;
-      box-shadow: 0 4px 12px #d7e2e8;
+      box-shadow: 0 4px 12px #d9e2e8;
     }
 
     h2 {
-      color: #28769b;
+      color: #28749b;
     }
 
     h3 {
-      color: #3b7f9f;
+      color: #397e9f;
     }
 
-    .example {
-      background: #eaf7fc;
+    .definition {
+      background: #eaf6fd;
       padding: 18px;
       border-radius: 12px;
       margin: 15px 0;
     }
 
-    .topic {
-      background: #f5fbfe;
-      border-left: 5px solid #69aecb;
-      padding: 15px;
+    .important {
+      background: #f0f8fc;
+      padding: 18px;
+      border-left: 5px solid #5ca5c9;
+      border-radius: 10px;
       margin: 15px 0;
-      border-radius: 8px;
     }
 
     .diagram {
@@ -78,58 +78,55 @@ weather
       max-width: 760px;
       height: auto;
       margin: 20px auto;
-      border: 1px solid #d5e3e9;
-      background: #fff;
+      border: 1px solid #d6e1e7;
       border-radius: 12px;
+      background: #ffffff;
     }
 
     .question {
-      background: #f7fcff;
+      background: #f7fbfe;
       padding: 16px;
       margin: 12px 0;
       border-radius: 10px;
-      border-left: 4px solid #67a8c3;
+      border-left: 4px solid #75aec9;
     }
 
     .answer {
       margin-top: 7px;
-      color: #276d88;
+      color: #28647f;
       font-weight: bold;
+    }
+
+    .buttons {
+      text-align: center;
+      margin: 35px 0;
     }
 
     .back {
       display: inline-block;
-      margin: 20px 10px;
-      color: #28769b;
+      margin: 8px;
+      padding: 12px 20px;
+      background: #d9effa;
+      color: #28647f;
       text-decoration: none;
       font-weight: bold;
-      background: white;
-      padding: 10px 16px;
       border-radius: 10px;
-      box-shadow: 0 3px 8px #d7e2e8;
     }
 
     .back:hover {
-      background: #eaf7fc;
+      background: #c4e5f4;
     }
 
-    .footer {
+    .topic-list {
+      background: #f4faff;
+      padding: 20px 30px;
+      border-radius: 12px;
+    }
+
+    footer {
       text-align: center;
-      margin-top: 35px;
       padding: 25px;
-      color: #55717e;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 30px;
-      }
-
-      .lesson,
-      .diagram-box,
-      .questions {
-        padding: 20px;
-      }
+      color: #527181;
     }
   </style>
 </head>
@@ -137,7 +134,7 @@ weather
 <body>
 
 <header>
-  <h1>🌦️ Weather & Climate</h1>
+  <h1>🌤️ Weather & Climate</h1>
   <p>Explore temperature, wind, humidity, rainfall, clouds, climate zones and weather events.</p>
 </header>
 
@@ -146,237 +143,733 @@ weather
   <!-- INTRODUCTION -->
 
   <div class="lesson">
-
     <h2>📚 Weather & Climate Guide</h2>
 
     <p>
-      <strong>Weather</strong> describes the condition of the atmosphere
-      at a particular place and time.
+      Weather describes the condition of the atmosphere at a particular
+      place and time. Climate describes the usual pattern of weather
+      in a place over a long period.
     </p>
 
-    <p>
-      <strong>Climate</strong> describes the usual pattern of weather
-      in a place over a long period of time.
-    </p>
-
-    <div class="example">
-      <strong>Remember:</strong><br><br>
-      Weather can change from hour to hour or day to day,
-      while climate describes long-term patterns.
+    <div class="definition">
+      <strong>🌦️ Weather:</strong><br>
+      The condition of the atmosphere at a particular place and time,
+      including temperature, wind, clouds, humidity and precipitation.
     </div>
 
-    <div class="topic">
-      <h3>🌡️ Temperature</h3>
-      <p>
-        Temperature tells us how hot or cold the air is.
-        It is commonly measured with a thermometer in degrees Celsius (°C).
-      </p>
+    <div class="definition">
+      <strong>🌍 Climate:</strong><br>
+      The long-term pattern of weather experienced by a place or region.
     </div>
 
-    <div class="topic">
-      <h3>💨 Wind</h3>
-      <p>
-        Wind is moving air. Wind generally moves from areas of higher
-        air pressure toward areas of lower air pressure.
-      </p>
+    <div class="topic-list">
+      <strong>Topics on this page:</strong>
+      <ul>
+        <li>🌡️ Temperature</li>
+        <li>💨 Wind</li>
+        <li>💧 Humidity</li>
+        <li>🌧️ Rainfall and precipitation</li>
+        <li>☁️ Clouds</li>
+        <li>🌍 Climate zones</li>
+        <li>🌪️ Weather events</li>
+      </ul>
     </div>
-
-    <div class="topic">
-      <h3>💧 Humidity</h3>
-      <p>
-        Humidity is the amount of water vapour present in the air.
-        Relative humidity is usually expressed as a percentage.
-      </p>
-    </div>
-
-    <div class="topic">
-      <h3>🌧️ Rainfall & Precipitation</h3>
-      <p>
-        Precipitation is water that falls from clouds to Earth's surface.
-        It can include rain, snow, sleet or hail.
-      </p>
-    </div>
-
-    <div class="topic">
-      <h3>☁️ Clouds</h3>
-      <p>
-        Clouds form when moist air cools and water vapour condenses
-        into tiny water droplets or ice crystals.
-      </p>
-    </div>
-
-    <div class="topic">
-      <h3>🌍 Climate Zones</h3>
-      <p>
-        Earth's major climate zones include tropical, temperate and polar
-        regions. Climate varies with factors such as latitude, altitude
-        and distance from the sea.
-      </p>
-    </div>
-
-    <div class="topic">
-      <h3>🌪️ Weather Events</h3>
-      <p>
-        Weather events include thunderstorms, hurricanes or tropical
-        cyclones, tornadoes, floods, droughts and heatwaves.
-      </p>
-    </div>
-
   </div>
 
 
-  <!-- DIAGRAM 1 -->
+  <!-- 1. TEMPERATURE -->
 
   <div class="diagram-box">
+    <h2>🌡️ 1. Temperature</h2>
 
-    <h2>📊 Diagram 1 — Weather Elements</h2>
+    <div class="definition">
+      <strong>Definition:</strong>
+      Temperature is a measure of how hot or cold the air or another substance is.
+      It is commonly measured in degrees Celsius (°C).
+    </div>
 
-    <svg class="diagram" viewBox="0 0 800 500">
+    <svg class="diagram" viewBox="0 0 760 430">
 
-      <rect x="40" y="40" width="720" height="420"
-            rx="25" fill="#f7fcff"
-            stroke="#47788b" stroke-width="3"/>
-
-      <circle cx="400" cy="250" r="85"
-              fill="#dff2fa"
-              stroke="#47788b"
-              stroke-width="4"/>
-
-      <text x="345" y="245" font-size="25" font-weight="bold">
-        WEATHER
-      </text>
-
-      <text x="355" y="278" font-size="18">
-        Elements
-      </text>
-
-      <!-- Temperature -->
-      <rect x="80" y="90" width="190" height="70"
-            rx="15" fill="#fff0d8"
-            stroke="#555" stroke-width="2"/>
-      <text x="105" y="125" font-size="19">🌡 Temperature</text>
-      <text x="105" y="148" font-size="14">Hot or cold</text>
-
-      <!-- Wind -->
-      <rect x="530" y="90" width="190" height="70"
-            rx="15" fill="#e5f4fb"
-            stroke="#555" stroke-width="2"/>
-      <text x="575" y="125" font-size="19">💨 Wind</text>
-      <text x="575" y="148" font-size="14">Moving air</text>
-
-      <!-- Humidity -->
-      <rect x="80" y="330" width="190" height="70"
-            rx="15" fill="#e5f4fb"
-            stroke="#555" stroke-width="2"/>
-      <text x="105" y="365" font-size="19">💧 Humidity</text>
-      <text x="105" y="388" font-size="14">Water vapour</text>
-
-      <!-- Rain -->
-      <rect x="530" y="330" width="190" height="70"
-            rx="15" fill="#e9f3ff"
-            stroke="#555" stroke-width="2"/>
-      <text x="565" y="365" font-size="19">🌧 Rainfall</text>
-      <text x="565" y="388" font-size="14">Precipitation</text>
-
-      <line x1="270" y1="125" x2="330" y2="205"
-            stroke="#47788b" stroke-width="3"/>
-
-      <line x1="530" y1="125" x2="470" y2="205"
-            stroke="#47788b" stroke-width="3"/>
-
-      <line x1="270" y1="365" x2="330" y2="295"
-            stroke="#47788b" stroke-width="3"/>
-
-      <line x1="530" y1="365" x2="470" y2="295"
-            stroke="#47788b" stroke-width="3"/>
-
-    </svg>
-
-    <p>
-      Weather is described using several measurable elements,
-      including temperature, wind, humidity and precipitation.
-    </p>
-
-  </div>
-
-
-  <!-- DIAGRAM 2 -->
-
-  <div class="diagram-box">
-
-    <h2>🌡️ Diagram 2 — Temperature Measurement</h2>
-
-    <svg class="diagram" viewBox="0 0 700 450">
+      <!-- sky -->
+      <rect x="0" y="0" width="760" height="430" fill="#eef9ff"/>
 
       <!-- thermometer -->
-      <rect x="315" y="70" width="55" height="260"
-            rx="25" fill="#f7f7f7"
-            stroke="#333" stroke-width="3"/>
+      <rect x="270" y="70" width="70" height="250"
+            rx="35" fill="#ffffff" stroke="#333" stroke-width="4"/>
 
-      <circle cx="342" cy="345" r="48"
-              fill="#e87575"
-              stroke="#333" stroke-width="3"/>
+      <circle cx="305" cy="330" r="55"
+              fill="#e85c5c" stroke="#333" stroke-width="4"/>
 
-      <rect x="330" y="190" width="24" height="155"
-            fill="#e87575"/>
+      <rect x="287" y="170" width="36" height="160"
+            fill="#e85c5c"/>
 
       <!-- scale -->
-      <line x1="400" y1="90" x2="400" y2="340"
+      <line x1="340" y1="100" x2="390" y2="100"
             stroke="#333" stroke-width="3"/>
+      <text x="405" y="107" font-size="20">40°C</text>
 
-      <line x1="390" y1="100" x2="420" y2="100"
+      <line x1="340" y1="155" x2="390" y2="155"
             stroke="#333" stroke-width="3"/>
-      <text x="435" y="107" font-size="18">40°C</text>
+      <text x="405" y="162" font-size="20">30°C</text>
 
-      <line x1="390" y1="160" x2="420" y2="160"
+      <line x1="340" y1="210" x2="390" y2="210"
             stroke="#333" stroke-width="3"/>
-      <text x="435" y="167" font-size="18">30°C</text>
+      <text x="405" y="217" font-size="20">20°C</text>
 
-      <line x1="390" y1="220" x2="420" y2="220"
+      <line x1="340" y1="265" x2="390" y2="265"
             stroke="#333" stroke-width="3"/>
-      <text x="435" y="227" font-size="18">20°C</text>
+      <text x="405" y="272" font-size="20">10°C</text>
 
-      <line x1="390" y1="280" x2="420" y2="280"
+      <line x1="340" y1="320" x2="390" y2="320"
             stroke="#333" stroke-width="3"/>
-      <text x="435" y="287" font-size="18">10°C</text>
+      <text x="405" y="327" font-size="20">0°C</text>
 
-      <line x1="390" y1="340" x2="420" y2="340"
-            stroke="#333" stroke-width="3"/>
-      <text x="435" y="347" font-size="18">0°C</text>
-
-      <text x="220" y="410" font-size="21" font-weight="bold">
-        Thermometer
-      </text>
-
-      <text x="250" y="435" font-size="16">
-        Measures air temperature
+      <text x="210" y="385" font-size="22">Thermometer</text>
+      <text x="470" y="385" font-size="19">
+        Temperature changes with heating and cooling.
       </text>
 
     </svg>
 
     <p>
-      A thermometer is used to measure temperature.
-      Temperature is commonly recorded in degrees Celsius.
+      Temperature is one of the most important elements of weather.
+      Thermometers are used to measure temperature.
     </p>
+  </div>
+
+
+  <!-- 2. WIND -->
+
+  <div class="diagram-box">
+    <h2>💨 2. Wind</h2>
+
+    <div class="definition">
+      <strong>Definition:</strong>
+      Wind is moving air. Air moves from areas of higher air pressure
+      toward areas of lower air pressure.
+    </div>
+
+    <svg class="diagram" viewBox="0 0 760 430">
+
+      <rect x="0" y="0" width="760" height="430" fill="#f3fbff"/>
+
+      <!-- high pressure -->
+      <circle cx="160" cy="190" r="75"
+              fill="#dbeefa" stroke="#3e718b" stroke-width="4"/>
+
+      <text x="105" y="185" font-size="22">HIGH</text>
+      <text x="105" y="215" font-size="20">Pressure</text>
+
+      <!-- low pressure -->
+      <circle cx="600" cy="190" r="75"
+              fill="#fde3e3" stroke="#a34e4e" stroke-width="4"/>
+
+      <text x="555" y="185" font-size="22">LOW</text>
+      <text x="555" y="215" font-size="20">Pressure</text>
+
+      <!-- wind arrows -->
+      <line x1="245" y1="150" x2="500" y2="150"
+            stroke="#3f7895" stroke-width="8"/>
+      <polygon points="500,150 475,135 475,165"
+               fill="#3f7895"/>
+
+      <line x1="245" y1="210" x2="500" y2="210"
+            stroke="#3f7895" stroke-width="8"/>
+      <polygon points="500,210 475,195 475,225"
+               fill="#3f7895"/>
+
+      <text x="315" y="115" font-size="24">WIND</text>
+      <text x="245" y="300" font-size="20">
+        Air moves from higher pressure toward lower pressure.
+      </text>
+
+      <!-- wind vane -->
+      <line x1="380" y1="325" x2="380" y2="390"
+            stroke="#555" stroke-width="5"/>
+
+      <line x1="320" y1="345" x2="440" y2="345"
+            stroke="#555" stroke-width="5"/>
+
+      <polygon points="440,345 415,333 415,357"
+               fill="#555"/>
+
+    </svg>
+
+    <p>
+      Wind speed can be measured with an anemometer, while wind direction
+      can be shown using a wind vane.
+    </p>
+  </div>
+
+
+  <!-- 3. HUMIDITY -->
+
+  <div class="diagram-box">
+    <h2>💧 3. Humidity</h2>
+
+    <div class="definition">
+      <strong>Definition:</strong>
+      Humidity is the amount of water vapour present in the air.
+      Relative humidity is commonly expressed as a percentage.
+    </div>
+
+    <svg class="diagram" viewBox="0 0 760 430">
+
+      <rect x="0" y="0" width="760" height="430" fill="#eef9ff"/>
+
+      <!-- water vapour -->
+      <circle cx="180" cy="150" r="18" fill="#8ccde8"/>
+      <circle cx="245" cy="100" r="14" fill="#8ccde8"/>
+      <circle cx="310" cy="160" r="20" fill="#8ccde8"/>
+      <circle cx="390" cy="105" r="16" fill="#8ccde8"/>
+      <circle cx="470" cy="160" r="19" fill="#8ccde8"/>
+      <circle cx="540" cy="110" r="14" fill="#8ccde8"/>
+
+      <text x="270" y="55" font-size="25">Water Vapour</text>
+
+      <!-- humidity gauge -->
+      <rect x="250" y="250" width="260" height="55"
+            rx="25" fill="#eeeeee" stroke="#333" stroke-width="3"/>
+
+      <rect x="253" y="253" width="180" height="49"
+            rx="22" fill="#72b7d5"/>
+
+      <text x="330" y="290" font-size="20">70%</text>
+
+      <text x="205" y="350" font-size="18">Relative Humidity</text>
+
+      <text x="90" y="395" font-size="18">Low humidity</text>
+      <text x="580" y="395" font-size="18">High humidity</text>
+
+    </svg>
+
+    <p>
+      When humidity is high, the air contains a large amount of water vapour.
+      Humidity affects cloud formation, rainfall and how comfortable the air feels.
+    </p>
+  </div>
+
+
+  <!-- 4. RAINFALL -->
+
+  <div class="diagram-box">
+    <h2>🌧️ 4. Rainfall & Precipitation</h2>
+
+    <div class="definition">
+      <strong>Definition:</strong>
+      Precipitation is water that falls from clouds to Earth's surface.
+      It can occur as rain, snow, sleet or hail.
+    </div>
+
+    <svg class="diagram" viewBox="0 0 760 450">
+
+      <rect x="0" y="0" width="760" height="450" fill="#eef8ff"/>
+
+      <!-- cloud -->
+      <circle cx="290" cy="150" r="60" fill="#c9d9e3"/>
+      <circle cx="360" cy="130" r="75" fill="#c9d9e3"/>
+      <circle cx="440" cy="155" r="60" fill="#c9d9e3"/>
+      <rect x="250" y="150" width="260" height="65"
+            fill="#c9d9e3"/>
+
+      <text x="320" y="185" font-size="23">Cloud</text>
+
+      <!-- rain -->
+      <line x1="285" y1="230" x2="265" y2="310"
+            stroke="#4c9cc1" stroke-width="7"/>
+      <line x1="335" y1="230" x2="315" y2="320"
+            stroke="#4c9cc1" stroke-width="7"/>
+      <line x1="385" y1="230" x2="365" y2="310"
+            stroke="#4c9cc1" stroke-width="7"/>
+      <line x1="435" y1="230" x2="415" y2="320"
+            stroke="#4c9cc1" stroke-width="7"/>
+      <line x1="485" y1="230" x2="465" y2="310"
+            stroke="#4c9cc1" stroke-width="7"/>
+
+      <text x="540" y="270" font-size="20">Rain</text>
+
+      <!-- ground -->
+      <path d="M0 350 Q150 330 300 350 T600 350 T760 350"
+            fill="none" stroke="#5b8a55" stroke-width="8"/>
+
+      <text x="255" y="410" font-size="21">
+        Water falls from clouds to Earth's surface.
+      </text>
+
+    </svg>
+
+    <p>
+      Rainfall is one form of precipitation. Other forms include snow,
+      sleet and hail.
+    </p>
+  </div>
+
+
+  <!-- 5. CLOUDS -->
+
+  <div class="diagram-box">
+    <h2>☁️ 5. Clouds</h2>
+
+    <div class="definition">
+      <strong>Definition:</strong>
+      A cloud is a visible collection of tiny water droplets or ice crystals
+      suspended in the atmosphere.
+    </div>
+
+    <svg class="diagram" viewBox="0 0 760 450">
+
+      <rect x="0" y="0" width="760" height="450" fill="#eaf7ff"/>
+
+      <!-- sun -->
+      <circle cx="620" cy="90" r="45"
+              fill="#f5d56a" stroke="#333" stroke-width="3"/>
+      <text x="590" y="98" font-size="18">Sun</text>
+
+      <!-- cloud 1 -->
+      <circle cx="180" cy="150" r="55" fill="#ffffff" stroke="#777" stroke-width="3"/>
+      <circle cx="240" cy="130" r="75" fill="#ffffff" stroke="#777" stroke-width="3"/>
+      <circle cx="310" cy="155" r="55" fill="#ffffff" stroke="#777" stroke-width="3"/>
+      <rect x="145" y="150" width="205" height="60"
+            fill="#ffffff" stroke="#777" stroke-width="3"/>
+
+      <text x="205" y="245" font-size="22">Cloud</text>
+
+      <!-- evaporation arrows -->
+      <path d="M420 350 Q430 290 420 245"
+            fill="none" stroke="#4d99bb" stroke-width="6"/>
+
+      <polygon points="420,240 408,260 432,260"
+               fill="#4d99bb"/>
+
+      <text x="450" y="300" font-size="19">Water vapour rises</text>
+
+      <!-- ground water -->
+      <path d="M0 370 Q150 350 300 370 T600 370 T760 370"
+            fill="none" stroke="#4b92b2" stroke-width="10"/>
+
+      <text x="270" y="420" font-size="20">Earth's surface</text>
+
+    </svg>
+
+    <p>
+      Clouds form when moist air rises, cools and water vapour condenses
+      into tiny droplets or ice crystals.
+    </p>
+  </div>
+
+
+  <!-- 6. CLIMATE ZONES -->
+
+  <div class="diagram-box">
+    <h2>🌍 6. Climate Zones</h2>
+
+    <div class="definition">
+      <strong>Definition:</strong>
+      Climate zones are broad regions of Earth that have similar long-term
+      patterns of temperature and precipitation.
+    </div>
+
+    <svg class="diagram" viewBox="0 0 760 470">
+
+      <!-- Earth -->
+      <circle cx="380" cy="235" r="170"
+              fill="#dceff7" stroke="#333" stroke-width="4"/>
+
+      <!-- climate bands -->
+      <path d="M220 160 Q380 110 540 160
+               L550 205 Q380 165 210 205 Z"
+            fill="#f4d98b"/>
+
+      <path d="M210 205 Q380 165 550 205
+               L550 265 Q380 305 210 265 Z"
+            fill="#a9d58e"/>
+
+      <path d="M210 265 Q380 305 550 265
+               L540 310 Q380 360 220 310 Z"
+            fill="#f0c98a"/>
+
+      <!-- equator -->
+      <line x1="215" y1="235" x2="545" y2="235"
+            stroke="#333" stroke-width="3" stroke-dasharray="10 7"/>
+
+      <text x="335" y="230" font-size="19">Equator</text>
+
+      <!-- labels -->
+      <text x="25" y="115" font-size="20">Polar zones</text>
+      <text x="25" y="205" font-size="20">Temperate zones</text>
+      <text x="25" y="310" font-size="20">Tropical zone</text>
+
+      <text x="245" y="420" font-size="20">
+        Different parts of Earth receive different amounts of solar energy.
+      </text>
+
+    </svg>
+
+    <p>
+      The major climate zones include tropical, temperate and polar regions.
+      Climate is influenced by latitude, altitude, distance from the sea and other factors.
+    </p>
+  </div>
+
+
+  <!-- 7. WEATHER EVENTS -->
+
+  <div class="diagram-box">
+    <h2>🌪️ 7. Weather Events</h2>
+
+    <div class="definition">
+      <strong>Definition:</strong>
+      Weather events are atmospheric events that can cause noticeable
+      changes in weather conditions, such as thunderstorms, cyclones,
+      heat waves, heavy rainfall and hailstorms.
+    </div>
+
+    <svg class="diagram" viewBox="0 0 760 450">
+
+      <rect x="0" y="0" width="760" height="450" fill="#f4f9fc"/>
+
+      <!-- thunderstorm cloud -->
+      <circle cx="180" cy="150" r="55" fill="#9aa9b5"/>
+      <circle cx="245" cy="125" r="70" fill="#9aa9b5"/>
+      <circle cx="315" cy="150" r="55" fill="#9aa9b5"/>
+      <rect x="145" y="150" width="210" height="60"
+            fill="#9aa9b5"/>
+
+      <!-- lightning -->
+      <polygon points="245,205 210,280 240,275 215,350 285,255 250,260"
+               fill="#e6b936" stroke="#333" stroke-width="3"/>
+
+      <text x="120" y="390" font-size="20">Thunderstorm</text>
+
+      <!-- cyclone -->
+      <circle cx="555" cy="205" r="105"
+              fill="#e5f0f5" stroke="#4d8097" stroke-width="4"/>
+
+      <path d="M555 205
+               C500 160 475 235 540 255
+               C610 275 650 190 585 160
+               C520 130 470 190 505 250"
+            fill="none" stroke="#4d8097" stroke-width="8"/>
+
+      <path d="M555 205
+               C600 220 600 175 565 170"
+            fill="none" stroke="#4d8097" stroke-width="8"/>
+
+      <text x="500" y="390" font-size="20">Cyclone</text>
+
+    </svg>
+
+    <p>
+      Severe weather events can affect people, buildings, transport,
+      agriculture and the environment. Weather warnings help people prepare
+      for dangerous conditions.
+    </p>
+  </div>
+
+
+  <!-- 55 QUESTIONS -->
+
+  <div class="questions">
+
+    <h2>🧠 Weather & Climate — 55 Short Questions with Answers</h2>
+
+    <div class="question">
+      <strong>1. What is weather?</strong>
+      <div class="answer">Answer: Weather is the condition of the atmosphere at a particular place and time.</div>
+    </div>
+
+    <div class="question">
+      <strong>2. What is climate?</strong>
+      <div class="answer">Answer: Climate is the usual pattern of weather in a place over a long period.</div>
+    </div>
+
+    <div class="question">
+      <strong>3. What is temperature?</strong>
+      <div class="answer">Answer: Temperature is a measure of how hot or cold something is.</div>
+    </div>
+
+    <div class="question">
+      <strong>4. Which instrument measures temperature?</strong>
+      <div class="answer">Answer: A thermometer measures temperature.</div>
+    </div>
+
+    <div class="question">
+      <strong>5. What unit is commonly used to measure temperature?</strong>
+      <div class="answer">Answer: Degrees Celsius, written as °C, is commonly used.</div>
+    </div>
+
+    <div class="question">
+      <strong>6. Why does temperature vary during the day?</strong>
+      <div class="answer">Answer: Temperature changes because the amount of solar heating changes during the day.</div>
+    </div>
+
+    <div class="question">
+      <strong>7. What is solar energy?</strong>
+      <div class="answer">Answer: Solar energy is energy received from the Sun.</div>
+    </div>
+
+    <div class="question">
+      <strong>8. What is wind?</strong>
+      <div class="answer">Answer: Wind is moving air.</div>
+    </div>
+
+    <div class="question">
+      <strong>9. What causes wind?</strong>
+      <div class="answer">Answer: Differences in air pressure cause air to move and produce wind.</div>
+    </div>
+
+    <div class="question">
+      <strong>10. In which direction does air generally move between pressure areas?</strong>
+      <div class="answer">Answer: Air generally moves from higher pressure toward lower pressure.</div>
+    </div>
+
+    <div class="question">
+      <strong>11. What is wind speed?</strong>
+      <div class="answer">Answer: Wind speed is the rate at which air moves.</div>
+    </div>
+
+    <div class="question">
+      <strong>12. Which instrument measures wind speed?</strong>
+      <div class="answer">Answer: An anemometer measures wind speed.</div>
+    </div>
+
+    <div class="question">
+      <strong>13. What is wind direction?</strong>
+      <div class="answer">Answer: Wind direction tells us where the wind is coming from.</div>
+    </div>
+
+    <div class="question">
+      <strong>14. Which instrument shows wind direction?</strong>
+      <div class="answer">Answer: A wind vane shows wind direction.</div>
+    </div>
+
+    <div class="question">
+      <strong>15. What is air pressure?</strong>
+      <div class="answer">Answer: Air pressure is the force exerted by the weight of the atmosphere.</div>
+    </div>
+
+    <div class="question">
+      <strong>16. What is humidity?</strong>
+      <div class="answer">Answer: Humidity is the amount of water vapour present in the air.</div>
+    </div>
+
+    <div class="question">
+      <strong>17. What is water vapour?</strong>
+      <div class="answer">Answer: Water vapour is water in its gaseous state in the atmosphere.</div>
+    </div>
+
+    <div class="question">
+      <strong>18. What is relative humidity?</strong>
+      <div class="answer">Answer: Relative humidity compares the amount of water vapour in the air with the maximum amount the air can hold at that temperature.</div>
+    </div>
+
+    <div class="question">
+      <strong>19. How is relative humidity expressed?</strong>
+      <div class="answer">Answer: Relative humidity is usually expressed as a percentage.</div>
+    </div>
+
+    <div class="question">
+      <strong>20. What happens when moist air cools?</strong>
+      <div class="answer">Answer: Water vapour may condense into tiny water droplets or ice crystals.</div>
+    </div>
+
+    <div class="question">
+      <strong>21. What is precipitation?</strong>
+      <div class="answer">Answer: Precipitation is water that falls from clouds to Earth's surface.</div>
+    </div>
+
+    <div class="question">
+      <strong>22. Name four forms of precipitation.</strong>
+      <div class="answer">Answer: Rain, snow, sleet and hail are forms of precipitation.</div>
+    </div>
+
+    <div class="question">
+      <strong>23. What is rainfall?</strong>
+      <div class="answer">Answer: Rainfall is liquid water that falls from clouds to Earth's surface.</div>
+    </div>
+
+    <div class="question">
+      <strong>24. What is snow?</strong>
+      <div class="answer">Answer: Snow is precipitation that falls as ice crystals or groups of ice crystals.</div>
+    </div>
+
+    <div class="question">
+      <strong>25. What is hail?</strong>
+      <div class="answer">Answer: Hail consists of balls or pieces of ice that fall from certain storm clouds.</div>
+    </div>
+
+    <div class="question">
+      <strong>26. What is condensation?</strong>
+      <div class="answer">Answer: Condensation is the change of water vapour into liquid water.</div>
+    </div>
+
+    <div class="question">
+      <strong>27. What is evaporation?</strong>
+      <div class="answer">Answer: Evaporation is the change of liquid water into water vapour.</div>
+    </div>
+
+    <div class="question">
+      <strong>28. What is the water cycle?</strong>
+      <div class="answer">Answer: The water cycle is the continuous movement of water between Earth's surface, atmosphere and other parts of the environment.</div>
+    </div>
+
+    <div class="question">
+      <strong>29. What is a cloud?</strong>
+      <div class="answer">Answer: A cloud is a visible collection of tiny water droplets or ice crystals in the atmosphere.</div>
+    </div>
+
+    <div class="question">
+      <strong>30. How do clouds form?</strong>
+      <div class="answer">Answer: Clouds form when moist air rises, cools and water vapour condenses.</div>
+    </div>
+
+    <div class="question">
+      <strong>31. Why are clouds important?</strong>
+      <div class="answer">Answer: Clouds are important because they influence weather and are a major source of precipitation.</div>
+    </div>
+
+    <div class="question">
+      <strong>32. What is a cloud made of?</strong>
+      <div class="answer">Answer: Clouds are made of tiny water droplets, ice crystals, or both.</div>
+    </div>
+
+    <div class="question">
+      <strong>33. What is a climate zone?</strong>
+      <div class="answer">Answer: A climate zone is a broad region with a similar long-term climate.</div>
+    </div>
+
+    <div class="question">
+      <strong>34. What are the three major climate zones?</strong>
+      <div class="answer">Answer: The three major zones are tropical, temperate and polar.</div>
+    </div>
+
+    <div class="question">
+      <strong>35. What is the tropical zone?</strong>
+      <div class="answer">Answer: The tropical zone is the region around the Equator that generally has warm temperatures throughout the year.</div>
+    </div>
+
+    <div class="question">
+      <strong>36. What is the temperate zone?</strong>
+      <div class="answer">Answer: Temperate zones generally have moderate temperatures and greater seasonal changes than tropical regions.</div>
+    </div>
+
+    <div class="question">
+      <strong>37. What are polar zones?</strong>
+      <div class="answer">Answer: Polar zones are the cold regions near the North and South Poles.</div>
+    </div>
+
+    <div class="question">
+      <strong>38. What is the Equator?</strong>
+      <div class="answer">Answer: The Equator is an imaginary line around Earth at 0° latitude.</div>
+    </div>
+
+    <div class="question">
+      <strong>39. Why are tropical regions generally warm?</strong>
+      <div class="answer">Answer: Tropical regions receive relatively direct solar energy throughout the year.</div>
+    </div>
+
+    <div class="question">
+      <strong>40. What is latitude?</strong>
+      <div class="answer">Answer: Latitude is the angular distance of a place north or south of the Equator.</div>
+    </div>
+
+    <div class="question">
+      <strong>41. How does latitude affect climate?</strong>
+      <div class="answer">Answer: Latitude affects the angle and amount of solar energy received, influencing temperature and climate.</div>
+    </div>
+
+    <div class="question">
+      <strong>42. How does altitude affect temperature?</strong>
+      <div class="answer">Answer: Temperature generally decreases as altitude increases in the lower atmosphere.</div>
+    </div>
+
+    <div class="question">
+      <strong>43. How can distance from the sea affect climate?</strong>
+      <div class="answer">Answer: Large bodies of water heat and cool more slowly than land, which can moderate nearby temperatures.</div>
+    </div>
+
+    <div class="question">
+      <strong>44. What is a weather event?</strong>
+      <div class="answer">Answer: A weather event is an atmospheric event that produces noticeable weather conditions.</div>
+    </div>
+
+    <div class="question">
+      <strong>45. What is a thunderstorm?</strong>
+      <div class="answer">Answer: A thunderstorm is a storm associated with lightning and thunder, often accompanied by heavy rain and strong winds.</div>
+    </div>
+
+    <div class="question">
+      <strong>46. What is lightning?</strong>
+      <div class="answer">Answer: Lightning is a powerful electrical discharge in the atmosphere.</div>
+    </div>
+
+    <div class="question">
+      <strong>47. What is thunder?</strong>
+      <div class="answer">Answer: Thunder is the sound produced by the rapid expansion of air heated by lightning.</div>
+    </div>
+
+    <div class="question">
+      <strong>48. What is a cyclone?</strong>
+      <div class="answer">Answer: A cyclone is a large rotating weather system associated with low atmospheric pressure.</div>
+    </div>
+
+    <div class="question">
+      <strong>49. What is a heat wave?</strong>
+      <div class="answer">Answer: A heat wave is a period of unusually hot weather lasting for several days or longer in a particular region.</div>
+    </div>
+
+    <div class="question">
+      <strong>50. What is a drought?</strong>
+      <div class="answer">Answer: A drought is a prolonged period of unusually low precipitation that can result in water shortages.</div>
+    </div>
+
+    <div class="question">
+      <strong>51. What is a flood?</strong>
+      <div class="answer">Answer: A flood occurs when water covers land that is normally dry.</div>
+    </div>
+
+    <div class="question">
+      <strong>52. What is a weather forecast?</strong>
+      <div class="answer">Answer: A weather forecast is a prediction of future atmospheric conditions.</div>
+    </div>
+
+    <div class="question">
+      <strong>53. Why are weather forecasts useful?</strong>
+      <div class="answer">Answer: Weather forecasts help people plan activities and prepare for potentially dangerous weather.</div>
+    </div>
+
+    <div class="question">
+      <strong>54. What is the difference between weather and climate?</strong>
+      <div class="answer">Answer: Weather describes short-term atmospheric conditions, while climate describes long-term patterns of weather.</div>
+    </div>
+
+    <div class="question">
+      <strong>55. Why is it important to study weather and climate?</strong>
+      <div class="answer">Answer: Studying weather and climate helps us understand atmospheric conditions, prepare for hazards, manage resources and understand Earth's environment.</div>
+    </div>
 
   </div>
 
 
-  <!-- DIAGRAM 3 -->
+  <!-- BUTTONS -->
 
-  <div class="diagram-box">
+  <div class="buttons">
 
-    <h2>💨 Diagram 3 — Wind and Air Pressure</h2>
+    <a class="back" href="geography.html">
+      ← Back to Geography
+    </a>
 
-    <svg class="diagram" viewBox="0 0 800 430">
+    <a class="back" href="index.html">
+      🏠 Home
+    </a>
 
-      <rect x="60" y="80" width="250" height="250"
-            rx="25" fill="#eaf4ff"
-            stroke="#4d7190" stroke-width="4"/>
+  </div>
 
-      <rect x="490" y="80" width="250" height="250"
-            rx="25" fill="#fff0f0"
-            stroke="#9a5c5c" stroke-width="4"/>
+</div>
 
-      <text x="125" y="135
-```
+<footer>
+  <p>🌍 The Student Spot — Learn, Explore & Grow</p>
+</footer>
+
+</body>
+</html>
