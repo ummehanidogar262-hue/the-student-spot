@@ -12,13 +12,13 @@ study-tips
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f8f7ff;
+      background: #fff7fb;
       color: #333;
       line-height: 1.7;
     }
 
     header {
-      background: #cfc4ff;
+      background: #d9b8ff;
       text-align: center;
       padding: 45px 20px;
     }
@@ -26,78 +26,112 @@ study-tips
     header h1 {
       margin: 0;
       font-size: 40px;
-      color: #55419a;
+      color: #4f2878;
     }
 
     header p {
       font-size: 18px;
-      margin-top: 10px;
+      margin-bottom: 0;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1050px;
       margin: auto;
-      padding: 30px 20px;
+      padding: 35px 20px;
     }
 
-    .card {
+    .intro {
       background: white;
-      padding: 28px;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px #ddd;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .intro h2 {
+      color: #7b4bb7;
+      margin-top: 0;
+    }
+
+    .tip-section {
+      background: white;
+      padding: 30px;
       margin: 25px 0;
       border-radius: 18px;
       box-shadow: 0 4px 12px #ddd;
     }
 
-    .card h2 {
-      color: #6250a5;
+    .tip-section h2 {
+      color: #7b4bb7;
+      margin-top: 0;
+      font-size: 26px;
+    }
+
+    .tip-section h3 {
+      color: #8f62bd;
+      margin-bottom: 6px;
     }
 
     .tip {
-      background: #f1eeff;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 14px;
-      border-left: 5px solid #8b78d1;
+      background: #faf5ff;
+      border-left: 5px solid #b58ad9;
+      padding: 15px 18px;
+      margin: 14px 0;
+      border-radius: 10px;
     }
 
-    .tip h3 {
-      color: #55419a;
-      margin-top: 0;
+    .tip strong {
+      color: #633d8c;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    li {
+      margin: 8px 0;
     }
 
     .highlight {
-      background: #fff8d9;
-      border-left: 5px solid #e0bd45;
+      background: #f3e8ff;
       padding: 20px;
-      border-radius: 14px;
-      margin: 20px 0;
+      border-radius: 12px;
+      margin-top: 20px;
     }
 
-    .routine {
-      background: #eef8ff;
-      border-left: 5px solid #72acd4;
-      padding: 20px;
-      border-radius: 14px;
+    .bottom {
+      text-align: center;
+      margin: 40px 0 20px;
     }
 
     .back {
       display: inline-block;
-      margin: 20px 10px;
-      color: #55419a;
+      margin: 10px;
+      padding: 12px 20px;
+      color: white;
+      background: #7b4bb7;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
     }
 
     .back:hover {
-      text-decoration: underline;
+      background: #633d8c;
     }
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      margin-top: 30px;
-      background: #cfc4ff;
-      color: #55419a;
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .tip-section {
+        padding: 22px;
+      }
+
+      .intro {
+        padding: 22px;
+      }
     }
   </style>
 </head>
@@ -105,298 +139,553 @@ study-tips
 <body>
 
 <header>
-  <h1>📚 Study Tips</h1>
-  <p>Simple habits to make studying easier, smarter and more organized.</p>
+  <h1>💡 Study Tips</h1>
+  <p>Simple strategies to make studying clearer, easier and more effective.</p>
 </header>
 
 <div class="container">
 
   <!-- INTRODUCTION -->
 
-  <div class="card">
-
+  <div class="intro">
     <h2>🌟 Welcome to Study Tips</h2>
 
     <p>
-      Studying does not have to mean sitting for hours and memorizing
-      everything at once. A good study routine helps you understand
-      information, remember it and use it confidently.
+      Studying is not only about spending more hours with a book.
+      It is also about using your time wisely, understanding what
+      you learn and practicing regularly.
     </p>
+
+    <p>
+      These tips are designed to help students build useful study
+      habits for different subjects and different situations.
+    </p>
+  </div>
+
+
+  <!-- GENERAL STUDY TIPS -->
+
+  <div class="tip-section">
+    <h2>📚 General Study Tips</h2>
+
+    <div class="tip">
+      <strong>1. Set a clear goal:</strong>
+      Before studying, decide exactly what you want to finish.
+    </div>
+
+    <div class="tip">
+      <strong>2. Study in manageable sessions:</strong>
+      Break a large topic into smaller sections instead of trying
+      to learn everything at once.
+    </div>
+
+    <div class="tip">
+      <strong>3. Understand before memorizing:</strong>
+      Try to understand the idea first. Memorization becomes easier
+      when the information makes sense.
+    </div>
+
+    <div class="tip">
+      <strong>4. Test yourself:</strong>
+      Close your notes and try to explain what you remember.
+    </div>
+
+    <div class="tip">
+      <strong>5. Review regularly:</strong>
+      Short reviews over several days can be more useful than
+      trying to learn everything the night before a test.
+    </div>
+
+    <div class="tip">
+      <strong>6. Keep your study area organized:</strong>
+      Keep the materials you need nearby and reduce unnecessary
+      distractions.
+    </div>
+
+    <div class="tip">
+      <strong>7. Ask when you are confused:</strong>
+      Do not leave an important concept unexplained. Ask a teacher,
+      trusted adult or use a reliable learning resource.
+    </div>
+  </div>
+
+
+  <!-- ENGLISH -->
+
+  <div class="tip-section">
+    <h2>🇬🇧 Study Tips for English</h2>
+
+    <div class="tip">
+      <strong>1. Read regularly:</strong>
+      Read stories, articles or other age-appropriate material to
+      encounter new vocabulary and sentence structures.
+    </div>
+
+    <div class="tip">
+      <strong>2. Keep a vocabulary notebook:</strong>
+      Write new words with their meanings and an example sentence.
+    </div>
+
+    <div class="tip">
+      <strong>3. Learn words in context:</strong>
+      Understanding how a word is used can be more useful than
+      memorizing a definition alone.
+    </div>
+
+    <div class="tip">
+      <strong>4. Practice grammar:</strong>
+      After learning a grammar rule, write your own examples.
+    </div>
+
+    <div class="tip">
+      <strong>5. Improve writing:</strong>
+      Plan your ideas before writing a paragraph, essay or story.
+    </div>
+
+    <div class="tip">
+      <strong>6. Read your writing again:</strong>
+      Check spelling, punctuation, grammar and whether your ideas
+      are clearly connected.
+    </div>
+
+    <div class="tip">
+      <strong>7. Practice speaking:</strong>
+      Explain topics aloud or practice conversations to become
+      more comfortable using English.
+    </div>
+  </div>
+
+
+  <!-- MATHEMATICS -->
+
+  <div class="tip-section">
+    <h2>➗ Study Tips for Mathematics</h2>
+
+    <div class="tip">
+      <strong>1. Understand the method:</strong>
+      Do not only memorize a formula. Learn what each part means
+      and when the formula should be used.
+    </div>
+
+    <div class="tip">
+      <strong>2. Work through examples:</strong>
+      Study a solved example and then attempt a similar question
+      without looking at the solution.
+    </div>
+
+    <div class="tip">
+      <strong>3. Show your working:</strong>
+      Write each important step so you can find where an error
+      happened.
+    </div>
+
+    <div class="tip">
+      <strong>4. Practice different question types:</strong>
+      Do not practice only questions that look exactly the same.
+    </div>
+
+    <div class="tip">
+      <strong>5. Check your answer:</strong>
+      Substitute your result back into an equation when possible
+      or estimate whether the answer makes sense.
+    </div>
+
+    <div class="tip">
+      <strong>6. Learn from mistakes:</strong>
+      Keep track of mistakes and understand why they happened.
+    </div>
+
+    <div class="tip">
+      <strong>7. Practice regularly:</strong>
+      Mathematics skills improve through repeated practice.
+    </div>
+  </div>
+
+
+  <!-- SCIENCE -->
+
+  <div class="tip-section">
+    <h2>🔬 Study Tips for Science</h2>
+
+    <div class="tip">
+      <strong>1. Learn scientific vocabulary:</strong>
+      Understand important terms before trying to memorize
+      complicated explanations.
+    </div>
+
+    <div class="tip">
+      <strong>2. Use diagrams:</strong>
+      Draw or study labelled diagrams for structures, systems
+      and scientific processes.
+    </div>
+
+    <div class="tip">
+      <strong>3. Understand processes:</strong>
+      Learn the sequence of events rather than memorizing isolated
+      sentences.
+    </div>
+
+    <div class="tip">
+      <strong>4. Connect cause and effect:</strong>
+      Ask yourself what causes something and what happens as a result.
+    </div>
+
+    <div class="tip">
+      <strong>5. Practice scientific questions:</strong>
+      Use questions to check whether you can apply what you learned.
+    </div>
+
+    <div class="tip">
+      <strong>6. Compare concepts:</strong>
+      Make simple comparisons such as similarities and differences
+      between related ideas.
+    </div>
+
+    <div class="tip">
+      <strong>7. Explain science aloud:</strong>
+      Try teaching a concept in your own words.
+    </div>
+  </div>
+
+
+  <!-- HISTORY -->
+
+  <div class="tip-section">
+    <h2>🏺 Study Tips for History</h2>
+
+    <div class="tip">
+      <strong>1. Build a timeline:</strong>
+      Put important events in chronological order so you can see
+      how events relate to one another.
+    </div>
+
+    <div class="tip">
+      <strong>2. Remember key people:</strong>
+      Connect important people with their actions, ideas or historical
+      significance.
+    </div>
+
+    <div class="tip">
+      <strong>3. Focus on causes and consequences:</strong>
+      Ask what caused an event and what happened afterward.
+    </div>
+
+    <div class="tip">
+      <strong>4. Use dates carefully:</strong>
+      Learn the dates that are important for your course rather than
+      trying to memorize every date.
+    </div>
+
+    <div class="tip">
+      <strong>5. Make comparison tables:</strong>
+      Compare different civilizations, periods or events using
+      categories such as government, culture and economy.
+    </div>
+
+    <div class="tip">
+      <strong>6. Tell the historical story:</strong>
+      Try explaining an event from beginning to end in your own words.
+    </div>
+
+    <div class="tip">
+      <strong>7. Practice short answers:</strong>
+      Answer historical questions using clear facts and specific
+      examples.
+    </div>
+  </div>
+
+
+  <!-- GEOGRAPHY -->
+
+  <div class="tip-section">
+    <h2>🌍 Study Tips for Geography</h2>
+
+    <div class="tip">
+      <strong>1. Use maps:</strong>
+      Regularly study maps to understand locations, regions and
+      physical features.
+    </div>
+
+    <div class="tip">
+      <strong>2. Learn geographical vocabulary:</strong>
+      Understand terms such as climate, erosion, population,
+      migration and landform.
+    </div>
+
+    <div class="tip">
+      <strong>3. Connect people and places:</strong>
+      Ask how physical geography can affect human activities.
+    </div>
+
+    <div class="tip">
+      <strong>4. Practice diagrams:</strong>
+      Draw processes such as the water cycle or the formation
+      of different landforms.
+    </div>
+
+    <div class="tip">
+      <strong>5. Use examples:</strong>
+      Connect geographical ideas to real places and situations
+      when your course requires them.
+    </div>
+
+    <div class="tip">
+      <strong>6. Compare regions:</strong>
+      Look at differences and similarities between places.
+    </div>
+
+    <div class="tip">
+      <strong>7. Practice interpreting information:</strong>
+      Learn to read maps, graphs, tables and geographical diagrams.
+    </div>
+  </div>
+
+
+  <!-- TEENAGERS -->
+
+  <div class="tip-section">
+    <h2>🧑‍🎓 Study Tips for Teenagers</h2>
+
+    <div class="tip">
+      <strong>1. Create a realistic routine:</strong>
+      Make a study schedule that leaves time for school, rest,
+      family, hobbies and other responsibilities.
+    </div>
+
+    <div class="tip">
+      <strong>2. Avoid comparing yourself with others:</strong>
+      Focus on your own progress and the areas you want to improve.
+    </div>
+
+    <div class="tip">
+      <strong>3. Take reasonable breaks:</strong>
+      Short breaks can help you reset your attention during longer
+      study sessions.
+    </div>
+
+    <div class="tip">
+      <strong>4. Get enough sleep:</strong>
+      A regular sleep routine supports learning, attention and
+      everyday functioning.
+    </div>
+
+    <div class="tip">
+      <strong>5. Keep expectations realistic:</strong>
+      You do not have to master everything in one day.
+    </div>
+
+    <div class="tip">
+      <strong>6. Put your phone aside when needed:</strong>
+      During focused study time, reduce notifications and other
+      distractions.
+    </div>
+
+    <div class="tip">
+      <strong>7. Celebrate progress:</strong>
+      Notice improvements, completed tasks and topics you understand
+      better than before.
+    </div>
+  </div>
+
+
+  <!-- EXAM AND REVISION -->
+
+  <div class="tip-section">
+    <h2>📝 Exam & Revision Tips</h2>
+
+    <div class="tip">
+      <strong>1. Start revision early:</strong>
+      Spread revision across several sessions instead of leaving
+      everything until the last moment.
+    </div>
+
+    <div class="tip">
+      <strong>2. Make a revision list:</strong>
+      Write down the topics you need to review and work through
+      them systematically.
+    </div>
+
+    <div class="tip">
+      <strong>3. Use active recall:</strong>
+      Close your notes and retrieve information from memory.
+    </div>
+
+    <div class="tip">
+      <strong>4. Practice questions:</strong>
+      Answer questions without immediately checking the answer.
+    </div>
+
+    <div class="tip">
+      <strong>5. Review mistakes:</strong>
+      Identify topics that cause repeated mistakes and revisit them.
+    </div>
+
+    <div class="tip">
+      <strong>6. Practice under realistic conditions:</strong>
+      When appropriate, try timed practice so you become familiar
+      with working within a time limit.
+    </div>
+
+    <div class="tip">
+      <strong>7. Read questions carefully:</strong>
+      Before answering, identify exactly what the question asks.
+    </div>
+  </div>
+
+
+  <!-- TIME MANAGEMENT -->
+
+  <div class="tip-section">
+    <h2>⏰ Time Management & Study Planning</h2>
+
+    <div class="tip">
+      <strong>1. Make a weekly plan:</strong>
+      Decide which subjects and topics you will study during the week.
+    </div>
+
+    <div class="tip">
+      <strong>2. Prioritize:</strong>
+      Give attention to important or difficult topics rather than
+      spending all your time on things you already know.
+    </div>
+
+    <div class="tip">
+      <strong>3. Break large tasks into smaller tasks:</strong>
+      "Study science" is vague. "Review the respiratory system"
+      is a clearer target.
+    </div>
+
+    <div class="tip">
+      <strong>4. Estimate your time:</strong>
+      Give each task a reasonable amount of time and adjust your
+      future plans based on what actually works.
+    </div>
+
+    <div class="tip">
+      <strong>5. Avoid multitasking:</strong>
+      Focus on one study task at a time when possible.
+    </div>
+
+    <div class="tip">
+      <strong>6. Leave time for review:</strong>
+      Do not plan every minute so tightly that there is no time
+      to revisit difficult topics.
+    </div>
+
+    <div class="tip">
+      <strong>7. Keep your plan flexible:</strong>
+      If something unexpected happens, adjust the schedule instead
+      of giving up on it completely.
+    </div>
+  </div>
+
+
+  <!-- MEMORY AND CONCENTRATION -->
+
+  <div class="tip-section">
+    <h2>🧠 Memory & Concentration Tips</h2>
+
+    <div class="tip">
+      <strong>1. Use active recall:</strong>
+      Try to remember information without looking at your notes.
+    </div>
+
+    <div class="tip">
+      <strong>2. Use spaced review:</strong>
+      Revisit important information at increasing intervals rather
+      than studying it only once.
+    </div>
+
+    <div class="tip">
+      <strong>3. Explain concepts:</strong>
+      Explain a topic in simple words as if you were teaching someone.
+    </div>
+
+    <div class="tip">
+      <strong>4. Connect new information:</strong>
+      Link new ideas to concepts you already understand.
+    </div>
+
+    <div class="tip">
+      <strong>5. Use short summaries:</strong>
+      After studying a section, write a few key points from memory.
+    </div>
+
+    <div class="tip">
+      <strong>6. Reduce distractions:</strong>
+      Keep unnecessary tabs, notifications and entertainment away
+      during focused study time.
+    </div>
+
+    <div class="tip">
+      <strong>7. Change your approach when stuck:</strong>
+      Try a diagram, example, explanation or practice question
+      instead of repeatedly reading the same sentence.
+    </div>
+  </div>
+
+
+  <!-- USING THE STUDENT SPOT -->
+
+  <div class="tip-section">
+    <h2>💜 Using The Student Spot Effectively</h2>
+
+    <div class="tip">
+      <strong>1. Start with your subject:</strong>
+      Open the Subjects section and choose the subject you are studying.
+    </div>
+
+    <div class="tip">
+      <strong>2. Read the explanations first:</strong>
+      Understand the topic before moving to practice questions.
+    </div>
+
+    <div class="tip">
+      <strong>3. Use the diagrams:</strong>
+      Look carefully at scientific and geographical diagrams when
+      studying processes or structures.
+    </div>
+
+    <div class="tip">
+      <strong>4. Practice after learning:</strong>
+      Use the practice sections to check what you remember.
+    </div>
+
+    <div class="tip">
+      <strong>5. Return to difficult topics:</strong>
+      If a topic is still confusing, review the explanation and
+      try the questions again later.
+    </div>
+
+    <div class="tip">
+      <strong>6. Use Study Tips alongside your subjects:</strong>
+      Choose strategies that match the subject you are learning.
+    </div>
+
+    <div class="tip">
+      <strong>7. Make The Student Spot part of your routine:</strong>
+      Regular, focused study can make revision more organized.
+    </div>
 
     <div class="highlight">
-      <strong>Remember:</strong>
-      Understanding what you learn is more useful than simply trying
-      to memorize every word.
+      <strong>🌟 Remember:</strong>
+      The goal is not to study endlessly. The goal is to understand,
+      practice, review and gradually improve.
     </div>
-
   </div>
 
 
-  <!-- TIP 1 -->
+  <!-- BOTTOM BUTTONS -->
 
-  <div class="tip">
+  <div class="bottom">
 
-    <h3>1. 🎯 Set a Clear Goal</h3>
+    <a class="back" href="index.html">🏠 Back to Home</a>
 
-    <p>
-      Before starting, decide exactly what you want to complete.
-      For example, you could choose one chapter, a group of questions
-      or one difficult topic.
-    </p>
-
-  </div>
-
-
-  <!-- TIP 2 -->
-
-  <div class="tip">
-
-    <h3>2. 🗓️ Make a Simple Study Plan</h3>
-
-    <p>
-      Divide your work into smaller tasks. A simple plan can help you
-      know what to study first and prevent everything from piling up.
-    </p>
-
-  </div>
-
-
-  <!-- TIP 3 -->
-
-  <div class="tip">
-
-    <h3>3. 🧠 Understand Before Memorizing</h3>
-
-    <p>
-      Read the explanation carefully and ask yourself what the main
-      idea means. Once you understand it, remembering important facts
-      becomes easier.
-    </p>
-
-  </div>
-
-
-  <!-- TIP 4 -->
-
-  <div class="tip">
-
-    <h3>4. ✍️ Make Short Notes</h3>
-
-    <p>
-      Write important definitions, facts, formulas and examples in
-      your own words. Avoid copying an entire textbook.
-    </p>
-
-  </div>
-
-
-  <!-- TIP 5 -->
-
-  <div class="tip">
-
-    <h3>5. ❓ Practice Questions</h3>
-
-    <p>
-      Answer questions without looking at the answer first.
-      Afterwards, check your work and review anything you missed.
-    </p>
-
-  </div>
-
-
-  <!-- TIP 6 -->
-
-  <div class="tip">
-
-    <h3>6. 🔄 Review Regularly</h3>
-
-    <p>
-      Short, regular reviews can help you remember information better
-      than leaving everything until the last moment.
-    </p>
-
-  </div>
-
-
-  <!-- TIP 7 -->
-
-  <div class="tip">
-
-    <h3>7. 🗣️ Explain What You Learned</h3>
-
-    <p>
-      Try explaining a topic in simple words as if you were teaching
-      someone else. This can reveal which parts you understand and
-      which parts need more review.
-    </p>
-
-  </div>
-
-
-  <!-- TIP 8 -->
-
-  <div class="tip">
-
-    <h3>8. 🧩 Break Difficult Topics Into Parts</h3>
-
-    <p>
-      If a lesson feels difficult, divide it into smaller sections.
-      Learn one part at a time and then connect the ideas together.
-    </p>
-
-  </div>
-
-
-  <!-- TIP 9 -->
-
-  <div class="tip">
-
-    <h3>9. 📊 Use Diagrams and Visuals</h3>
-
-    <p>
-      Diagrams can be especially useful for science, geography,
-      mathematics and other subjects where relationships or processes
-      are easier to understand visually.
-    </p>
-
-  </div>
-
-
-  <!-- TIP 10 -->
-
-  <div class="tip">
-
-    <h3>10. 📝 Learn From Mistakes</h3>
-
-    <p>
-      When you get a question wrong, don't simply erase it and move on.
-      Find out what you misunderstood and try a similar question again.
-    </p>
-
-  </div>
-
-
-  <!-- STUDY ROUTINE -->
-
-  <div class="card">
-
-    <h2>⏰ A Simple Study Routine</h2>
-
-    <div class="routine">
-
-      <ol>
-        <li>Choose one topic.</li>
-        <li>Read and understand the lesson.</li>
-        <li>Write a few important notes.</li>
-        <li>Practice questions.</li>
-        <li>Check your answers.</li>
-        <li>Review mistakes.</li>
-        <li>Take a reasonable break.</li>
-      </ol>
-
-    </div>
-
-  </div>
-
-
-  <!-- SUBJECT TIPS -->
-
-  <div class="card">
-
-    <h2>📚 Subject-Specific Tips</h2>
-
-    <h3>🔬 Science</h3>
-    <p>
-      Focus on definitions, processes, diagrams and cause-and-effect
-      relationships.
-    </p>
-
-    <h3>➗ Mathematics</h3>
-    <p>
-      Practice problems and show your working step by step.
-    </p>
-
-    <h3>📜 History</h3>
-    <p>
-      Organize important events chronologically and connect people,
-      dates, causes and effects.
-    </p>
-
-    <h3>🌍 Geography</h3>
-    <p>
-      Study maps, locations, physical features, processes and
-      geographical definitions.
-    </p>
-
-    <h3>📘 English</h3>
-    <p>
-      Practice vocabulary, grammar, reading and writing regularly.
-    </p>
-
-  </div>
-
-
-  <!-- BEFORE EXAM -->
-
-  <div class="card">
-
-    <h2>📝 Before an Exam</h2>
-
-    <ul>
-      <li>Review your important notes.</li>
-      <li>Practice questions.</li>
-      <li>Review difficult topics.</li>
-      <li>Practice important formulas and definitions.</li>
-      <li>Check your mistakes.</li>
-      <li>Prepare your school materials.</li>
-      <li>Get enough rest.</li>
-    </ul>
-
-  </div>
-
-
-  <!-- FINAL MESSAGE -->
-
-  <div class="card">
-
-    <h2>💜 Keep Going!</h2>
-
-    <p>
-      You do not need to understand everything perfectly on the first
-      try. Learning takes practice.
-    </p>
-
-    <div class="highlight">
-      <strong>Learn → Practice → Review → Improve</strong>
-    </div>
-
-  </div>
-
-
-  <!-- NAVIGATION -->
-
-  <div style="text-align:center;">
-
-    <a class="back" href="index.html">
-      🏠 Back to Home
-    </a>
-
-    <a class="back" href="custom-notes.html">
-      📝 Custom Notes
-    </a>
-
-    <a class="back" href="study-help.html">
-      📚 Study Help
-    </a>
+    <a class="back" href="subjects.html">📚 Go to Subjects</a>
 
   </div>
 
 </div>
-
-
-<footer>
-  <p>📚 The Student Spot — Learn • Practice • Improve</p>
-</footer>
 
 </body>
 </html>
