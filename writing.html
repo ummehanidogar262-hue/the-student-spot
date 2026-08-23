@@ -1,17 +1,16 @@
-writing.html
-<!DOCTYPE html>
+writing <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>C1 Writing | The Student Spot</title>
+  <title>Writing | The Student Spot</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #fff7fb;
+      background: #fff8fc;
       color: #333;
       line-height: 1.7;
     }
@@ -19,12 +18,12 @@ writing.html
     header {
       background: #d9b8ff;
       text-align: center;
-      padding: 50px 20px;
+      padding: 45px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 42px;
+      font-size: 40px;
     }
 
     header p {
@@ -32,13 +31,14 @@ writing.html
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1050px;
       margin: auto;
-      padding: 35px 20px;
+      padding: 30px 20px;
     }
 
-    .topic,
-    .practice {
+    .intro,
+    .section,
+    .tip-box {
       background: white;
       padding: 28px;
       margin: 25px 0;
@@ -50,38 +50,49 @@ writing.html
       color: #7b4bb7;
     }
 
-    .box {
-      background: #f6edff;
-      padding: 18px;
-      border-radius: 12px;
-      margin: 15px 0;
+    h3 {
+      color: #68409c;
+    }
+
+    .writing-card {
+      background: #faf3ff;
+      padding: 20px;
+      margin: 18px 0;
+      border-radius: 14px;
+      border-left: 5px solid #b98be6;
+    }
+
+    .writing-card h3 {
+      margin-top: 0;
     }
 
     .example {
-      border-left: 4px solid #7b4bb7;
-      padding-left: 15px;
-      margin: 15px 0;
+      background: #f1e5ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 12px;
     }
 
     .mistake {
-      background: #fff0f5;
-      padding: 18px;
-      border-radius: 12px;
-      margin-top: 15px;
+      background: #fff0f0;
+      padding: 15px;
+      border-left: 5px solid #d96b6b;
+      border-radius: 10px;
+      margin: 12px 0;
     }
 
     .tip {
-      background: #f4faff;
-      padding: 18px;
-      border-radius: 12px;
-      margin-top: 15px;
+      background: #eee2ff;
+      padding: 16px;
+      border-radius: 10px;
+      margin: 12px 0;
     }
 
-    .answers {
-      background: #f6edff;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 25px;
+    .practice {
+      background: #f4edff;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 10px 0;
     }
 
     .back {
@@ -91,334 +102,284 @@ writing.html
       text-decoration: none;
       font-weight: bold;
     }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .container {
+        padding: 20px 12px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>✍️ C1 English Writing</h1>
-  <p>Learn how to write clearly, accurately and effectively.</p>
+  <h1>✍️ Writing</h1>
+  <p>Learn how to write clearly, creatively and confidently.</p>
 </header>
 
 <div class="container">
 
-  <div class="topic">
-    <h2>1. Planning Your Writing</h2>
+  <!-- INTRODUCTION -->
+
+  <div class="intro">
+    <h2>📝 Welcome to Writing</h2>
 
     <p>
-      Strong writing begins before you write the first sentence.
-      Understand the question, identify your purpose and organise
-      your ideas before you start.
+      Good writing helps you communicate your ideas clearly.
+      Whether you are writing a paragraph, essay, letter, email,
+      article, report, speech or story, organising your ideas is important.
     </p>
-
-    <div class="box">
-      <strong>Simple planning method:</strong>
-      <ol>
-        <li>Understand the question.</li>
-        <li>Identify the audience.</li>
-        <li>Decide your purpose.</li>
-        <li>Choose your main ideas.</li>
-        <li>Arrange your ideas logically.</li>
-      </ol>
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>2. Writing a Strong Introduction</h2>
-
-    <p>
-      An introduction should make the topic clear and prepare the reader
-      for the main argument or ideas.
-    </p>
-
-    <div class="example">
-      <strong>Example:</strong><br><br>
-
-      In recent years, the role of technology in education has become
-      increasingly significant. While digital tools can provide students
-      with greater access to information, their effectiveness depends
-      largely on how they are used.
-    </div>
 
     <div class="tip">
-      💡 Avoid starting every essay with:
-      "Nowadays, technology is very important."
-      Try to make your opening more specific and purposeful.
+      <strong>💡 Student Tip:</strong>
+      Before you start writing, understand the topic, organise your ideas,
+      and decide what you want your reader to understand.
     </div>
   </div>
 
 
-  <div class="topic">
-    <h2>3. Paragraph Structure</h2>
+  <!-- WRITING BASICS -->
 
-    <p>A strong academic paragraph often contains:</p>
+  <div class="section">
+    <h2>📝 Writing Basics</h2>
 
-    <div class="box">
-      <strong>Point → Explanation → Evidence/Example → Link</strong>
-    </div>
-
-    <div class="example">
-      <strong>Example:</strong><br><br>
-
-      One major advantage of online learning is its flexibility.
-      Students can often access lessons at times that suit their
-      individual schedules. For example, recorded lectures allow
-      learners to review difficult concepts whenever necessary.
-      Consequently, online education can be particularly useful for
-      students with demanding schedules.
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>4. Linking Words</h2>
-
-    <p>
-      Linking expressions help your writing flow logically.
-    </p>
-
-    <div class="box">
-      <strong>Adding ideas:</strong><br>
-      furthermore, moreover, in addition, additionally
-      <br><br>
-
-      <strong>Contrasting:</strong><br>
-      however, nevertheless, whereas, although
-      <br><br>
-
-      <strong>Giving examples:</strong><br>
-      for instance, for example, such as
-      <br><br>
-
-      <strong>Showing results:</strong><br>
-      therefore, consequently, as a result
-      <br><br>
-
-      <strong>Concluding:</strong><br>
-      overall, in conclusion, to sum up
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>5. Formal Emails</h2>
-
-    <p>
-      Formal emails require polite and professional language.
-    </p>
-
-    <div class="example">
-      <strong>Useful phrases:</strong><br><br>
-
-      Dear Sir or Madam,<br>
-      I am writing to enquire about...<br>
-      I would be grateful if you could...<br>
-      I look forward to hearing from you.<br>
-      Yours faithfully,
-    </div>
-
-    <div class="mistake">
-      ❌ Hey! I want some information about your course.<br><br>
-      ✅ Dear Sir or Madam, I am writing to enquire about your course.
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>6. Writing Reports</h2>
-
-    <p>
-      Reports are usually organised with clear headings and objective
-      language.
-    </p>
-
-    <div class="box">
-      <strong>Useful structure:</strong>
-      <ol>
-        <li>Introduction</li>
-        <li>Findings</li>
-        <li>Discussion</li>
-        <li>Recommendations</li>
-        <li>Conclusion</li>
-      </ol>
-    </div>
-
-    <div class="example">
-      <strong>Useful phrase:</strong><br>
-      The findings indicate that the majority of students would benefit
-      from additional study resources.
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>7. Opinion Essays</h2>
-
-    <p>
-      When writing an opinion essay, make your position clear and
-      support it with logical reasons.
-    </p>
-
-    <div class="box">
-      <strong>Useful phrases:</strong><br><br>
-
-      From my perspective...<br>
-      It could be argued that...<br>
-      One significant advantage is...<br>
-      A major drawback is...<br>
-      This suggests that...
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>8. Advanced Vocabulary in Writing</h2>
-
-    <p>
-      Advanced writing does not mean using complicated words everywhere.
-      Choose precise words that communicate your meaning accurately.
-    </p>
-
-    <div class="example">
-      <strong>Instead of:</strong> very important<br>
-      <strong>Try:</strong> crucial / significant / fundamental
-      <br><br>
-
-      <strong>Instead of:</strong> make better<br>
-      <strong>Try:</strong> enhance / improve / strengthen
-      <br><br>
-
-      <strong>Instead of:</strong> make worse<br>
-      <strong>Try:</strong> exacerbate / aggravate
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>9. Avoiding Repetition</h2>
-
-    <p>
-      Repeating the same word too often can make writing less effective.
-      Use precise alternatives when appropriate.
-    </p>
-
-    <div class="example">
-      <strong>Weak:</strong><br>
-      Technology is important. Technology helps students.
-      Technology also provides information.
-      <br><br>
-
-      <strong>Better:</strong><br>
-      Technology plays a significant role in education. Digital tools
-      provide students with greater access to information and can
-      support independent learning.
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>10. Editing and Proofreading</h2>
-
-    <p>
-      Never assume that your first draft is your final draft.
-      Always review your work.
-    </p>
-
-    <div class="box">
-      <strong>Check for:</strong>
-      <ul>
-        <li>Grammar</li>
-        <li>Spelling</li>
-        <li>Punctuation</li>
-        <li>Paragraph structure</li>
-        <li>Repetition</li>
-        <li>Clarity</li>
-        <li>Word choice</li>
-      </ul>
-    </div>
-
-    <div class="tip">
-      💡 Read your writing slowly. You may notice mistakes that you
-      missed when reading quickly.
-    </div>
-  </div>
-
-
-  <div class="practice">
-
-    <h2>🧠 Writing Practice</h2>
-
-    <ol>
-
-      <li>
-        Which phrase is most appropriate for a formal email?
-        <br><br>
-        A) Hey, give me some information.<br>
-        B) I want to know about this.<br>
-        C) I would be grateful if you could provide further information.<br>
-        D) Tell me more.
-      </li>
-
-      <li>
-        Which word is best for introducing a contrasting idea?
-        <br><br>
-        A) Furthermore<br>
-        B) However<br>
-        C) Therefore<br>
-        D) For instance
-      </li>
-
-      <li>
-        Which organisation is most suitable for a report?
-        <br><br>
-        A) Findings → Introduction → Recommendations<br>
-        B) Introduction → Findings → Recommendations<br>
-        C) Conclusion → Introduction → Findings<br>
-        D) Examples → Greeting → Conclusion
-      </li>
-
-      <li>
-        Which word is closest in meaning to "crucial"?
-        <br><br>
-        A) insignificant<br>
-        B) essential<br>
-        C) optional<br>
-        D) uncertain
-      </li>
-
-      <li>
-        What should you do after completing your first draft?
-        <br><br>
-        A) Submit it immediately<br>
-        B) Delete it<br>
-        C) Proofread and edit it<br>
-        D) Add random vocabulary
-      </li>
-
-    </ol>
-
-    <div class="answers">
-      <h3>✅ Answer Key</h3>
-
+    <div class="writing-card">
+      <h3>1. Understand the Topic</h3>
       <p>
-        1. C<br>
-        2. B<br>
-        3. B<br>
-        4. B<br>
-        5. C
+        Read the question carefully and identify exactly what you have
+        been asked to write.
       </p>
     </div>
 
+    <div class="writing-card">
+      <h3>2. Plan Your Ideas</h3>
+      <p>
+        Make a short plan before writing. Decide what information belongs
+        in the introduction, main body and conclusion.
+      </p>
+    </div>
+
+    <div class="writing-card">
+      <h3>3. Use Clear Sentences</h3>
+      <p>
+        Keep your sentences understandable and make sure each sentence
+        communicates a clear idea.
+      </p>
+    </div>
+
+    <div class="writing-card">
+      <h3>4. Check Your Work</h3>
+      <p>
+        Read your writing again and check spelling, grammar, punctuation
+        and organisation.
+      </p>
+    </div>
   </div>
 
 
-  <a class="back" href="english.html">← Back to English</a>
-  <a class="back" href="subjects.html">📚 Subjects</a>
-  <a class="back" href="index.html">🏠 Home</a>
+  <!-- PARAGRAPH WRITING -->
 
-</div>
+  <div class="section">
+    <h2>📖 Paragraph Writing</h2>
 
-</body>
-</html>
+    <p>
+      A good paragraph usually focuses on one main idea.
+      It can contain a topic sentence, supporting sentences and
+      a concluding sentence.
+    </p>
+
+    <div class="example">
+      <strong>Example structure:</strong><br><br>
+      Topic sentence → Supporting details → Example → Concluding sentence
+    </div>
+
+    <div class="writing-card">
+      <h3>Example Topic: My Favourite Hobby</h3>
+      <p>
+        Start by introducing the hobby. Explain why you enjoy it,
+        give supporting details and finish by summarising your opinion.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- ESSAY WRITING -->
+
+  <div class="section">
+    <h2>📚 Essay Writing</h2>
+
+    <p>
+      An essay develops an idea or discusses a topic in organised paragraphs.
+    </p>
+
+    <div class="writing-card">
+      <h3>Introduction</h3>
+      <p>
+        Introduce the topic and give the reader an idea of what the essay
+        will discuss.
+      </p>
+    </div>
+
+    <div class="writing-card">
+      <h3>Body Paragraphs</h3>
+      <p>
+        Explain your main points using reasons, examples and relevant details.
+      </p>
+    </div>
+
+    <div class="writing-card">
+      <h3>Conclusion</h3>
+      <p>
+        Summarise the main ideas without introducing a completely new topic.
+      </p>
+    </div>
+
+    <div class="example">
+      <strong>Useful essay structure:</strong><br><br>
+      Introduction → Main Point 1 → Main Point 2 → Main Point 3 → Conclusion
+    </div>
+  </div>
+
+
+  <!-- LETTER WRITING -->
+
+  <div class="section">
+    <h2>✉️ Letter Writing</h2>
+
+    <div class="writing-card">
+      <h3>Formal Letters</h3>
+      <p>
+        Formal letters are used for official or serious communication.
+        Use polite and respectful language.
+      </p>
+    </div>
+
+    <div class="writing-card">
+      <h3>Informal Letters</h3>
+      <p>
+        Informal letters are usually written to friends or family.
+        The language can be more personal and relaxed.
+      </p>
+    </div>
+
+    <div class="example">
+      <strong>Basic letter structure:</strong><br><br>
+      Address/Date → Greeting → Introduction → Main Message →
+      Closing → Signature
+    </div>
+  </div>
+
+
+  <!-- EMAIL WRITING -->
+
+  <div class="section">
+    <h2>📧 Email Writing</h2>
+
+    <p>
+      Emails should be clear, organised and appropriate for the person
+      receiving them.
+    </p>
+
+    <div class="writing-card">
+      <h3>Subject</h3>
+      <p>Use a short subject that clearly explains the purpose of the email.</p>
+    </div>
+
+    <div class="writing-card">
+      <h3>Greeting</h3>
+      <p>Start with an appropriate greeting.</p>
+    </div>
+
+    <div class="writing-card">
+      <h3>Message</h3>
+      <p>Explain the purpose of your email using clear paragraphs.</p>
+    </div>
+
+    <div class="writing-card">
+      <h3>Closing</h3>
+      <p>End politely with an appropriate closing.</p>
+    </div>
+  </div>
+
+
+  <!-- ARTICLE WRITING -->
+
+  <div class="section">
+    <h2>📰 Article Writing</h2>
+
+    <p>
+      An article presents information or ideas for readers.
+      It often has an interesting title and an engaging introduction.
+    </p>
+
+    <div class="example">
+      <strong>Article structure:</strong><br><br>
+      Title → Introduction → Main Information → Examples →
+      Conclusion
+    </div>
+
+    <div class="writing-card">
+      <h3>⭐ Tip</h3>
+      <p>
+        Choose a clear title and try to make the opening interesting
+        enough to encourage the reader to continue.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- REPORT WRITING -->
+
+  <div class="section">
+    <h2>📋 Report Writing</h2>
+
+    <p>
+      A report presents information in an organised and usually formal way.
+    </p>
+
+    <div class="writing-card">
+      <h3>Heading</h3>
+      <p>Clearly state what the report is about.</p>
+    </div>
+
+    <div class="writing-card">
+      <h3>Introduction</h3>
+      <p>Explain the purpose or subject of the report.</p>
+    </div>
+
+    <div class="writing-card">
+      <h3>Findings</h3>
+      <p>Present the important information or observations.</p>
+    </div>
+
+    <div class="writing-card">
+      <h3>Conclusion / Recommendations</h3>
+      <p>Summarise the findings and provide recommendations when appropriate.</p>
+    </div>
+  </div>
+
+
+  <!-- SPEECH WRITING -->
+
+  <div class="section">
+    <h2>🎤 Speech Writing</h2>
+
+    <p>
+      A speech is written to be delivered to an audience.
+      It should sound natural when spoken.
+    </p>
+
+    <div class="example">
+      <strong>Speech structure:</strong><br><br>
+      Greeting → Introduction → Main Points → Examples →
+      Conclusion → Thank You
+    </div>
