@@ -1,17 +1,20 @@
-grammar.html
-<!DOCTYPE html>
+grammar <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>C1 Grammar | The Student Spot</title>
+  <title>English Grammar | The Student Spot</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #fff7fb;
+      background: #fff8fc;
       color: #333;
       line-height: 1.7;
     }
@@ -19,70 +22,151 @@ grammar.html
     header {
       background: #d9b8ff;
       text-align: center;
-      padding: 50px 20px;
+      padding: 45px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 42px;
+      color: #4f2878;
+      font-size: 40px;
     }
 
     header p {
-      font-size: 18px;
+      margin: 8px 0 0;
+      font-size: 17px;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
-      padding: 35px 20px;
+      padding: 30px 20px;
     }
 
-    .topic,
-    .practice {
+    .intro {
       background: white;
       padding: 28px;
-      margin: 25px 0;
       border-radius: 18px;
       box-shadow: 0 4px 12px #ddd;
+      margin-bottom: 30px;
     }
 
-    h2 {
+    .intro h2 {
       color: #7b4bb7;
+      margin-top: 0;
     }
 
-    .rule {
-      background: #f6edff;
-      padding: 18px;
+    .levels {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      margin: 25px 0 35px;
+    }
+
+    .level-link {
+      display: block;
+      text-align: center;
+      padding: 12px 5px;
+      background: white;
       border-radius: 12px;
-      margin: 15px 0;
+      text-decoration: none;
+      color: #633d8c;
+      font-weight: bold;
+      box-shadow: 0 3px 8px #ddd;
+    }
+
+    .level-link:hover {
+      background: #eadcff;
+    }
+
+    .level {
+      background: white;
+      margin: 35px 0;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px #ddd;
+      scroll-margin-top: 20px;
+    }
+
+    .level h2 {
+      margin-top: 0;
+      color: #633d8c;
+      font-size: 30px;
+    }
+
+    .level-intro {
+      background: #f7efff;
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 22px;
+    }
+
+    .grammar-topic {
+      background: #fcf9ff;
+      border-left: 5px solid #b48be0;
+      padding: 18px;
+      margin: 18px 0;
+      border-radius: 10px;
+    }
+
+    .grammar-topic h3 {
+      color: #6c4397;
+      margin-top: 0;
     }
 
     .example {
-      border-left: 4px solid #7b4bb7;
-      padding-left: 15px;
-      margin: 15px 0;
+      background: #f1f8ff;
+      border-left: 4px solid #7ba7d8;
+      padding: 12px 15px;
+      margin-top: 12px;
+      border-radius: 8px;
     }
 
-    .mistake {
-      background: #fff0f5;
-      padding: 15px;
-      border-radius: 10px;
+    .tip {
+      background: #fff8e8;
+      border-left: 4px solid #e0b94f;
+      padding: 14px;
       margin-top: 15px;
-    }
-
-    .answers {
-      background: #f6edff;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 25px;
+      border-radius: 8px;
     }
 
     .back {
       display: inline-block;
-      margin: 20px 10px;
-      color: #7b4bb7;
+      margin: 8px;
+      padding: 12px 22px;
+      background: #7b4bb7;
+      color: white;
       text-decoration: none;
+      border-radius: 10px;
       font-weight: bold;
+    }
+
+    .back:hover {
+      background: #633d8c;
+    }
+
+    .bottom {
+      text-align: center;
+      margin: 40px 0 50px;
+    }
+
+    @media (max-width: 850px) {
+      .levels {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .levels {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      header h1 {
+        font-size: 32px;
+      }
+
+      .level {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -90,356 +174,925 @@ grammar.html
 <body>
 
 <header>
-  <h1>📖 C1 English Grammar</h1>
-  <p>Understand advanced grammar and use it confidently.</p>
+  <h1>📚 English Grammar</h1>
+  <p>Learn English grammar step by step from A1 beginner to C2 proficiency.</p>
 </header>
+
 
 <div class="container">
 
-  <div class="topic">
-    <h2>1. Advanced Conditionals</h2>
+  <div class="intro">
+    <h2>🌟 Your English Grammar Journey</h2>
 
     <p>
-      Conditionals describe situations and their possible results.
-      At C1 level, you should be comfortable with mixed and inverted
-      conditionals.
+      English grammar becomes more advanced as your language skills grow.
+      The Student Spot organizes grammar into six CEFR levels:
+      A1, A2, B1, B2, C1 and C2.
     </p>
 
-    <div class="rule">
-      <strong>Mixed conditional:</strong><br>
-      If + past perfect → would + base verb
-    </div>
-
-    <div class="example">
-      <strong>Example:</strong><br>
-      If I had studied harder last year, I would understand this topic
-      much better now.
-    </div>
-
-    <div class="example">
-      <strong>Another example:</strong><br>
-      If she weren't so busy, she would have attended the event yesterday.
-    </div>
+    <p>
+      Start with the level that matches your current English ability
+      and gradually move toward more advanced grammar.
+    </p>
   </div>
 
 
-  <div class="topic">
-    <h2>2. Inversion</h2>
+  <!-- LEVEL NAVIGATION -->
 
-    <p>
-      In formal English, we can place certain negative or limiting
-      expressions at the beginning of a sentence and invert the
-      subject and auxiliary verb.
-    </p>
+  <div class="levels">
 
-    <div class="rule">
-      <strong>Normal:</strong><br>
-      I had never seen such a beautiful place.
-      <br><br>
+    <a class="level-link" href="#a1">A1</a>
+    <a class="level-link" href="#a2">A2</a>
+    <a class="level-link" href="#b1">B1</a>
+    <a class="level-link" href="#b2">B2</a>
+    <a class="level-link" href="#c1">C1</a>
+    <a class="level-link" href="#c2">C2</a>
 
-      <strong>Inverted:</strong><br>
-      Never had I seen such a beautiful place.
-    </div>
-
-    <div class="example">
-      <strong>Examples:</strong><br>
-      Rarely do students get such an opportunity.<br>
-      Not only did she finish the project, but she also presented it.
-    </div>
   </div>
 
 
-  <div class="topic">
-    <h2>3. Modal Verbs of Deduction</h2>
+  <!-- A1 -->
 
-    <p>
-      Modal verbs can express how certain we are about a past or
-      present situation.
-    </p>
+  <section class="level" id="a1">
 
-    <div class="rule">
-      <strong>Present:</strong><br>
-      must be → strong certainty<br>
-      might be → possibility<br>
-      can't be → strong belief that something is impossible
-      <br><br>
+    <h2>🟢 A1 — Beginner</h2>
 
-      <strong>Past:</strong><br>
-      must have + past participle<br>
-      might have + past participle<br>
-      can't have + past participle
+    <div class="level-intro">
+      A1 grammar focuses on the basic structures needed to communicate
+      about yourself, everyday activities, people, places and simple situations.
     </div>
 
-    <div class="example">
-      <strong>Example:</strong><br>
-      She isn't answering her phone. She must be busy.
-      <br><br>
-      They left an hour ago, so they must have arrived by now.
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>4. Participle Clauses</h2>
-
-    <p>
-      Participle clauses allow us to combine information and make
-      writing more concise.
-    </p>
-
-    <div class="example">
-      <strong>Example:</strong><br>
-      Having finished her homework, Maria went outside.
-      <br><br>
-      Instead of:<br>
-      Maria had finished her homework, so she went outside.
-    </div>
-
-    <div class="example">
-      <strong>Another example:</strong><br>
-      Feeling tired, he decided to take a break.
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>5. Cleft Sentences</h2>
-
-    <p>
-      Cleft sentences allow us to emphasise particular information.
-    </p>
-
-    <div class="rule">
-      <strong>Structure:</strong><br>
-      It + be + emphasised information + that/who...
-    </div>
-
-    <div class="example">
-      <strong>Example:</strong><br>
-      It was Sarah who solved the problem.
-      <br><br>
-      The emphasis is on <strong>Sarah</strong>.
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>6. Relative Clauses</h2>
-
-    <p>
-      Relative clauses provide additional information about a noun.
-      At advanced level, you should understand defining,
-      non-defining and reduced relative clauses.
-    </p>
-
-    <div class="example">
-      <strong>Example:</strong><br>
-      The book, which was published last year, became extremely popular.
-    </div>
-
-    <div class="example">
-      <strong>Reduced form:</strong><br>
-      Students studying abroad often develop greater independence.
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>7. Advanced Passive Structures</h2>
-
-    <p>
-      Passive structures are especially common in formal,
-      academic and scientific writing.
-    </p>
-
-    <div class="example">
-      <strong>Example:</strong><br>
-      The researchers are believed to have discovered a new species.
-    </div>
-
-    <div class="example">
-      <strong>Another example:</strong><br>
-      The problem is thought to have been caused by a technical error.
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>8. Reported Speech</h2>
-
-    <p>
-      Reported speech is used to communicate what someone said
-      without repeating their exact words.
-    </p>
-
-    <div class="example">
-      <strong>Direct:</strong><br>
-      "I am studying for my exam."
-      <br><br>
-
-      <strong>Reported:</strong><br>
-      She said that she was studying for her exam.
-    </div>
-
-    <div class="example">
-      <strong>Advanced example:</strong><br>
-      He claimed that he had never been informed about the changes.
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>9. Wish & Regret</h2>
-
-    <p>
-      We use different structures to talk about present situations,
-      past regrets and desired changes.
-    </p>
-
-    <div class="example">
-      <strong>Present:</strong><br>
-      I wish I had more time.
-      <br><br>
-
-      <strong>Past regret:</strong><br>
-      I wish I had studied harder.
-      <br><br>
-
-      <strong>Annoying repeated behaviour:</strong><br>
-      I wish you wouldn't interrupt me.
-    </div>
-  </div>
-
-
-  <div class="topic">
-    <h2>10. Emphasis with Auxiliary Verbs</h2>
-
-    <p>
-      We can use <strong>do, does</strong> or <strong>did</strong>
-      to emphasise an affirmative statement.
-    </p>
-
-    <div class="example">
-      <strong>Example:</strong><br>
-      I do understand your point.
-      <br><br>
-      She did complete the assignment on time.
-    </div>
-
-    <div class="mistake">
-      <strong>⚠️ Common mistake:</strong><br>
-      Do not use "did" with another past-tense verb.
-      <br><br>
-      ❌ She did completed the work.<br>
-      ✅ She did complete the work.
-    </div>
-  </div>
-
-
-  <div class="practice">
-
-    <h2>🧠 C1 Grammar Practice</h2>
-
-    <ol>
-
-      <li>
-        If I ______ harder last year, I would be more confident now.
-        <br><br>
-        A) studied<br>
-        B) had studied<br>
-        C) would study<br>
-        D) have studied
-      </li>
-
-      <li>
-        Rarely ______ such an impressive performance.
-        <br><br>
-        A) I have seen<br>
-        B) have I seen<br>
-        C) I saw<br>
-        D) saw I
-      </li>
-
-      <li>
-        She isn't answering. She ______ be asleep.
-        <br><br>
-        A) must<br>
-        B) should have<br>
-        C) would<br>
-        D) can't have
-      </li>
-
-      <li>
-        ______ his homework, he went out with his friends.
-        <br><br>
-        A) Finished<br>
-        B) Having finished<br>
-        C) Has finished<br>
-        D) Finish
-      </li>
-
-      <li>
-        It was the teacher ______ explained the concept.
-        <br><br>
-        A) which<br>
-        B) whose<br>
-        C) who<br>
-        D) where
-      </li>
-
-      <li>
-        The scientist is believed ______ a major discovery.
-        <br><br>
-        A) make<br>
-        B) making<br>
-        C) to have made<br>
-        D) made
-      </li>
-
-      <li>
-        I wish I ______ more carefully for the examination.
-        <br><br>
-        A) study<br>
-        B) studied<br>
-        C) had studied<br>
-        D) would study
-      </li>
-
-      <li>
-        She ______ complete the assignment before the deadline.
-        <br><br>
-        A) did<br>
-        B) did to<br>
-        C) did completed<br>
-        D) does completed
-      </li>
-
-    </ol>
-
-
-    <div class="answers">
-
-      <h3>✅ Answer Key</h3>
-
+    <div class="grammar-topic">
+      <h3>1. Subject Pronouns</h3>
       <p>
-        1. B — had studied<br>
-        2. B — have I seen<br>
-        3. A — must<br>
-        4. B — Having finished<br>
-        5. C — who<br>
-        6. C — to have made<br>
-        7. C — had studied<br>
-        8. A — did
+        Subject pronouns tell us who performs an action.
       </p>
 
+      <div class="example">
+        <strong>Examples:</strong><br>
+        I am a student.<br>
+        She is my friend.<br>
+        They live here.
+      </div>
     </div>
+
+    <div class="grammar-topic">
+      <h3>2. Verb "Be" — am, is, are</h3>
+      <p>
+        Use <strong>am</strong> with I, <strong>is</strong> with he, she and it,
+        and <strong>are</strong> with you, we and they.
+      </p>
+
+      <div class="example">
+        I am happy.<br>
+        He is twelve.<br>
+        We are students.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>3. Articles — a, an, the</h3>
+      <p>
+        Articles are used before nouns. Use <strong>a</strong> before
+        a consonant sound, <strong>an</strong> before a vowel sound,
+        and <strong>the</strong> when referring to something specific.
+      </p>
+
+      <div class="example">
+        a book — an apple — the teacher
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>4. Plural Nouns</h3>
+      <p>
+        Many nouns form their plural by adding <strong>-s</strong> or
+        <strong>-es</strong>.
+      </p>
+
+      <div class="example">
+        book → books<br>
+        class → classes
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>5. Possessive Adjectives</h3>
+      <p>
+        Possessive adjectives show who something belongs to.
+      </p>
+
+      <div class="example">
+        my book — your bag — his pen — her phone — our school — their house
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>6. Present Simple</h3>
+      <p>
+        The present simple is commonly used for habits, routines,
+        facts and repeated actions.
+      </p>
+
+      <div class="example">
+        I study every day.<br>
+        She plays tennis on Saturday.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>7. Basic Questions</h3>
+      <p>
+        Common question words include who, what, where, when, why and how.
+      </p>
+
+      <div class="example">
+        Where do you live?<br>
+        What is your name?<br>
+        How are you?
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>8. Can and Can't</h3>
+      <p>
+        <strong>Can</strong> expresses ability or possibility.
+        <strong>Can't</strong> expresses inability.
+      </p>
+
+      <div class="example">
+        I can swim.<br>
+        He can't drive.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>9. Basic Prepositions</h3>
+      <p>
+        Common prepositions include in, on, at, under, behind and next to.
+      </p>
+
+      <div class="example">
+        The book is on the table.<br>
+        The bag is under the chair.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>10. There is / There are</h3>
+      <p>
+        Use these structures to say that something exists.
+      </p>
+
+      <div class="example">
+        There is a book on the desk.<br>
+        There are three students in the room.
+      </div>
+    </div>
+
+    <div class="tip">
+      <strong>💡 A1 Tip:</strong>
+      Focus on making short, correct sentences before trying complicated structures.
+    </div>
+
+  </section>
+
+
+  <!-- A2 -->
+
+  <section class="level" id="a2">
+
+    <h2>🔵 A2 — Elementary</h2>
+
+    <div class="level-intro">
+      A2 grammar builds on basic English and helps you describe past events,
+      future plans, comparisons and everyday situations in greater detail.
+    </div>
+
+    <div class="grammar-topic">
+      <h3>1. Past Simple</h3>
+      <p>
+        Use the past simple for completed actions in the past.
+      </p>
+
+      <div class="example">
+        I visited my grandmother yesterday.<br>
+        She watched a movie last night.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>2. Past Simple Questions and Negatives</h3>
+      <p>
+        Use <strong>did</strong> for many past simple questions and negatives.
+      </p>
+
+      <div class="example">
+        Did you study?<br>
+        I did not study.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>3. Present Continuous</h3>
+      <p>
+        Use the present continuous for actions happening now or around the present.
+      </p>
+
+      <div class="example">
+        I am reading a book.<br>
+        They are playing football.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>4. Future with Going To</h3>
+      <p>
+        Use <strong>going to</strong> for plans and intentions.
+      </p>
+
+      <div class="example">
+        I am going to study tonight.<br>
+        We are going to visit the museum.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>5. Will for the Future</h3>
+      <p>
+        <strong>Will</strong> can be used for predictions, decisions and promises.
+      </p>
+
+      <div class="example">
+        I think it will rain.<br>
+        I will help you.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>6. Comparatives</h3>
+      <p>
+        Comparatives compare two people or things.
+      </p>
+
+      <div class="example">
+        This book is cheaper than that one.<br>
+        Ali is taller than Ahmed.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>7. Superlatives</h3>
+      <p>
+        Superlatives compare one thing with a larger group.
+      </p>
+
+      <div class="example">
+        This is the tallest building in the city.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>8. Countable and Uncountable Nouns</h3>
+      <p>
+        Countable nouns can be counted. Uncountable nouns are generally
+        treated as substances or concepts rather than individual units.
+      </p>
+
+      <div class="example">
+        three books — some water
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>9. Some and Any</h3>
+      <p>
+        These words are commonly used with quantities of things.
+      </p>
+
+      <div class="example">
+        I have some apples.<br>
+        Do you have any water?
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>10. Basic Modal Verbs</h3>
+      <p>
+        Modal verbs such as should, must and might express advice,
+        necessity or possibility.
+      </p>
+
+      <div class="example">
+        You should study.<br>
+        You must wear a seat belt.
+      </div>
+    </div>
+
+    <div class="tip">
+      <strong>💡 A2 Tip:</strong>
+      Practise describing what you did, what you are doing and what you plan to do.
+    </div>
+
+  </section>
+
+
+  <!-- B1 -->
+
+  <section class="level" id="b1">
+
+    <h2>🟡 B1 — Intermediate</h2>
+
+    <div class="level-intro">
+      B1 grammar helps learners connect ideas, discuss experiences,
+      explain reasons and use several important verb structures.
+    </div>
+
+    <div class="grammar-topic">
+      <h3>1. Present Perfect</h3>
+      <p>
+        The present perfect connects past actions or experiences with the present.
+      </p>
+
+      <div class="example">
+        I have finished my homework.<br>
+        She has visited London.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>2. Present Perfect with For and Since</h3>
+      <p>
+        <strong>For</strong> describes a period of time.
+        <strong>Since</strong> identifies when a period began.
+      </p>
+
+      <div class="example">
+        I have lived here for three years.<br>
+        She has studied English since 2022.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>3. Past Continuous</h3>
+      <p>
+        Use the past continuous for an action that was in progress
+        at a particular time in the past.
+      </p>
+
+      <div class="example">
+        I was studying at eight o'clock.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>4. Past Perfect</h3>
+      <p>
+        The past perfect describes an earlier past action in relation
+        to another past event.
+      </p>
+
+      <div class="example">
+        The train had left before we arrived.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>5. First Conditional</h3>
+      <p>
+        The first conditional describes a possible future situation
+        and its result.
+      </p>
+
+      <div class="example">
+        If it rains, we will stay home.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>6. Second Conditional</h3>
+      <p>
+        The second conditional is commonly used for hypothetical
+        or unlikely situations.
+      </p>
+
+      <div class="example">
+        If I had more time, I would learn another language.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>7. Passive Voice</h3>
+      <p>
+        The passive focuses on the action or its receiver rather than
+        the person who performs the action.
+      </p>
+
+      <div class="example">
+        The window was broken.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>8. Reported Speech</h3>
+      <p>
+        Reported speech communicates what someone said without quoting
+        their exact words.
+      </p>
+
+      <div class="example">
+        Direct: Sara said, "I am tired."<br>
+        Reported: Sara said that she was tired.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>9. Relative Clauses</h3>
+      <p>
+        Relative clauses provide additional information about a noun.
+      </p>
+
+      <div class="example">
+        The student who won the prize is my friend.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>10. Gerunds and Infinitives</h3>
+      <p>
+        Some verbs are followed by an -ing form, while others can
+        be followed by an infinitive.
+      </p>
+
+      <div class="example">
+        I enjoy reading.<br>
+        I want to learn.
+      </div>
+    </div>
+
+    <div class="tip">
+      <strong>💡 B1 Tip:</strong>
+      Practise combining simple sentences with because, although, if,
+      when and relative clauses.
+    </div>
+
+  </section>
+
+
+  <!-- B2 -->
+
+  <section class="level" id="b2">
+
+    <h2>🟠 B2 — Upper-Intermediate</h2>
+
+    <div class="level-intro">
+      B2 grammar allows learners to express complex ideas, uncertainty,
+      hypothetical situations and relationships between events more precisely.
+    </div>
+
+    <div class="grammar-topic">
+      <h3>1. Third Conditional</h3>
+      <p>
+        The third conditional describes an unreal past situation
+        and its imagined past result.
+      </p>
+
+      <div class="example">
+        If I had studied harder, I would have passed the exam.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>2. Mixed Conditionals</h3>
+      <p>
+        Mixed conditionals connect different time periods in a hypothetical situation.
+      </p>
+
+      <div class="example">
+        If I had studied medicine, I would be a doctor now.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>3. Modal Verbs of Deduction</h3>
+      <p>
+        Modal verbs such as must, might and can't can express different
+        levels of certainty.
+      </p>
+
+      <div class="example">
+        She must be tired.<br>
+        He might be at home.<br>
+        They can't be serious.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>4. Advanced Passive Structures</h3>
+      <p>
+        Passive structures can be combined with reporting verbs and
+        other complex constructions.
+      </p>
+
+      <div class="example">
+        The project is believed to be successful.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>5. Advanced Reported Speech</h3>
+      <p>
+        Reported speech can include reporting verbs such as advise,
+        warn, admit, deny and suggest.
+      </p>
+
+      <div class="example">
+        The teacher advised us to revise carefully.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>6. Participle Clauses</h3>
+      <p>
+        Participle clauses can make sentences more concise by combining
+        related information.
+      </p>
+
+      <div class="example">
+        Walking home, I saw an old friend.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>7. Advanced Relative Clauses</h3>
+      <p>
+        Relative structures can add detailed information to complex sentences.
+      </p>
+
+      <div class="example">
+        The scientist whose research changed medicine received an award.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>8. Wish and If Only</h3>
+      <p>
+        These structures can express wishes, regrets or dissatisfaction.
+      </p>
+
+      <div class="example">
+        I wish I had more time.<br>
+        If only I had listened.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>9. Causative Structures</h3>
+      <p>
+        Causative structures describe arranging for someone else
+        to do something.
+      </p>
+
+      <div class="example">
+        I had my laptop repaired.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>10. Linking and Complex Clauses</h3>
+      <p>
+        B2 learners should be able to connect ideas using a wide range
+        of subordinating and linking structures.
+      </p>
+
+      <div class="example">
+        Although the exam was difficult, she completed it successfully.
+      </div>
+    </div>
+
+    <div class="tip">
+      <strong>💡 B2 Tip:</strong>
+      Don't only learn grammar rules. Practise choosing the structure
+      that communicates your intended meaning most naturally.
+    </div>
+
+  </section>
+
+
+  <!-- C1 -->
+
+  <section class="level" id="c1">
+
+    <h2>🔴 C1 — Advanced</h2>
+
+    <div class="level-intro">
+      C1 grammar focuses on sophisticated structures, precision,
+      emphasis, formal writing and subtle differences in meaning.
+    </div>
+
+    <div class="grammar-topic">
+      <h3>1. Inversion</h3>
+      <p>
+        Inversion changes the normal word order, often for emphasis
+        or formal effect.
+      </p>
+
+      <div class="example">
+        Never have I seen such a beautiful view.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>2. Cleft Sentences</h3>
+      <p>
+        Cleft structures highlight a particular part of a sentence.
+      </p>
+
+      <div class="example">
+        It was Sara who solved the problem.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>3. Advanced Conditionals</h3>
+      <p>
+        C1 learners should be able to use complex hypothetical
+        and conditional structures accurately.
+      </p>
+
+      <div class="example">
+        Had I known about the problem, I would have acted differently.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>4. Advanced Modal Structures</h3>
+      <p>
+        Modals can express subtle degrees of certainty, criticism,
+        expectation and possibility.
+      </p>
+
+      <div class="example">
+        You should have told me earlier.<br>
+        She may have misunderstood the instructions.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>5. Subjunctive Structures</h3>
+      <p>
+        The mandative subjunctive is used in some formal expressions,
+        particularly in formal English.
+      </p>
+
+      <div class="example">
+        It is essential that every student be prepared.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>6. Nominalisation</h3>
+      <p>
+        Nominalisation changes verbs or adjectives into noun forms
+        and is common in formal and academic writing.
+      </p>
+
+      <div class="example">
+        The committee decided to change the policy.<br>
+        The committee made a decision to change the policy.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>7. Ellipsis</h3>
+      <p>
+        Ellipsis removes words that can be understood from context.
+      </p>
+
+      <div class="example">
+        I can play the guitar, and my sister can too.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>8. Advanced Linking Structures</h3>
+      <p>
+        C1 learners should use precise structures to show contrast,
+        cause, consequence and qualification.
+      </p>
+
+      <div class="example">
+        Much as I understand your point, I disagree with the conclusion.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>9. Reduced Relative Clauses</h3>
+      <p>
+        Some relative clauses can be reduced using participle structures.
+      </p>
+
+      <div class="example">
+        Students studying abroad often experience new cultures.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>10. Formal Grammar and Register</h3>
+      <p>
+        C1 learners need to choose grammatical structures appropriate
+        for formal, neutral and informal situations.
+      </p>
+
+      <div class="example">
+        Formal: I would appreciate your response.<br>
+        Informal: I'd really appreciate a reply.
+      </div>
+    </div>
+
+    <div class="tip">
+      <strong>💡 C1 Tip:</strong>
+      At advanced level, grammar is not only about correctness.
+      Pay attention to emphasis, tone, precision and context.
+    </div>
+
+  </section>
+
+
+  <!-- C2 -->
+
+  <section class="level" id="c2">
+
+    <h2>🟣 C2 — Proficiency</h2>
+
+    <div class="level-intro">
+      C2 grammar represents highly advanced control of English.
+      The focus is on precision, flexibility, nuance, sophisticated
+      sentence structures and appropriate grammatical choices.
+    </div>
+
+    <div class="grammar-topic">
+      <h3>1. Sophisticated Inversion</h3>
+      <p>
+        C2 users can use inversion naturally for emphasis,
+        literary effect and formal communication.
+      </p>
+
+      <div class="example">
+        Little did they realise how important the decision would become.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>2. Advanced Emphasis</h3>
+      <p>
+        C2 grammar allows speakers and writers to emphasize information
+        through several structural choices.
+      </p>
+
+      <div class="example">
+        What matters most is how the problem is solved.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>3. Nuanced Modality</h3>
+      <p>
+        Advanced modal structures can communicate subtle differences
+        between certainty, probability, obligation and possibility.
+      </p>
+
+      <div class="example">
+        He could have been expected to respond sooner.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>4. Complex Hypothetical Structures</h3>
+      <p>
+        C2 users can combine complex hypothetical meanings
+        while maintaining accurate relationships between time and condition.
+      </p>
+
+      <div class="example">
+        Had circumstances been different, the outcome might well have changed.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>5. Advanced Ellipsis</h3>
+      <p>
+        Ellipsis can make sophisticated writing concise while leaving
+        the intended meaning clear from context.
+      </p>
+
+      <div class="example">
+        Some preferred the first proposal; others, the second.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>6. Complex Subordination</h3>
+      <p>
+        C2 speakers can organize several relationships between ideas
+        using carefully controlled subordinate structures.
+      </p>
+
+      <div class="example">
+        However carefully the evidence is examined, the conclusion remains uncertain.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>7. Advanced Cleft and Pseudo-Cleft Structures</h3>
+      <p>
+        These structures can place strong emphasis on particular information.
+      </p>
+
+      <div class="example">
+        What surprised me most was the speed of the response.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>8. Grammatical Choices and Nuance</h3>
+      <p>
+        At C2, different grammatically correct structures may communicate
+        slightly different meanings, attitudes or degrees of certainty.
+      </p>
+
+      <div class="example">
+        You must have forgotten.<br>
+        You may have forgotten.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>9. Formal and Literary Structures</h3>
+      <p>
+        C2 learners can understand and use sophisticated structures
+        found in academic, professional and literary English.
+      </p>
+
+      <div class="example">
+        Were the proposal to be accepted, significant changes would follow.
+      </div>
+    </div>
+
+    <div class="grammar-topic">
+      <h3>10. Flexible Sentence Construction</h3>
+      <p>
+        C2 users can restructure sentences to achieve clarity,
+        emphasis, rhythm, formality or a particular rhetorical effect.
+      </p>
+
+      <div class="example">
+        Only after reviewing the evidence did the researchers change their conclusion.
+      </div>
+    </div>
+
+    <div class="tip">
+      <strong>💡 C2 Tip:</strong>
+      C2 is about control and flexibility. Learn to choose between
+      different grammatical structures according to meaning, context,
+      register and emphasis.
+    </div>
+
+  </section>
+
+
+  <!-- END -->
+
+  <div class="intro">
+
+    <h2>🎯 How to Use This Page</h2>
+
+    <p>
+      If you are new to English grammar, begin with A1 and work upward.
+      If you already understand basic grammar, choose the level that
+      matches your current ability.
+    </p>
+
+    <p>
+      Remember: CEFR levels describe overall language proficiency,
+      so learners may have different strengths across grammar,
+      vocabulary, reading, writing, listening and speaking.
+    </p>
 
   </div>
 
 
-  <a class="back" href="english.html">← Back to English</a>
-  <a class="back" href="subjects.html">📚 Subjects</a>
-  <a class="back" href="index.html">🏠 Home</a>
+  <div class="bottom">
+
+    <a class="back" href="english.html">
+      🇬🇧 Back to English
+    </a>
+
+    <a class="back" href="index.html">
+      🏠 Back to Home
+    </a>
+
+  </div>
 
 </div>
 
