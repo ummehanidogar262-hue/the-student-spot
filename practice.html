@@ -1,5 +1,4 @@
-practice.html
-<!DOCTYPE html>
+practice <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -27,13 +26,17 @@ practice.html
       font-size: 42px;
     }
 
-    .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 35px 20px;
+    header p {
+      font-size: 18px;
     }
 
-    .quiz {
+    .container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .section {
       background: white;
       padding: 28px;
       margin: 25px 0;
@@ -43,20 +46,113 @@ practice.html
 
     h2 {
       color: #7b4bb7;
+      margin-top: 0;
+    }
+
+    h3 {
+      color: #68409c;
+    }
+
+    .level {
+      background: #faf3ff;
+      padding: 20px;
+      margin: 18px 0;
+      border-radius: 14px;
+      border-left: 5px solid #b98be6;
     }
 
     .question {
       background: #f6edff;
-      padding: 20px;
-      margin: 18px 0;
+      padding: 18px;
+      margin: 14px 0;
       border-radius: 12px;
     }
 
-    .answers {
-      background: #fff0f5;
-      padding: 25px;
-      border-radius: 15px;
-      margin-top: 30px;
+    .answer {
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: #eee2ff;
+      border-radius: 8px;
+      color: #5f3987;
+      font-weight: bold;
+    }
+
+    .word {
+      background: #fdf5ff;
+      padding: 15px;
+      margin: 12px 0;
+      border-radius: 10px;
+    }
+
+    .pronunciation {
+      background: #f3eaff;
+      padding: 18px;
+      margin: 14px 0;
+      border-radius: 12px;
+    }
+
+    .writing-task {
+      background: #fff4fa;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 12px;
+      border-left: 5px solid #d99ac0;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 450px;
+      box-sizing: border-box;
+      padding: 18px;
+      border: 2px solid #c9a7e8;
+      border-radius: 14px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      resize: vertical;
+      background: #fff;
+      outline: none;
+    }
+
+    textarea:focus {
+      border-color: #7b4bb7;
+    }
+
+    .buttons {
+      margin-top: 15px;
+    }
+
+    button {
+      border: none;
+      padding: 12px 20px;
+      margin: 6px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .save {
+      background: #d9b8ff;
+      color: #4f2d70;
+    }
+
+    .clear {
+      background: #ffdede;
+      color: #8a3333;
+    }
+
+    .status {
+      margin-top: 10px;
+      color: #5f3987;
+      font-weight: bold;
+    }
+
+    .tip {
+      background: #eee2ff;
+      padding: 16px;
+      margin: 12px 0;
+      border-radius: 10px;
     }
 
     .back {
@@ -66,6 +162,29 @@ practice.html
       text-decoration: none;
       font-weight: bold;
     }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    .small-note {
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      .container {
+        padding: 20px 12px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 
@@ -73,157 +192,711 @@ practice.html
 
 <header>
   <h1>🧠 English Practice</h1>
-  <p>Test your vocabulary, grammar, writing and pronunciation skills.</p>
+  <p>Practise grammar, vocabulary, pronunciation and writing at your own level.</p>
 </header>
 
 <div class="container">
 
-  <div class="quiz">
 
-    <h2>📖 Vocabulary</h2>
+  <!-- WELCOME -->
 
-    <div class="question">
-      <strong>1. What does "meticulous" mean?</strong><br><br>
-      A) Careless<br>
-      B) Very careful and precise<br>
-      C) Extremely fast<br>
-      D) Confused
-    </div>
+  <div class="section">
 
-    <div class="question">
-      <strong>2. What is closest in meaning to "substantial"?</strong><br><br>
-      A) Tiny<br>
-      B) Significant<br>
-      C) Temporary<br>
-      D) Unusual
-    </div>
-
-    <div class="question">
-      <strong>3. What does "inevitable" mean?</strong><br><br>
-      A) Impossible to avoid<br>
-      B) Easy to change<br>
-      C) Difficult to understand<br>
-      D) Completely unexpected
-    </div>
-
-  </div>
-
-
-  <div class="quiz">
-
-    <h2>📚 Grammar</h2>
-
-    <div class="question">
-      <strong>4. Choose the correct answer:</strong><br><br>
-
-      If I ______ harder, I would have passed the examination.
-      <br><br>
-
-      A) studied<br>
-      B) had studied<br>
-      C) have studied<br>
-      D) would study
-    </div>
-
-    <div class="question">
-      <strong>5. Choose the correct sentence:</strong><br><br>
-
-      A) Rarely I have seen such a beautiful place.<br>
-      B) Rarely have I seen such a beautiful place.<br>
-      C) Rarely I saw have such a beautiful place.<br>
-      D) Have rarely I seen such a beautiful place.
-    </div>
-
-    <div class="question">
-      <strong>6. Choose the correct answer:</strong><br><br>
-
-      She ______ have forgotten about the meeting.
-      <br><br>
-
-      A) must<br>
-      B) must to<br>
-      C) must have<br>
-      D) must has
-    </div>
-
-  </div>
-
-
-  <div class="quiz">
-
-    <h2>✍️ Writing</h2>
-
-    <div class="question">
-      <strong>7. Which is most appropriate for a formal email?</strong><br><br>
-
-      A) Hey! Tell me about the course.<br>
-      B) I wanna know about the course.<br>
-      C) I would be grateful if you could provide further information.<br>
-      D) Give me the information.
-    </div>
-
-    <div class="question">
-      <strong>8. Which linking word shows contrast?</strong><br><br>
-
-      A) Furthermore<br>
-      B) Therefore<br>
-      C) However<br>
-      D) Consequently
-    </div>
-
-  </div>
-
-
-  <div class="quiz">
-
-    <h2>🗣️ Pronunciation</h2>
-
-    <div class="question">
-      <strong>9. Which word contains a silent "k"?</strong><br><br>
-
-      A) Keep<br>
-      B) Kind<br>
-      C) Knife<br>
-      D) Kitchen
-    </div>
-
-    <div class="question">
-      <strong>10. Which pair is a minimal pair?</strong><br><br>
-
-      A) Ship / sheep<br>
-      B) Book / books<br>
-      C) Teacher / student<br>
-      D) Quickly / slowly
-    </div>
-
-  </div>
-
-
-  <div class="answers">
-
-    <h2>✅ Answer Key</h2>
+    <h2>🌟 Welcome to English Practice</h2>
 
     <p>
-      1. B — Very careful and precise<br>
-      2. B — Significant<br>
-      3. A — Impossible to avoid<br>
-      4. B — had studied<br>
-      5. B — Rarely have I seen...<br>
-      6. C — must have<br>
-      7. C — I would be grateful if you could provide further information.<br>
-      8. C — However<br>
-      9. C — Knife<br>
-      10. A — Ship / sheep
+      This page brings together different parts of English in one place.
+      Practise grammar, build vocabulary, improve pronunciation and develop
+      your writing skills.
+    </p>
+
+    <div class="tip">
+      <strong>💡 Student Tip:</strong>
+      Do a little practice regularly instead of trying to learn everything
+      in one session.
+    </div>
+
+  </div>
+
+
+  <!-- GRAMMAR -->
+
+  <div class="section">
+
+    <h2>📚 Grammar Practice</h2>
+
+    <p>
+      Choose a level that matches your current English and gradually work
+      towards more advanced grammar.
+    </p>
+
+
+    <div class="level">
+
+      <h3>A1 — Beginner</h3>
+
+      <div class="question">
+        <strong>1. Choose the correct sentence:</strong><br><br>
+        A) She are a student.<br>
+        B) She is a student.<br>
+        C) She am a student.<br>
+        D) She be a student.
+
+        <div class="answer">
+          Answer: B — She is a student.
+        </div>
+      </div>
+
+      <div class="question">
+        <strong>2. Complete the sentence:</strong><br><br>
+        I ___ two brothers.<br><br>
+        A) has<br>
+        B) having<br>
+        C) have<br>
+        D) had
+
+        <div class="answer">
+          Answer: C — have.
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="level">
+
+      <h3>A2 — Elementary</h3>
+
+      <div class="question">
+        <strong>3. Choose the correct form:</strong><br><br>
+        We ___ to the park yesterday.<br><br>
+        A) go<br>
+        B) goes<br>
+        C) went<br>
+        D) going
+
+        <div class="answer">
+          Answer: C — went.
+        </div>
+      </div>
+
+      <div class="question">
+        <strong>4. Complete the sentence:</strong><br><br>
+        There ___ some milk in the fridge.<br><br>
+        A) are<br>
+        B) is<br>
+        C) be<br>
+        D) were
+
+        <div class="answer">
+          Answer: B — is.
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="level">
+
+      <h3>B1 — Intermediate</h3>
+
+      <div class="question">
+        <strong>5. Choose the correct conditional:</strong><br><br>
+        If it rains tomorrow, we ___ at home.<br><br>
+        A) stayed<br>
+        B) will stay<br>
+        C) would stayed<br>
+        D) staying
+
+        <div class="answer">
+          Answer: B — will stay.
+        </div>
+      </div>
+
+      <div class="question">
+        <strong>6. Choose the correct form:</strong><br><br>
+        She has ___ her homework.<br><br>
+        A) finish<br>
+        B) finished<br>
+        C) finishing<br>
+        D) finishes
+
+        <div class="answer">
+          Answer: B — finished.
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="level">
+
+      <h3>B2 — Upper Intermediate</h3>
+
+      <div class="question">
+        <strong>7. Choose the correct form:</strong><br><br>
+        If I ___ more time, I would learn another language.<br><br>
+        A) have<br>
+        B) had<br>
+        C) will have<br>
+        D) having
+
+        <div class="answer">
+          Answer: B — had.
+        </div>
+      </div>
+
+      <div class="question">
+        <strong>8. Choose the correct sentence:</strong><br><br>
+        A) Despite of the rain, we went outside.<br>
+        B) Despite the rain, we went outside.<br>
+        C) Despite it was raining, we went outside.<br>
+        D) Despite the rain was heavy, we went outside.
+
+        <div class="answer">
+          Answer: B — Despite the rain, we went outside.
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="level">
+
+      <h3>C1 — Advanced</h3>
+
+      <div class="question">
+        <strong>9. Choose the correct form:</strong><br><br>
+        Had she known about the problem, she ___ earlier.<br><br>
+        A) would act<br>
+        B) would have acted<br>
+        C) will act<br>
+        D) acted
+
+        <div class="answer">
+          Answer: B — would have acted.
+        </div>
+      </div>
+
+      <div class="question">
+        <strong>10. Choose the correct sentence:</strong><br><br>
+        A) Rarely I have encountered such a difficult problem.<br>
+        B) Rarely have I encountered such a difficult problem.<br>
+        C) Rarely encountered I have such a difficult problem.<br>
+        D) Have rarely I encountered such a difficult problem.
+
+        <div class="answer">
+          Answer: B — Rarely have I encountered such a difficult problem.
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="level">
+
+      <h3>C2 — Proficiency</h3>
+
+      <div class="question">
+        <strong>11. Choose the best completion:</strong><br><br>
+        No sooner ___ the announcement than the audience began to react.<br><br>
+        A) had he made<br>
+        B) he had made<br>
+        C) did he made<br>
+        D) he made had
+
+        <div class="answer">
+          Answer: A — had he made.
+        </div>
+      </div>
+
+      <div class="question">
+        <strong>12. Choose the most appropriate form:</strong><br><br>
+        It is essential that every applicant ___ the instructions carefully.<br><br>
+        A) reads<br>
+        B) read<br>
+        C) reading<br>
+        D) has read
+
+        <div class="answer">
+          Answer: B — read.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- VOCABULARY -->
+
+  <div class="section">
+
+    <h2>🔤 Vocabulary Practice</h2>
+
+    <div class="level">
+
+      <h3>A1 Vocabulary</h3>
+
+      <div class="word">
+        <strong>Happy</strong><br>
+        Meaning: Feeling pleased or glad.
+      </div>
+
+      <div class="word">
+        <strong>Small</strong><br>
+        Meaning: Not large in size.
+      </div>
+
+    </div>
+
+
+    <div class="level">
+
+      <h3>A2 Vocabulary</h3>
+
+      <div class="word">
+        <strong>Journey</strong><br>
+        Meaning: The act of travelling from one place to another.
+      </div>
+
+      <div class="word">
+        <strong>Healthy</strong><br>
+        Meaning: In good health.
+      </div>
+
+    </div>
+
+
+    <div class="level">
+
+      <h3>B1 Vocabulary</h3>
+
+      <div class="word">
+        <strong>Reliable</strong><br>
+        Meaning: Able to be trusted or depended on.
+      </div>
+
+      <div class="word">
+        <strong>Opportunity</strong><br>
+        Meaning: A favourable situation or chance.
+      </div>
+
+    </div>
+
+
+    <div class="level">
+
+      <h3>B2 Vocabulary</h3>
+
+      <div class="word">
+        <strong>Significant</strong><br>
+        Meaning: Important or large enough to be noticed.
+      </div>
+
+      <div class="word">
+        <strong>Compelling</strong><br>
+        Meaning: Very convincing or interesting.
+      </div>
+
+    </div>
+
+
+    <div class="level">
+
+      <h3>C1 Vocabulary</h3>
+
+      <div class="word">
+        <strong>Meticulous</strong><br>
+        Meaning: Very careful and precise about details.
+      </div>
+
+      <div class="word">
+        <strong>Inevitable</strong><br>
+        Meaning: Certain to happen and impossible or very difficult to avoid.
+      </div>
+
+    </div>
+
+
+    <div class="level">
+
+      <h3>C2 Vocabulary</h3>
+
+      <div class="word">
+        <strong>Ambiguous</strong><br>
+        Meaning: Open to more than one interpretation.
+      </div>
+
+      <div class="word">
+        <strong>Ubiquitous</strong><br>
+        Meaning: Present or found almost everywhere.
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- PRONUNCIATION -->
+
+  <div class="section">
+
+    <h2>🗣️ Pronunciation Practice</h2>
+
+    <p>
+      Focus on sounds, word stress and differences between similar words.
+    </p>
+
+    <div class="pronunciation">
+      <strong>1. Knife</strong>
+      <p>The letter "k" is silent.</p>
+    </div>
+
+    <div class="pronunciation">
+      <strong>2. Honest</strong>
+      <p>The letter "h" is silent.</p>
+    </div>
+
+    <div class="pronunciation">
+      <strong>3. Ship / Sheep</strong>
+      <p>These words contain different vowel sounds.</p>
+    </div>
+
+    <div class="pronunciation">
+      <strong>4. Record</strong>
+      <p>
+        The pronunciation and stress can differ depending on whether
+        it is used as a noun or a verb.
+      </p>
+    </div>
+
+    <div class="pronunciation">
+      <strong>5. Comfortable</strong>
+      <p>
+        In natural English speech, some syllables may be pronounced
+        less strongly than learners expect from the spelling.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- MIXED PRACTICE -->
+
+  <div class="section">
+
+    <h2>🧠 Mixed English Practice</h2>
+
+    <div class="question">
+      <strong>13. Which word is closest in meaning to "brief"?</strong><br><br>
+      A) Short<br>
+      B) Heavy<br>
+      C) Loud<br>
+      D) Ancient
+
+      <div class="answer">
+        Answer: A — Short.
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>14. Choose the correct sentence:</strong><br><br>
+      A) They has finished their work.<br>
+      B) They have finished their work.<br>
+      C) They having finished their work.<br>
+      D) They is finished their work.
+
+      <div class="answer">
+        Answer: B — They have finished their work.
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>15. Which linking word normally introduces a contrast?</strong><br><br>
+      A) However<br>
+      B) Therefore<br>
+      C) Furthermore<br>
+      D) Similarly
+
+      <div class="answer">
+        Answer: A — However.
+      </div>
+    </div>
+
+    <div class="question">
+      <strong>16. Which sentence is most suitable for formal writing?</strong><br><br>
+      A) Give me the details now.<br>
+      B) I wanna know the details.<br>
+      C) Could you please provide the requested details?<br>
+      D) Tell me everything.
+
+      <div class="answer">
+        Answer: C — Could you please provide the requested details?
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- WRITING PRACTICE -->
+
+  <div class="section">
+
+    <h2>✍️ Writing Practice</h2>
+
+    <p>
+      Choose one of the activities below and write your answer in the
+      writing workspace further down the page.
+    </p>
+
+
+    <div class="writing-task">
+      <h3>📝 Essay Writing</h3>
+      <p>
+        Write an essay on:
+        <strong>The Importance of Education</strong>
+      </p>
+      <p>
+        Try to include an introduction, several organised paragraphs
+        and a conclusion.
+      </p>
+    </div>
+
+
+    <div class="writing-task">
+      <h3>📖 Story Writing</h3>
+      <p>
+        Write a story beginning with:
+        <strong>"When I opened the old box, I discovered something unexpected."</strong>
+      </p>
+    </div>
+
+
+    <div class="writing-task">
+      <h3>✉️ Letter Writing</h3>
+      <p>
+        Write a letter to a friend describing a memorable school day.
+      </p>
+    </div>
+
+
+    <div class="writing-task">
+      <h3>📧 Email Writing</h3>
+      <p>
+        Write an email to your teacher asking for information about
+        an upcoming school activity.
+      </p>
+    </div>
+
+
+    <div class="writing-task">
+      <h3>📰 Article Writing</h3>
+      <p>
+        Write an article about:
+        <strong>How Students Can Use Technology for Learning</strong>
+      </p>
+    </div>
+
+
+    <div class="writing-task">
+      <h3>📋 Report Writing</h3>
+      <p>
+        Write a short report about a school event.
+        Include the purpose, important details and conclusion.
+      </p>
+    </div>
+
+
+    <div class="writing-task">
+      <h3>🎤 Speech Writing</h3>
+      <p>
+        Write a speech about:
+        <strong>The Importance of Reading</strong>
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- WRITING WORKSPACE -->
+
+  <div class="section">
+
+    <h2>📝 My Writing Workspace</h2>
+
+    <p>
+      Choose a writing task above and type your answer here.
+      Your writing can be saved in this browser.
+    </p>
+
+    <textarea
+      id="writingArea"
+      placeholder="Start writing here...&#10;&#10;You can write essays, stories, letters, emails, articles, reports or speeches.">
+    </textarea>
+
+    <div class="buttons">
+      <button class="save" onclick="saveWriting()">
+        💾 Save Writing
+      </button>
+
+      <button class="clear" onclick="clearWriting()">
+        🗑️ Clear Writing
+      </button>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <p class="small-note">
+      Your writing is stored locally in this browser. It is not uploaded
+      to a server or shared with the website.
     </p>
 
   </div>
 
 
+  <!-- WRITING CHECKLIST -->
+
+  <div class="section">
+
+    <h2>✅ Writing Checklist</h2>
+
+    <div class="tip">
+      ✔ Did I understand the topic?
+    </div>
+
+    <div class="tip">
+      ✔ Did I organise my ideas into paragraphs?
+    </div>
+
+    <div class="tip">
+      ✔ Did I use suitable vocabulary?
+    </div>
+
+    <div class="tip">
+      ✔ Did I check my grammar?
+    </div>
+
+    <div class="tip">
+      ✔ Did I check spelling and punctuation?
+    </div>
+
+    <div class="tip">
+      ✔ Does my conclusion match the main topic?
+    </div>
+
+  </div>
+
+
+  <!-- FINAL TIPS -->
+
+  <div class="section">
+
+    <h2>🌟 Practice Tips</h2>
+
+    <div class="tip">
+      📚 Practise grammar regularly instead of memorising everything at once.
+    </div>
+
+    <div class="tip">
+      🔤 Learn vocabulary in context by using new words in sentences.
+    </div>
+
+    <div class="tip">
+      🗣️ Say difficult words aloud and listen carefully to their sounds.
+    </div>
+
+    <div class="tip">
+      ✍️ Write regularly and review your own work.
+    </div>
+
+    <div class="tip">
+      🧠 Keep a list of mistakes you often make and work on them.
+    </div>
+
+  </div>
+
+
+  <!-- NAVIGATION -->
+
   <a class="back" href="english.html">← Back to English</a>
+
   <a class="back" href="subjects.html">📚 Subjects</a>
+
   <a class="back" href="index.html">🏠 Home</a>
 
 </div>
+
+
+<script>
+
+  const writingArea = document.getElementById("writingArea");
+  const statusMessage = document.getElementById("status");
+
+  // Load previously saved writing
+  window.addEventListener("DOMContentLoaded", function() {
+
+    const savedWriting = localStorage.getItem("studentSpotEnglishWriting");
+
+    if (savedWriting) {
+      writingArea.value = savedWriting;
+      statusMessage.textContent = "📖 Your saved writing has been loaded.";
+    }
+
+  });
+
+
+  // Save writing
+  function saveWriting() {
+
+    localStorage.setItem(
+      "studentSpotEnglishWriting",
+      writingArea.value
+    );
+
+    statusMessage.textContent =
+      "✅ Your writing has been saved in this browser.";
+
+  }
+
+
+  // Clear writing
+  function clearWriting() {
+
+    const confirmed = confirm(
+      "Are you sure you want to clear your saved writing?"
+    );
+
+    if (confirmed) {
+
+      writingArea.value = "";
+
+      localStorage.removeItem(
+        "studentSpotEnglishWriting"
+      );
+
+      statusMessage.textContent =
+        "🗑️ Your writing has been cleared.";
+
+    }
+
+  }
+
+
+  // Automatically save while typing
+  writingArea.addEventListener("input", function() {
+
+    localStorage.setItem(
+      "studentSpotEnglishWriting",
+      writingArea.value
+    );
+
+    statusMessage.textContent =
+      "💾 Saving automatically...";
+
+  });
+
+</script>
 
 </body>
 </html>
